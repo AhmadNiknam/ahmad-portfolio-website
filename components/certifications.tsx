@@ -9,16 +9,21 @@ export function Certifications() {
       title="Certifications and professional credentials"
       description="Credentials that reinforce Ahmad's IT support, Azure administration, technical troubleshooting, and workplace safety background."
     >
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="reveal grid gap-4 md:grid-cols-3">
         {certifications.map((certification) => (
           <div
-            key={certification}
-            className="flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+            key={certification.name}
+            className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl hover:shadow-slate-200/80"
           >
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-slate-950 text-sm font-bold text-white">
-              IT
+            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-slate-950 via-sky-400 to-transparent opacity-0 transition group-hover:opacity-100" />
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-slate-950 text-sm font-black text-white shadow-lg shadow-slate-950/15">
+              {certification.badge}
             </span>
-            <p className="font-semibold text-slate-800">{certification}</p>
+            <p className="mt-5 text-xs font-bold uppercase tracking-[0.18em] text-sky-700">
+              {certification.issuer}
+            </p>
+            <h3 className="mt-2 text-lg font-bold tracking-tight text-slate-950">{certification.name}</h3>
+            <p className="mt-3 text-sm leading-6 text-slate-600">{certification.detail}</p>
           </div>
         ))}
       </div>

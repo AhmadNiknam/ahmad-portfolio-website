@@ -1,0 +1,19 @@
+<svg width="720" height="860" viewBox="0 0 720 860" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Professional portrait illustration for Ahmad Niknam</title>
+  <desc id="desc">A clean navy and soft blue professional profile illustration.</desc>
+  <rect width="720" height="860" rx="42" fill="#0f172a"/>
+  <circle cx="560" cy="128" r="180" fill="#38bdf8" fill-opacity="0.2"/>
+  <circle cx="128" cy="690" r="230" fill="#60a5fa" fill-opacity="0.15"/>
+  <path d="M92 652C138 536 230 462 360 462C490 462 582 536 628 652V780H92V652Z" fill="#1e293b"/>
+  <path d="M164 628C198 554 265 512 360 512C455 512 522 554 556 628V780H164V628Z" fill="#e2e8f0"/>
+  <path d="M212 780V640C212 602 243 571 281 571H439C477 571 508 602 508 640V780H212Z" fill="#0f172a"/>
+  <circle cx="360" cy="314" r="142" fill="#cbd5e1"/>
+  <path d="M237 300C246 216 296 168 369 168C440 168 490 214 498 300C469 273 425 258 370 258C315 258 267 273 237 300Z" fill="#1e293b"/>
+  <path d="M260 354C291 412 323 436 360 436C397 436 429 412 460 354C429 376 396 387 360 387C324 387 291 376 260 354Z" fill="#94a3b8" fill-opacity="0.45"/>
+  <rect x="92" y="84" width="210" height="54" rx="27" fill="#f8fafc" fill-opacity="0.9"/>
+  <text x="122" y="119" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">AHMAD NIKNAM</text>
+  <rect x="438" y="690" width="128" height="42" rx="21" fill="#38bdf8"/>
+  <text x="467" y="717" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">AZ-104</text>
+  <path d="M92 200L180 200" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  <path d="M540 578L628 578" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+</svg>
