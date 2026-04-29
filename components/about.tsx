@@ -5,7 +5,7 @@ export function About() {
     {
       title: "Infrastructure that stays dependable",
       description:
-        "Ahmad brings a steady, operations-first mindset to Windows Server, Active Directory, networking, and hybrid environments."
+        "Ahmad brings a steady, operations-first mindset to Windows Server, Active Directory, networking, Microsoft 365, Azure, and hybrid environments."
     },
     {
       title: "Cloud administration with practical judgment",
@@ -28,23 +28,22 @@ export function About() {
     <Section
       id="about"
       eyebrow="About"
-      title="A practical IT support and infrastructure professional focused on reliability, clarity, and useful automation."
-      description="Ahmad Niknam is based in Regina, Saskatchewan, Canada and focuses on IT support, systems administration, Windows Server, Active Directory, networking, Microsoft cloud services, PowerShell automation, and clear technical documentation."
+      title="IT support and infrastructure professional focused on reliable systems, clear troubleshooting, and practical operations."
+      description="Ahmad Niknam is based in Regina, Saskatchewan, Canada and brings hands-on experience across systems support, Windows Server, networking, Microsoft 365, Azure, Intune, PowerShell, and technical documentation."
     >
       <div className="reveal grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="relative overflow-hidden rounded-3xl bg-slate-950 p-8 text-white shadow-2xl shadow-slate-200 sm:p-10">
           <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-sky-400/20 blur-3xl" />
           <div className="relative">
           <p className="text-lg leading-8 text-slate-200">
-            Ahmad helps organizations keep their technology foundations reliable. His experience
-            spans hands-on systems support, server administration, network troubleshooting, Microsoft
-            cloud services, and the practical automation work that makes IT operations more visible
-            and repeatable.
+            Ahmad helps organizations keep technology dependable through hands-on systems support,
+            Windows Server administration, network troubleshooting, Microsoft 365 and Azure support,
+            endpoint operations, and clear documentation.
           </p>
           <p className="mt-6 text-lg leading-8 text-slate-200">
-            He is especially well suited for Canadian employers looking for a calm, accountable IT
-            professional who can support users, maintain infrastructure, troubleshoot carefully,
-            document clearly, and contribute to Azure and Microsoft 365 support work.
+            He is well suited for employers looking for a calm, accountable IT professional who can
+            support users, maintain infrastructure, troubleshoot carefully, document clearly, and
+            contribute to hybrid Microsoft environments.
           </p>
           </div>
         </div>

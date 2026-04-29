@@ -6,8 +6,8 @@ export function Experience() {
     <Section
       id="experience"
       eyebrow="Experience"
-      title="Professional experience"
-      description="A focused IT background supporting systems, servers, networks, users, documentation, and increasingly cloud-connected infrastructure."
+      title="Honest infrastructure and systems support experience"
+      description="Recruiter-friendly experience areas without invented employers: multi-site technical support, server and network operations, user troubleshooting, documentation, and operational reliability."
     >
       <div className="reveal relative space-y-7 before:absolute before:left-4 before:top-4 before:h-[calc(100%-1rem)] before:w-px before:bg-gradient-to-b before:from-sky-400 before:via-slate-200 before:to-transparent">
         {experienceItems.map((item, index) => (
@@ -29,6 +29,13 @@ export function Experience() {
                 </span>
               </div>
               <p className="mt-5 leading-7 text-slate-600">{item.summary}</p>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {item.highlights.map((highlight) => (
+                  <li key={highlight} className="rounded-2xl bg-slate-50 p-4 text-sm font-semibold leading-6 text-slate-700 ring-1 ring-slate-100">
+                    {highlight}
+                  </li>
+                ))}
+              </ul>
             </div>
           </article>
         ))}

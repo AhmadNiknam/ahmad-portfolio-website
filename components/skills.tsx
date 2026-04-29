@@ -6,10 +6,10 @@ export function Skills() {
     <Section
       id="skills"
       eyebrow="Skills"
-      title="Infrastructure and cloud capabilities"
-      description="Core strengths across Microsoft infrastructure, cloud administration, support operations, and practical automation."
+      title="Real infrastructure and support skill areas"
+      description="Focused categories for Windows Server, Active Directory, networking, Azure, Microsoft 365, Intune, PowerShell, troubleshooting, documentation, and hybrid infrastructure."
     >
-      <div className="reveal grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <div className="reveal grid gap-5 md:grid-cols-2 lg:grid-cols-5">
         {skillGroups.map((group) => (
           <article
             key={group.title}
