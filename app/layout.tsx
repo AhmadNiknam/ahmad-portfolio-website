@@ -24,19 +24,32 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://ahmadniknam.com"
   },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: ["/favicon.svg"]
+  },
   openGraph: {
     title: "Ahmad Niknam | IT Support & Infrastructure Professional",
     description:
       "IT Support, Infrastructure, Azure, Microsoft 365, and practical automation portfolio.",
     url: "https://ahmadniknam.com",
     siteName: "Ahmad Niknam Portfolio",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Ahmad Niknam - IT Support & Infrastructure Professional"
+      }
+    ],
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
     title: "Ahmad Niknam | IT Support & Infrastructure Professional",
     description:
-      "IT Support, Infrastructure, Azure, Microsoft 365, and practical automation portfolio."
+      "IT Support, Infrastructure, Azure, Microsoft 365, and practical automation portfolio.",
+    images: ["/opengraph-image"]
   }
 };
 
