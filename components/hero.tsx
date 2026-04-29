@@ -48,11 +48,10 @@ export function Hero() {
               View Projects
             </a>
             <a
-              href="/Ahmad-Niknam-Resume.pdf"
-              download
+              href={profileLinks.resumeRequest}
               className="rounded-full bg-white px-6 py-3 text-center text-sm font-bold text-slate-950 shadow-xl shadow-slate-950/20 transition hover:-translate-y-0.5 hover:bg-slate-100"
             >
-              Download Resume
+              Request Resume
             </a>
             <a
               href={profileLinks.linkedin}

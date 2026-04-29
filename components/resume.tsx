@@ -1,12 +1,12 @@
 import { Section } from "@/components/section";
-import { resumeHighlights } from "@/lib/portfolio-data";
+import { profileLinks, resumeHighlights } from "@/lib/portfolio-data";
 
 export function Resume() {
   return (
     <Section
       id="resume"
       eyebrow="Resume"
-      title="Download Ahmad Niknam's resume"
+      title="Request Ahmad Niknam's resume"
       description="A focused resume for IT Support Specialist, Systems Administrator, Infrastructure Support, Azure Administrator, and Network Support Analyst opportunities."
     >
       <div className="reveal relative overflow-hidden rounded-3xl bg-slate-950 p-8 text-white shadow-2xl shadow-slate-200 sm:p-10">
@@ -29,11 +29,10 @@ export function Resume() {
             </ul>
           </div>
           <a
-            href="/Ahmad-Niknam-Resume.pdf"
-            download
+            href={profileLinks.resumeRequest}
             className="inline-flex rounded-full bg-sky-400 px-6 py-3 text-center text-sm font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-sky-300"
           >
-            Download Resume
+            Request Resume
           </a>
         </div>
       </div>

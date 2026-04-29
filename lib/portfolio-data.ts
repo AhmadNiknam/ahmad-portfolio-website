@@ -8,9 +8,10 @@ export const navItems = [
 ];
 
 export const profileLinks = {
-  linkedin: "https://www.linkedin.com/in/ahmadniknam",
+  linkedin: "https://www.linkedin.com/in/ahmad-niknam/",
   github: "https://github.com/AhmadNiknam",
   email: "mailto:Ahmadniknam@hotmail.com",
+  resumeRequest: "mailto:Ahmadniknam@hotmail.com?subject=Resume%20Request%20-%20Ahmad%20Niknam",
   emailLabel: "Ahmadniknam@hotmail.com"
 };
 

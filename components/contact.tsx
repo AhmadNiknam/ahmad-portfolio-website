@@ -33,17 +33,16 @@ export function Contact() {
           <div className="relative">
             <h3 className="text-2xl font-bold tracking-tight">Connect professionally</h3>
             <p className="mt-4 leading-7 text-slate-200">
-              Use the resume download, email, GitHub portfolio, or LinkedIn profile to start a
+              Use the resume request, email, GitHub portfolio, or LinkedIn profile to start a
               conversation about IT support, infrastructure administration, Azure operations, or
               practical automation work.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
-                href="/Ahmad-Niknam-Resume.pdf"
-                download
+                href={profileLinks.resumeRequest}
                 className="rounded-full bg-sky-400 px-5 py-3 text-center text-sm font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-sky-300"
               >
-                Download Resume
+                Request Resume
               </a>
               <a
                 href={profileLinks.email}
