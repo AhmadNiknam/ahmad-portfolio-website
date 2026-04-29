@@ -9,10 +9,10 @@ export const navItems = [
 ];
 
 export const profileLinks = {
-  linkedin: "https://www.linkedin.com/in/ahmad-niknam/",
-  github: "https://github.com/ahmad-niknam",
-  email: "mailto:ahmad.niknam@email.example?subject=Portfolio%20Opportunity%20for%20Ahmad%20Niknam",
-  emailLabel: "ahmad.niknam@email.example"
+  linkedin: "#contact",
+  github: "https://github.com/AhmadNiknam",
+  email: "mailto:Ahmadniknam@hotmail.com",
+  emailLabel: "Ahmadniknam@hotmail.com"
 };
 
 export const skillGroups = [
@@ -85,7 +85,7 @@ export const projects = [
       "A portfolio project for connecting troubleshooting signals across network devices, servers, and support notes so recurring connectivity issues become easier to investigate.",
     impact: "Turns scattered network observations into clearer support evidence.",
     tags: ["Networking", "Hybrid Infrastructure", "Troubleshooting"],
-    githubUrl: "https://github.com/ahmad-niknam"
+    githubUrl: "https://github.com/AhmadNiknam"
   },
   {
     title: "Server Health Sentinel",
@@ -93,7 +93,7 @@ export const projects = [
       "A Windows Server health reporting project focused on uptime indicators, disk capacity, service status, and early warning checks for support teams.",
     impact: "Helps identify capacity and service issues before they become escalations.",
     tags: ["Windows Server", "PowerShell", "Operations"],
-    githubUrl: "https://github.com/ahmad-niknam"
+    githubUrl: "https://github.com/AhmadNiknam"
   },
   {
     title: "Windows Server Patch Readiness Checker",
@@ -101,7 +101,7 @@ export const projects = [
       "An operations-focused workflow for validating reboot status, available disk space, critical services, and maintenance notes before scheduled Windows Server patching.",
     impact: "Reduces maintenance risk with repeatable pre-patch checks.",
     tags: ["Patching", "Operations", "Documentation"],
-    githubUrl: "https://github.com/ahmad-niknam"
+    githubUrl: "https://github.com/AhmadNiknam"
   },
   {
     title: "Azure VM Cost and Idle Resource Reporter",
@@ -109,7 +109,7 @@ export const projects = [
       "An Azure administration project designed to identify idle virtual machines, summarize utilization signals, and support more responsible cloud cost decisions.",
     impact: "Connects Azure administration with practical cost awareness.",
     tags: ["Azure", "Cost Awareness", "Automation"],
-    githubUrl: "https://github.com/ahmad-niknam"
+    githubUrl: "https://github.com/AhmadNiknam"
   }
 ];
 
@@ -181,18 +181,28 @@ export const certifications = [
     name: "Microsoft Certified: Azure Administrator Associate",
     detail: "AZ-104",
     issuer: "Microsoft",
+    category: "Cloud & Infrastructure",
     badge: "AZ"
   },
   {
     name: "Google IT Support Professional Certificate",
     detail: "Technical support foundations",
     issuer: "Google",
+    category: "IT Support",
     badge: "IT"
   },
   {
     name: "WHMIS",
     detail: "Canadian workplace safety awareness",
     issuer: "Workplace Safety",
+    category: "Workplace Safety",
     badge: "CA"
+  },
+  {
+    name: "Preventing Harassment in the Workplace",
+    detail: "Issued April 2026",
+    issuer: "LinkedIn",
+    category: "Workplace & Professional Development",
+    badge: "PD"
   }
 ];
