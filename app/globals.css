@@ -4,6 +4,7 @@
   color-scheme: light;
   --background: #f8fafc;
   --foreground: #0f172a;
+  --section-scroll-offset: 96px;
 }
 
 * {
@@ -12,7 +13,12 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --section-scroll-offset: 120px;
+  }
 }
 
 body {

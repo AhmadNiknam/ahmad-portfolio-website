@@ -10,7 +10,7 @@ type SectionProps = {
 
 export function Section({ id, eyebrow, title, description, children }: SectionProps) {
   return (
-    <section id={id} className="scroll-mt-28 py-20 sm:py-24">
+    <section id={id} className="scroll-mt-[var(--section-scroll-offset)] py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="reveal mb-10 max-w-3xl">
           <p className="mb-3 inline-flex rounded-full bg-sky-50 px-3 py-1 text-sm font-bold uppercase tracking-[0.24em] text-sky-700 ring-1 ring-sky-100">
