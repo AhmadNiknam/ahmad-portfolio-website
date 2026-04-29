@@ -72,12 +72,13 @@ export function Hero() {
           <div className="absolute -inset-4 rounded-[2.75rem] bg-sky-400/20 blur-3xl" />
           <div className="relative overflow-hidden rounded-[2.25rem] border border-white/[0.12] bg-white/10 p-3 shadow-2xl shadow-slate-950/40 backdrop-blur">
             <Image
-              src="/ahmad-niknam-profile.svg"
-              alt="Professional portrait illustration for Ahmad Niknam"
+              src="/profile.jpg"
+              alt="Ahmad Niknam professional profile photo"
               width={720}
               height={860}
+              sizes="(min-width: 1024px) 42vw, (min-width: 640px) 70vw, 100vw"
               priority
-              className="aspect-[4/5] w-full rounded-[1.65rem] object-cover"
+              className="aspect-[4/5] h-auto w-full rounded-[1.65rem] object-cover object-center"
             />
             <div className="absolute right-6 top-6 rounded-full border border-white/15 bg-white/90 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-950 shadow-xl">
               Open to IT roles
