@@ -6,8 +6,8 @@ export function Certifications() {
     <Section
       id="certifications"
       eyebrow="Certifications"
-      title="Certifications and learning"
-      description="A clean area for verified certifications, continuing education, and technical training."
+      title="Certifications and professional credentials"
+      description="Verified certifications that reinforce Ahmad's cloud administration, project delivery, agile, and workplace safety background."
     >
       <div className="grid gap-4 md:grid-cols-2">
         {certifications.map((certification) => (

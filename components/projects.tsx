@@ -6,14 +6,14 @@ export function Projects() {
     <Section
       id="projects"
       eyebrow="Projects"
-      title="Selected work and case study placeholders"
-      description="No external project links are included yet. These cards are ready for verified project details when available."
+      title="Practical IT automation and infrastructure projects"
+      description="A focused set of projects that show Ahmad's ability to turn everyday infrastructure problems into clear checks, reports, and support workflows."
     >
-      <div className="grid gap-6 lg:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <article
             key={project.title}
-            className="flex min-h-80 flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            className="flex min-h-72 flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
           >
             <div className="mb-6 h-2 w-16 rounded-full bg-sky-500" />
             <h3 className="text-2xl font-bold text-slate-950">{project.title}</h3>

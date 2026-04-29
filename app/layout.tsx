@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ahmad Niknam | IT Infrastructure & Cloud Professional",
+  title: "Ahmad Niknam | Azure Administrator & IT Infrastructure Professional",
   description:
-    "Modern personal portfolio for Ahmad Niknam, an IT Infrastructure and Cloud professional based in Regina, Saskatchewan, Canada."
+    "Professional portfolio for Ahmad Niknam, an IT Infrastructure Professional, Azure Administrator, Systems Support specialist, and practical IT automation builder based in Regina, Saskatchewan, Canada."
 };
 
 export default function RootLayout({

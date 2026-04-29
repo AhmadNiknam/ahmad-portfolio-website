@@ -10,66 +10,72 @@ export const navItems = [
 
 export const skillGroups = [
   {
-    title: "Cloud Platforms",
-    skills: ["Microsoft Azure", "Hybrid Cloud", "Infrastructure Planning", "Cloud Migration"]
-  },
-  {
     title: "Infrastructure",
-    skills: ["Windows Server", "Networking", "Virtualization", "Storage", "Backup & Recovery"]
+    skills: ["Windows Server", "Active Directory", "Hybrid Infrastructure", "Technical Documentation"]
   },
   {
-    title: "Operations",
-    skills: ["Monitoring", "Incident Response", "IT Service Management", "Documentation"]
+    title: "Cloud & Microsoft",
+    skills: ["Microsoft Azure", "Microsoft 365", "Intune", "Azure Administration"]
   },
   {
-    title: "Security",
-    skills: ["Identity & Access", "Endpoint Security", "Hardening", "Compliance Awareness"]
+    title: "Support Operations",
+    skills: ["IT Troubleshooting", "Systems Support", "Patch Readiness", "Service Reliability"]
+  },
+  {
+    title: "Automation",
+    skills: ["PowerShell", "Infrastructure Reporting", "Health Checks", "Operational Runbooks"]
   }
 ];
 
 export const projects = [
   {
-    title: "Cloud Infrastructure Modernization",
+    title: "Hybrid Network Correlator",
     description:
-      "Placeholder case study for planning, migrating, and stabilizing business infrastructure in a cloud-first environment.",
-    tags: ["Azure", "Migration", "Governance"]
+      "A practical visibility tool for connecting signals across network devices, servers, and support notes so infrastructure teams can diagnose recurring connectivity issues faster.",
+    tags: ["Networking", "Hybrid IT", "Troubleshooting"]
   },
   {
-    title: "Hybrid Network Reliability",
+    title: "Server Health Sentinel",
     description:
-      "Placeholder project highlighting resilient connectivity, monitoring, and documentation for distributed teams.",
-    tags: ["Networking", "Monitoring", "Operations"]
+      "A server monitoring and reporting concept focused on uptime indicators, disk capacity, service status, and early warnings for Windows Server environments.",
+    tags: ["Windows Server", "Monitoring", "PowerShell"]
   },
   {
-    title: "IT Operations Improvement",
+    title: "Windows Server Patch Readiness Checker",
     description:
-      "Placeholder initiative focused on standard operating procedures, asset visibility, and reliable support workflows.",
-    tags: ["ITSM", "Process", "Support"]
+      "An operations-focused readiness workflow for validating reboot status, available disk space, critical services, and documentation before scheduled maintenance windows.",
+    tags: ["Patching", "Operations", "Documentation"]
+  },
+  {
+    title: "Azure VM Cost and Idle Resource Reporter",
+    description:
+      "A cloud administration project designed to identify idle virtual machines, summarize utilization signals, and support more responsible Azure cost management decisions.",
+    tags: ["Azure", "Cost Awareness", "Automation"]
   }
 ];
 
 export const experienceItems = [
   {
-    role: "IT Infrastructure & Cloud Professional",
-    company: "Professional Experience",
-    location: "Regina, Saskatchewan",
-    period: "Current",
+    role: "IT Infrastructure Professional",
+    company: "Systems, servers, networking, and support operations",
+    location: "Regina, Saskatchewan, Canada",
+    period: "10+ years",
     summary:
-      "Placeholder summary for infrastructure operations, cloud services, end-user support, and secure systems administration."
+      "Hands-on background supporting reliable IT environments across Windows Server, Active Directory, networking, endpoint administration, documentation, and daily infrastructure troubleshooting."
   },
   {
-    role: "Systems and Network Support",
-    company: "Previous Experience",
-    location: "Canada",
-    period: "Previous",
+    role: "Azure Administrator & Automation Builder",
+    company: "Modern cloud and hybrid infrastructure focus",
+    location: "Microsoft Azure and Microsoft 365 environments",
+    period: "Current focus",
     summary:
-      "Placeholder summary for troubleshooting, documentation, service reliability, and cross-functional technical support."
+      "Applies Azure administration, Microsoft 365, Intune, and PowerShell automation to make infrastructure work clearer, more measurable, and easier to support."
   }
 ];
 
 export const certifications = [
-  "Microsoft Azure certification placeholder",
-  "Networking certification placeholder",
-  "Security certification placeholder",
-  "IT service management certification placeholder"
+  "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+  "Project Management Professional (PMP)",
+  "Professional Scrum Master I (PSM I)",
+  "WHMIS"
 ];

@@ -7,7 +7,7 @@ export function Skills() {
       id="skills"
       eyebrow="Skills"
       title="Infrastructure and cloud capabilities"
-      description="A concise snapshot of the technical areas this portfolio will showcase."
+      description="Core strengths across Microsoft infrastructure, cloud administration, support operations, and practical automation."
     >
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {skillGroups.map((group) => (

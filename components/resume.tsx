@@ -6,20 +6,27 @@ export function Resume() {
       id="resume"
       eyebrow="Resume"
       title="Resume overview"
-      description="Use this section for a downloadable resume once the final file is ready."
+      description="A concise profile for infrastructure, Azure administrator, systems support, and hybrid IT roles."
     >
-      <div className="rounded-3xl bg-slate-950 p-8 text-white sm:p-10">
+      <div className="rounded-3xl bg-slate-950 p-8 text-white shadow-xl shadow-slate-200 sm:p-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
-            <h3 className="text-2xl font-bold">Professional resume placeholder</h3>
+            <h3 className="text-2xl font-bold">Ahmad Niknam</h3>
             <p className="mt-4 max-w-3xl leading-8 text-slate-200">
-              Add Ahmad&apos;s final resume summary, target roles, and a verified download link
-              here. No placeholder external links have been added.
+              IT Infrastructure Professional, Azure Administrator, Systems Support specialist,
+              and practical IT automation builder based in Regina, Saskatchewan. Ahmad brings
+              10+ years of experience across Windows Server, Active Directory, networking,
+              Microsoft Azure, Microsoft 365, Intune, PowerShell, troubleshooting, and technical
+              documentation.
             </p>
           </div>
-          <span className="inline-flex rounded-full border border-white/20 px-6 py-3 text-center text-sm font-bold text-slate-200">
-            Resume link coming soon
-          </span>
+          <a
+            href="/Ahmad-Niknam-Resume.pdf"
+            download
+            className="inline-flex rounded-full bg-sky-400 px-6 py-3 text-center text-sm font-bold text-slate-950 transition hover:bg-sky-300"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
     </Section>
