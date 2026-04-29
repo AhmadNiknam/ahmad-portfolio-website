@@ -7,7 +7,7 @@ export function Experience() {
       id="experience"
       eyebrow="Experience"
       title="Professional experience"
-      description="More than 10 years of experience supporting systems, servers, networks, users, documentation, and increasingly cloud-connected infrastructure."
+      description="A focused IT background supporting systems, servers, networks, users, documentation, and increasingly cloud-connected infrastructure."
     >
       <div className="relative space-y-6 before:absolute before:left-4 before:top-2 before:h-full before:w-px before:bg-slate-200">
         {experienceItems.map((item) => (

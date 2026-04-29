@@ -7,7 +7,7 @@ export function Certifications() {
       id="certifications"
       eyebrow="Certifications"
       title="Certifications and professional credentials"
-      description="Verified certifications that reinforce Ahmad's cloud administration, project delivery, agile, and workplace safety background."
+      description="Credentials that reinforce Ahmad's IT support, Azure administration, technical troubleshooting, and workplace safety background."
     >
       <div className="grid gap-4 md:grid-cols-2">
         {certifications.map((certification) => (

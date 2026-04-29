@@ -11,17 +11,17 @@ export function Hero() {
       <div className="relative mx-auto grid min-h-[calc(100vh-73px)] max-w-6xl items-center gap-14 px-6 py-20 sm:py-24 lg:grid-cols-[1.12fr_0.88fr]">
         <div>
           <p className="mb-5 inline-flex rounded-full border border-sky-300/30 bg-white/10 px-4 py-2 text-sm font-medium text-sky-100">
-            IT Infrastructure Professional | Azure Administrator | Regina, SK
+            IT Support & Infrastructure Professional | Regina, Saskatchewan, Canada
           </p>
           <h1
             id="hero-title"
             className="max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
           >
-            Helping Businesses Build Reliable IT Infrastructure
+            Practical IT Support, Infrastructure, and Automation
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-            Experienced IT professional combining hands-on infrastructure knowledge with modern
-            cloud and automation solutions.
+            I help support reliable IT environments by combining hands-on systems experience,
+            cloud knowledge, troubleshooting skills, and practical automation.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
@@ -69,16 +69,16 @@ export function Hero() {
                 Ahmad Niknam
               </p>
               <p className="mt-2 text-lg font-bold">
-                Azure Administrator & Systems Support Professional
+                Azure Administrator Associate & Systems Support Professional
               </p>
               <dl className="mt-5 grid grid-cols-2 gap-3 text-sm">
                 <div className="rounded-2xl bg-white/10 p-3">
-                  <dt className="text-slate-300">Experience</dt>
-                  <dd className="mt-1 font-semibold text-white">10+ years</dd>
+                  <dt className="text-slate-300">Focus</dt>
+                  <dd className="mt-1 font-semibold text-white">IT Support</dd>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-3">
                   <dt className="text-slate-300">Based in</dt>
-                  <dd className="mt-1 font-semibold text-white">Regina, Canada</dd>
+                  <dd className="mt-1 font-semibold text-white">Regina, SK</dd>
                 </div>
               </dl>
             </div>

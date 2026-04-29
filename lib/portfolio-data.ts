@@ -11,7 +11,7 @@ export const navItems = [
 export const skillGroups = [
   {
     title: "Infrastructure",
-    skills: ["Windows Server", "Active Directory", "Hybrid Infrastructure", "Technical Documentation"]
+    skills: ["Windows Server", "Active Directory", "DNS / DHCP", "Technical Documentation"]
   },
   {
     title: "Cloud & Microsoft",
@@ -19,11 +19,11 @@ export const skillGroups = [
   },
   {
     title: "Support Operations",
-    skills: ["IT Troubleshooting", "Systems Support", "Patch Readiness", "Service Reliability"]
+    skills: ["IT Support", "Systems Administration", "Networking Fundamentals", "Troubleshooting"]
   },
   {
     title: "Automation",
-    skills: ["PowerShell", "Infrastructure Reporting", "Health Checks", "Operational Runbooks"]
+    skills: ["PowerShell", "IT Automation", "Infrastructure Reporting", "Operational Runbooks"]
   }
 ];
 
@@ -56,26 +56,25 @@ export const projects = [
 
 export const experienceItems = [
   {
-    role: "IT Infrastructure Professional",
-    company: "Systems, servers, networking, and support operations",
+    role: "IT Support & Infrastructure Professional",
+    company: "Systems administration, support operations, and infrastructure",
     location: "Regina, Saskatchewan, Canada",
-    period: "10+ years",
+    period: "Professional focus",
     summary:
-      "Hands-on background supporting reliable IT environments across Windows Server, Active Directory, networking, endpoint administration, documentation, and daily infrastructure troubleshooting."
+      "Hands-on background supporting reliable IT environments across Windows Server, Active Directory, DNS, DHCP, networking fundamentals, endpoint administration, documentation, and daily infrastructure troubleshooting."
   },
   {
-    role: "Azure Administrator & Automation Builder",
+    role: "Azure Administrator Associate & Automation Builder",
     company: "Modern cloud and hybrid infrastructure focus",
     location: "Microsoft Azure and Microsoft 365 environments",
     period: "Current focus",
     summary:
-      "Applies Azure administration, Microsoft 365, Intune, and PowerShell automation to make infrastructure work clearer, more measurable, and easier to support."
+      "Applies Azure administration, Microsoft 365, Intune, and PowerShell-based automation to make infrastructure work clearer, more measurable, and easier to support."
   }
 ];
 
 export const certifications = [
   "Microsoft Certified: Azure Administrator Associate (AZ-104)",
-  "Project Management Professional (PMP)",
-  "Professional Scrum Master I (PSM I)",
+  "Google IT Support Professional Certificate",
   "WHMIS"
 ];

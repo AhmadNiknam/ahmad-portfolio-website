@@ -28,8 +28,8 @@ export function About() {
     <Section
       id="about"
       eyebrow="About"
-      title="A practical IT infrastructure professional focused on reliability, clarity, and business continuity."
-      description="Ahmad Niknam is based in Regina, Saskatchewan, Canada and brings more than a decade of experience across IT systems, servers, networking, support operations, and infrastructure environments."
+      title="A practical IT support and infrastructure professional focused on reliability, clarity, and useful automation."
+      description="Ahmad Niknam is based in Regina, Saskatchewan, Canada and focuses on IT support, systems administration, Windows Server, Active Directory, networking, Microsoft cloud services, PowerShell automation, and clear technical documentation."
     >
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="rounded-3xl bg-slate-950 p-8 text-white shadow-xl shadow-slate-200 sm:p-10">
@@ -41,8 +41,8 @@ export function About() {
           </p>
           <p className="mt-6 text-lg leading-8 text-slate-200">
             He is especially well suited for Canadian employers looking for a calm, accountable IT
-            professional who can support users, maintain infrastructure, document clearly, and
-            contribute to Azure and hybrid modernization work.
+            professional who can support users, maintain infrastructure, troubleshoot carefully,
+            document clearly, and contribute to Azure and Microsoft 365 support work.
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
