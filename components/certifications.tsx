@@ -6,10 +6,10 @@ export function Certifications() {
     <Section
       id="certifications"
       eyebrow="Certifications"
-      title="Certifications and professional credentials"
-      description="Credentials that reinforce Ahmad's IT support, Azure administration, technical troubleshooting, workplace safety, and professional development background."
+      title="Certifications and professional development"
+      description="Credentials that support Azure administration, IT support, endpoint management, workplace readiness, and professional IT membership."
     >
-      <div className="reveal grid gap-4 md:grid-cols-3">
+      <div className="reveal grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {certifications.map((certification) => (
           <div
             key={certification.name}

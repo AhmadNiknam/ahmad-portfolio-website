@@ -6,8 +6,8 @@ export function Experience() {
     <Section
       id="experience"
       eyebrow="Experience"
-      title="Honest infrastructure and systems support experience"
-      description="Recruiter-friendly experience areas without invented employers: multi-site technical support, server and network operations, user troubleshooting, documentation, and operational reliability."
+      title="Professional experience across IT support, systems administration, and infrastructure operations."
+      description="A clear timeline focused on support outcomes, multi-site operations, Windows infrastructure, Microsoft 365, networking, and remote technical support."
     >
       <div className="reveal relative space-y-7 before:absolute before:left-4 before:top-4 before:h-[calc(100%-1rem)] before:w-px before:bg-gradient-to-b before:from-sky-400 before:via-slate-200 before:to-transparent">
         {experienceItems.map((item, index) => (

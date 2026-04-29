@@ -1,19 +1,13 @@
 import { Section } from "@/components/section";
+import { resumeHighlights } from "@/lib/portfolio-data";
 
 export function Resume() {
-  const resumeHighlights = [
-    "IT Support and Infrastructure Professional based in Regina, Saskatchewan",
-    "Microsoft Certified: Azure Administrator Associate (AZ-104)",
-    "Windows Server, Active Directory, networking, Microsoft 365, Azure, Intune, and PowerShell",
-    "Projects focused on health checks, patch readiness, hybrid troubleshooting, and Azure cost visibility"
-  ];
-
   return (
     <Section
       id="resume"
       eyebrow="Resume"
-      title="Downloadable resume profile"
-      description="A PDF-ready resume summary for IT Support, IT Technician, Systems Support, Junior Network Analyst, and Cloud Support opportunities."
+      title="Download Ahmad Niknam's resume"
+      description="A focused resume for IT Support Specialist, Systems Administrator, Infrastructure Support, Azure Administrator, and Network Support Analyst opportunities."
     >
       <div className="reveal relative overflow-hidden rounded-3xl bg-slate-950 p-8 text-white shadow-2xl shadow-slate-200 sm:p-10">
         <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-sky-400/20 blur-3xl" />
@@ -21,11 +15,10 @@ export function Resume() {
           <div>
             <h3 className="text-2xl font-bold tracking-tight">Ahmad Niknam</h3>
             <p className="mt-4 max-w-3xl leading-8 text-slate-200">
-              IT Support & Infrastructure Professional and Microsoft Certified Azure Administrator
-              Associate based in Regina, Saskatchewan. The downloadable resume is prepared around
-              real strengths in Windows Server, Active Directory, networking, Microsoft Azure,
-              Microsoft 365, Intune, PowerShell, troubleshooting, documentation, and hybrid
-              infrastructure support.
+              IT infrastructure support and Azure administration profile based in Regina,
+              Saskatchewan. The resume highlights practical experience with Windows Server, Active
+              Directory, networking, Microsoft 365, PowerShell, documentation, troubleshooting, and
+              hybrid operations.
             </p>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {resumeHighlights.map((highlight) => (

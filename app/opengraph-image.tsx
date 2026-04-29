@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Ahmad Niknam - IT Support & Infrastructure Professional";
+export const alt = "Ahmad Niknam - IT Support Specialist and Azure Administrator";
 export const contentType = "image/png";
 export const size = {
   width: 1200,
@@ -68,7 +68,7 @@ export default function OpenGraphImage() {
             >
               AN
             </div>
-            IT Portfolio
+            Regina, Saskatchewan
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
@@ -91,7 +91,7 @@ export default function OpenGraphImage() {
                 letterSpacing: "-0.025em"
               }}
             >
-              IT Support & Infrastructure Professional
+              IT Support Specialist | Azure Administrator
             </div>
           </div>
 
@@ -102,7 +102,7 @@ export default function OpenGraphImage() {
               fontWeight: 700
             }}
           >
-            ahmadniknam.com
+            Windows Server · Microsoft 365 · PowerShell Automation
           </div>
         </div>
       </div>

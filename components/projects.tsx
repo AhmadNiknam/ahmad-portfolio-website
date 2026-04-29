@@ -6,16 +6,17 @@ export function Projects() {
     <Section
       id="projects"
       eyebrow="Projects"
-      title="Practical IT automation and infrastructure projects"
-      description="A focused set of projects that show Ahmad's ability to turn everyday infrastructure problems into clear checks, reports, and support workflows."
+      title="Portfolio projects built around real infrastructure support problems."
+      description="Focused automation and reporting projects that demonstrate PowerShell, Azure, Microsoft 365, and troubleshooting judgment."
     >
-      <div className="reveal grid gap-6 md:grid-cols-2">
+      <div className="reveal grid gap-6 lg:grid-cols-3">
         {projects.map((project, index) => (
           <article
             key={project.title}
-            className="group relative flex min-h-80 flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-sky-200 hover:shadow-2xl hover:shadow-slate-200/80"
+            className="group relative flex min-h-96 flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-sky-200 hover:shadow-2xl hover:shadow-slate-200/80"
           >
-            <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-sky-50 transition group-hover:bg-sky-100" />
+            <div className="absolute right-0 top-0 h-32 w-32 rounded-bl-full bg-sky-50 transition group-hover:bg-sky-100" />
+            <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-slate-950 via-sky-500 to-blue-300 opacity-0 transition group-hover:opacity-100" />
             <div className="relative mb-7 flex items-center justify-between">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-sm font-black text-white shadow-lg shadow-slate-950/15">
                 0{index + 1}
@@ -40,7 +41,7 @@ export function Projects() {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-sky-700"
+              className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-sky-700"
             >
               View on GitHub
               <span aria-hidden="true">-&gt;</span>

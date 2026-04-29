@@ -6,15 +6,16 @@ export function Contact() {
     <Section
       id="contact"
       eyebrow="Contact"
-      title="Start a professional conversation"
-      description="For IT support, infrastructure operations, Azure administration, Microsoft 365, systems support, and practical automation opportunities in Regina or remote-friendly Canadian teams."
+      title="Open to IT infrastructure, cloud support, systems administration, and operations roles."
+      description="Open to IT infrastructure, cloud support, systems administration, and technical operations opportunities in Canada."
     >
       <div className="reveal grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl hover:shadow-slate-200/80">
           <h3 className="text-xl font-bold text-slate-950">Based in Regina, Saskatchewan</h3>
           <p className="mt-4 leading-7 text-slate-600">
-            Ahmad is available for conversations with employers and teams looking for dependable
-            IT infrastructure, Azure, Microsoft 365, user support, troubleshooting, and documentation capability.
+            Ahmad is available for conversations with employers and teams hiring for IT support,
+            infrastructure, Azure administration, network support, systems administration, and
+            technical operations opportunities in Canada.
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-100">
@@ -32,9 +33,9 @@ export function Contact() {
           <div className="relative">
             <h3 className="text-2xl font-bold tracking-tight">Connect professionally</h3>
             <p className="mt-4 leading-7 text-slate-200">
-              Use the resume download, email, GitHub portfolio, or LinkedIn placeholder to start a
-              conversation about systems support, infrastructure administration, Azure operations,
-              or IT automation work.
+              Use the resume download, email, GitHub portfolio, or LinkedIn profile to start a
+              conversation about IT support, infrastructure administration, Azure operations, or
+              practical automation work.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
@@ -61,14 +62,16 @@ export function Contact() {
               </a>
               <a
                 href={profileLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full border border-white/20 px-5 py-3 text-center text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-white/10"
-                aria-label="LinkedIn profile placeholder"
+                aria-label="LinkedIn profile"
               >
                 LinkedIn
               </a>
             </div>
             <p className="mt-4 text-sm font-medium text-slate-300">
-              Email: {profileLinks.emailLabel} · LinkedIn URL coming soon.
+              Email: {profileLinks.emailLabel} · GitHub: github.com/AhmadNiknam
             </p>
           </div>
         </div>

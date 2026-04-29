@@ -4,174 +4,113 @@ export const navItems = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Certifications", href: "#certifications" },
-  { label: "Resume", href: "#resume" },
   { label: "Contact", href: "#contact" }
 ];
 
 export const profileLinks = {
-  linkedin: "#contact",
+  linkedin: "https://www.linkedin.com/in/ahmadniknam",
   github: "https://github.com/AhmadNiknam",
   email: "mailto:Ahmadniknam@hotmail.com",
   emailLabel: "Ahmadniknam@hotmail.com"
 };
 
+export const heroBadges = ["AZ-104 Certified", "Regina, SK", "Open to Opportunities"];
+
 export const skillGroups = [
   {
-    title: "Windows Server",
-    icon: "SRV",
-    summary: "Server administration, maintenance readiness, core services, and operational checks.",
-    skills: ["Server support", "Patch readiness", "Service health"]
+    title: "Cloud",
+    icon: "AZ",
+    summary: "Microsoft cloud administration with a practical hybrid support mindset.",
+    skills: ["Microsoft Azure", "Hybrid Cloud", "Azure VM", "Identity"]
   },
   {
-    title: "Active Directory",
-    icon: "AD",
-    summary: "User, group, access, and directory support for Microsoft environments.",
-    skills: ["Users and groups", "Access support", "Directory operations"]
+    title: "Infrastructure",
+    icon: "INF",
+    summary: "Core server and directory services that keep business systems available.",
+    skills: ["Windows Server", "Active Directory", "DNS / DHCP", "Virtualization", "Backup"]
   },
   {
     title: "Networking",
     icon: "NET",
-    summary: "Practical network support across DNS, DHCP, connectivity, and site issues.",
-    skills: ["DNS / DHCP", "Connectivity", "Network triage"]
+    summary: "Structured troubleshooting across connectivity, segmentation, and access paths.",
+    skills: ["VLAN", "VPN", "Routing", "Switching", "Troubleshooting"]
   },
   {
-    title: "Azure",
-    icon: "AZ",
-    summary: "Azure administration fundamentals with a focus on reliable, cost-aware operations.",
-    skills: ["VM administration", "Resource review", "Cost awareness"]
+    title: "Operations",
+    icon: "OPS",
+    summary: "Service-focused habits for incidents, users, monitoring, and handoffs.",
+    skills: ["Incident Response", "Monitoring", "Documentation", "End User Support", "Service Desk"]
   },
   {
-    title: "Microsoft 365",
-    icon: "M365",
-    summary: "User-focused support for Microsoft cloud productivity and collaboration services.",
-    skills: ["Account support", "Service support", "Tenant operations"]
-  },
-  {
-    title: "Intune",
-    icon: "INT",
-    summary: "Endpoint management awareness for device support and modern workplace operations.",
-    skills: ["Device support", "Policy awareness", "Endpoint operations"]
-  },
-  {
-    title: "PowerShell",
+    title: "Automation",
     icon: "PS",
-    summary: "Automation and reporting scripts that make infrastructure work more repeatable.",
-    skills: ["Health checks", "Reporting", "Support automation"]
-  },
-  {
-    title: "Troubleshooting",
-    icon: "FIX",
-    summary: "Structured diagnosis for user, endpoint, server, cloud, and network issues.",
-    skills: ["Root cause analysis", "Incident triage", "Escalation clarity"]
-  },
-  {
-    title: "Documentation",
-    icon: "DOC",
-    summary: "Clear notes, runbooks, and operational records that improve handoffs.",
-    skills: ["Runbooks", "Support notes", "Process clarity"]
-  },
-  {
-    title: "Hybrid Infrastructure",
-    icon: "HYB",
-    summary: "Support mindset across on-premises systems, Microsoft cloud services, and users.",
-    skills: ["On-prem and cloud", "Operations support", "Reliability focus"]
+    summary: "Lightweight automation and reporting for repeatable support workflows.",
+    skills: ["PowerShell", "Microsoft Graph", "GitHub Actions", "Reporting"]
   }
 ];
 
 export const projects = [
   {
-    title: "Hybrid Network Correlator",
-    description:
-      "A portfolio project for connecting troubleshooting signals across network devices, servers, and support notes so recurring connectivity issues become easier to investigate.",
-    impact: "Turns scattered network observations into clearer support evidence.",
-    tags: ["Networking", "Hybrid Infrastructure", "Troubleshooting"],
-    githubUrl: "https://github.com/AhmadNiknam"
-  },
-  {
     title: "Server Health Sentinel",
     description:
-      "A Windows Server health reporting project focused on uptime indicators, disk capacity, service status, and early warning checks for support teams.",
-    impact: "Helps identify capacity and service issues before they become escalations.",
-    tags: ["Windows Server", "PowerShell", "Operations"],
+      "Hybrid server health check automation for on-prem and Azure environments using PowerShell. Provides readiness scoring, risk indicators, and HTML/CSV reporting.",
+    impact: "Improves visibility into server readiness, service risk, and maintenance priorities.",
+    tags: ["PowerShell", "Azure VM", "Windows Server"],
     githubUrl: "https://github.com/AhmadNiknam"
   },
   {
-    title: "Windows Server Patch Readiness Checker",
+    title: "Hybrid Network Correlator",
     description:
-      "An operations-focused workflow for validating reboot status, available disk space, critical services, and maintenance notes before scheduled Windows Server patching.",
-    impact: "Reduces maintenance risk with repeatable pre-patch checks.",
-    tags: ["Patching", "Operations", "Documentation"],
+      "Network incident correlation tool for Azure and on-prem systems with evidence-based ranking and alert workflows.",
+    impact: "Connects scattered troubleshooting signals into clearer incident evidence.",
+    tags: ["Azure Monitor", "PowerShell", "JSON"],
     githubUrl: "https://github.com/AhmadNiknam"
   },
   {
-    title: "Azure VM Cost and Idle Resource Reporter",
+    title: "M365 Read-Only Audit Toolkit",
     description:
-      "An Azure administration project designed to identify idle virtual machines, summarize utilization signals, and support more responsible cloud cost decisions.",
-    impact: "Connects Azure administration with practical cost awareness.",
-    tags: ["Azure", "Cost Awareness", "Automation"],
+      "Microsoft 365 reporting toolkit using Microsoft Graph for user inventory, sign-in methods, licenses, and directory roles.",
+    impact: "Helps administrators review tenant posture with read-only reporting and clear exports.",
+    tags: ["PowerShell", "Microsoft Graph"],
     githubUrl: "https://github.com/AhmadNiknam"
   }
 ];
 
 export const experienceItems = [
   {
-    role: "IT Infrastructure & Systems Support Experience",
-    company: "Hands-on systems support, infrastructure operations, and technical troubleshooting",
+    role: "IT Support Trainee",
+    company: "Saskatchewan Polytechnic",
     location: "Regina, Saskatchewan, Canada",
-    period: "Professional profile",
+    period: "2025 - 2026",
     summary:
-      "Supports reliable IT environments across Windows Server, Active Directory, networking, endpoints, Microsoft 365, Azure, and day-to-day infrastructure troubleshooting.",
+      "Focused on Canadian workplace readiness, Microsoft 365, support operations, and communication.",
     highlights: [
-      "Maintains a reliability-first approach to server, endpoint, and user support work.",
-      "Uses clear documentation and repeatable checks to reduce operational uncertainty."
+      "Built local workplace familiarity for IT service, documentation, and team communication.",
+      "Strengthened support practices aligned with Canadian business environments."
     ]
   },
   {
-    role: "Multi-site Technical Support",
-    company: "User support, endpoint assistance, access issues, and site connectivity triage",
-    location: "On-site, hybrid, and remote support contexts",
-    period: "Support operations",
+    role: "IT Support & Systems Administrator",
+    company: "Iranian Blood Transfusion Organization",
+    location: "Multi-branch environment",
+    period: "2015 - 2022",
     summary:
-      "Provides calm, structured support for users and technical environments where issues may involve endpoints, accounts, network access, Microsoft services, or escalation paths.",
+      "Supported 500+ users across multiple branches. Managed Windows Server, Active Directory, VPN, DNS, DHCP, Microsoft 365, monitoring, and user support.",
     highlights: [
-      "Communicates clearly with users while working through practical troubleshooting steps.",
-      "Documents incidents, fixes, and recurring patterns so future support is faster."
+      "Maintained user accounts, core network services, and Windows infrastructure operations.",
+      "Supported operational continuity through monitoring, troubleshooting, and documentation."
     ]
   },
   {
-    role: "Server and Network Operations",
-    company: "Windows Server, Active Directory, DNS, DHCP, network fundamentals, and monitoring",
-    location: "Infrastructure support environments",
-    period: "Operations focus",
+    role: "Remote IT Support Technician",
+    company: "Arain Fars Company",
+    location: "Remote",
+    period: "2023 - 2025",
     summary:
-      "Works across server and network operations with attention to service availability, maintenance readiness, access reliability, and infrastructure visibility.",
+      "Provided remote support for Windows Server environments and core infrastructure services.",
     highlights: [
-      "Supports Windows Server health, patch readiness, and service status review.",
-      "Investigates connectivity, DNS, DHCP, and access-related issues with disciplined notes."
-    ]
-  },
-  {
-    role: "User Support and Troubleshooting",
-    company: "Practical support for Microsoft 365, endpoints, accounts, and daily IT issues",
-    location: "Business support environments",
-    period: "User support",
-    summary:
-      "Combines technical diagnosis with service-minded communication to resolve user issues and keep teams productive.",
-    highlights: [
-      "Handles support requests with clear prioritization, follow-up, and escalation judgment.",
-      "Connects symptoms to likely causes across devices, accounts, network paths, and services."
-    ]
-  },
-  {
-    role: "Documentation and Operational Reliability",
-    company: "Runbooks, support notes, readiness checks, and infrastructure reporting",
-    location: "Hybrid infrastructure environments",
-    period: "Reliability practice",
-    summary:
-      "Builds documentation and lightweight automation that make support work easier to repeat, audit, and hand off.",
-    highlights: [
-      "Creates practical PowerShell checks and reports for infrastructure visibility.",
-      "Treats documentation as part of the fix, not an afterthought."
+      "Troubleshot server, user access, connectivity, and service availability issues remotely.",
+      "Documented support activity and escalated infrastructure issues with clear context."
     ]
   }
 ];
@@ -185,11 +124,25 @@ export const certifications = [
     badge: "AZ"
   },
   {
-    name: "Google IT Support Professional Certificate",
+    name: "Microsoft Certified: Azure Fundamentals",
+    detail: "Cloud fundamentals",
+    issuer: "Microsoft",
+    category: "Cloud & Infrastructure",
+    badge: "AZ"
+  },
+  {
+    name: "Google IT Support Professional",
     detail: "Technical support foundations",
     issuer: "Google",
     category: "IT Support",
     badge: "IT"
+  },
+  {
+    name: "Cloud Management with Microsoft Intune",
+    detail: "Endpoint and cloud management",
+    issuer: "Microsoft Intune",
+    category: "Endpoint Management",
+    badge: "INT"
   },
   {
     name: "WHMIS",
@@ -200,9 +153,23 @@ export const certifications = [
   },
   {
     name: "Preventing Harassment in the Workplace",
-    detail: "Issued April 2026",
-    issuer: "LinkedIn",
+    detail: "Professional workplace training",
+    issuer: "Workplace Training",
     category: "Workplace & Professional Development",
     badge: "PD"
+  },
+  {
+    name: "CIPS Saskatchewan Membership",
+    detail: "Professional IT association membership",
+    issuer: "CIPS Saskatchewan",
+    category: "Professional Membership",
+    badge: "CA"
   }
+];
+
+export const resumeHighlights = [
+  "IT Infrastructure Support | Azure Administrator | Windows Server | PowerShell Automation",
+  "10+ years supporting servers, networks, users, Microsoft 365, and hybrid environments",
+  "Hands-on experience with Active Directory, DNS, DHCP, VPN, monitoring, documentation, and service desk operations",
+  "Based in Regina, Saskatchewan and open to Canadian IT infrastructure, cloud support, and operations opportunities"
 ];

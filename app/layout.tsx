@@ -3,23 +3,24 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ahmad Niknam | IT Support & Infrastructure Professional",
+  title: "Ahmad Niknam | IT Support Specialist | Azure Administrator",
   description:
-    "Ahmad Niknam is an IT Support and Infrastructure Professional based in Regina, Saskatchewan, Canada, with hands-on experience in Windows Server, Active Directory, networking, Microsoft Azure, Microsoft 365, Intune, PowerShell, troubleshooting, and IT automation.",
+    "Ahmad Niknam is an IT professional in Regina, Saskatchewan specializing in IT support, Windows Server, Azure administration, networking, and PowerShell automation.",
   metadataBase: new URL("https://ahmadniknam.com"),
   keywords: [
     "Ahmad Niknam",
-    "IT Support",
-    "IT Infrastructure",
+    "IT Support Specialist",
     "Azure Administrator",
+    "Systems Administrator",
+    "Infrastructure Support",
+    "Network Support Analyst",
     "Windows Server",
     "Active Directory",
     "Microsoft 365",
-    "Intune",
+    "Hybrid Cloud",
     "PowerShell",
     "Regina Saskatchewan",
-    "IT Automation",
-    "Systems Support"
+    "Canadian IT Professional"
   ],
   alternates: {
     canonical: "https://ahmadniknam.com"
@@ -32,9 +33,9 @@ export const metadata: Metadata = {
     shortcut: ["/favicon.svg"]
   },
   openGraph: {
-    title: "Ahmad Niknam | IT Support & Infrastructure Professional",
+    title: "Ahmad Niknam | IT Support Specialist | Azure Administrator",
     description:
-      "IT Support, Infrastructure, Azure, Microsoft 365, and practical automation portfolio.",
+      "Professional IT portfolio for Windows Server, Azure administration, networking, Microsoft 365, and PowerShell automation.",
     url: "https://ahmadniknam.com",
     siteName: "Ahmad Niknam Portfolio",
     images: [
@@ -42,16 +43,16 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Ahmad Niknam - IT Support & Infrastructure Professional"
+        alt: "Ahmad Niknam - IT Support Specialist and Azure Administrator"
       }
     ],
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmad Niknam | IT Support & Infrastructure Professional",
+    title: "Ahmad Niknam | IT Support Specialist | Azure Administrator",
     description:
-      "IT Support, Infrastructure, Azure, Microsoft 365, and practical automation portfolio.",
+      "IT support, Windows Server, Azure administration, networking, and PowerShell automation portfolio.",
     images: ["/opengraph-image"]
   }
 };
