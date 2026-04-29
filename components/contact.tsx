@@ -33,7 +33,7 @@ export function Contact() {
             <a
               href="https://www.linkedin.com/in/ahmad-niknam/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="rounded-full border border-slate-300 bg-white px-5 py-3 text-center text-sm font-bold text-slate-950 transition hover:border-sky-400 hover:text-sky-700"
             >
               LinkedIn

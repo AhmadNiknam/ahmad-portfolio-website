@@ -46,7 +46,7 @@ export function Hero() {
             <a
               href="https://www.linkedin.com/in/ahmad-niknam/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="rounded-full border border-white/25 px-6 py-3 text-center text-sm font-bold text-white transition hover:border-sky-200 hover:text-sky-100"
             >
               LinkedIn
