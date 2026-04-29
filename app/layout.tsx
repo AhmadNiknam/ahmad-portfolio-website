@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Systems Support"
   ],
   alternates: {
-    canonical: "/"
+    canonical: "https://ahmadniknam.com"
   },
   openGraph: {
     title: "Ahmad Niknam | IT Support & Infrastructure Professional",
