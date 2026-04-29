@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://ahmadniknam.com"
   },
+  verification: {
+    google: "E8yU6l_An-5KhdPMWgvodlQxl6QrmfnhLCVkKMhgRCU"
+  },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     shortcut: ["/favicon.svg"]
