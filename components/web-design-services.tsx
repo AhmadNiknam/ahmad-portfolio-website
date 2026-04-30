@@ -80,6 +80,30 @@ export function WebDesignServices() {
         ))}
       </div>
 
+      <div className="reveal mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm sm:p-8">
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h3 className="text-2xl font-bold tracking-tight text-slate-950">
+              Demo Portfolio Website Concepts
+            </h3>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-600">
+              These are sample website concepts only, included to show the types of portfolios that
+              can be planned and built.
+            </p>
+          </div>
+        </div>
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {demoConcepts.map((concept) => (
+            <div
+              key={concept}
+              className="rounded-2xl border border-slate-200 bg-white p-4 font-bold text-slate-900 shadow-sm"
+            >
+              {concept}
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="reveal mt-8 rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-8">
         <div>
           <h3 className="text-2xl font-bold tracking-tight text-slate-950">
@@ -104,30 +128,6 @@ export function WebDesignServices() {
               </h4>
               <p className="mt-3 leading-7 text-slate-600">{step.description}</p>
             </article>
-          ))}
-        </div>
-      </div>
-
-      <div className="reveal mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm sm:p-8">
-        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h3 className="text-2xl font-bold tracking-tight text-slate-950">
-              Demo Portfolio Website Concepts
-            </h3>
-            <p className="mt-3 max-w-3xl leading-7 text-slate-600">
-              These are sample website concepts only, included to show the types of portfolios that
-              can be planned and built.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {demoConcepts.map((concept) => (
-            <div
-              key={concept}
-              className="rounded-2xl border border-slate-200 bg-white p-4 font-bold text-slate-900 shadow-sm"
-            >
-              {concept}
-            </div>
           ))}
         </div>
       </div>
