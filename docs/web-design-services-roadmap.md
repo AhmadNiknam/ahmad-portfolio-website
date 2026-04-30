@@ -84,7 +84,7 @@ Suggested cards:
 
 Add a small demo/sample area inside the new services section or as a separate nearby section if the content becomes too large.
 
-These should be example concepts, not fake client claims.
+These should be example concepts, not real client claims.
 
 Suggested sample cards:
 
@@ -104,7 +104,7 @@ Update the contact section so it can support two types of inquiries:
 - IT infrastructure, cloud support, systems administration, and operations opportunities.
 - Portfolio website design inquiries.
 
-Use placeholder email text for service-facing content if needed:
+Use the public contact email for service-facing content if needed:
 
 - `contact@ahmadniknam.com`
 
@@ -206,7 +206,7 @@ Likely files:
 - `app/layout.tsx`: update metadata title, description, keywords, Open Graph, and Twitter text.
 - `components/hero.tsx`: update hero text and calls to action.
 - `components/header.tsx`: no structural change expected, but it will reflect updated `navItems`.
-- `components/contact.tsx`: add web design inquiry language and placeholder service email if needed.
+- `components/contact.tsx`: add web design inquiry language and the public contact email if needed.
 - `lib/portfolio-data.ts`: add/update `navItems`, hero badges, profile links if needed, service audiences, service features, and demo portfolio samples.
 
 New file likely needed:
@@ -234,7 +234,7 @@ After implementation:
 - Confirm no backend, database, login, payment, form submission, or unnecessary dependency is introduced.
 - Confirm service wording is practical, customer-focused, and not exaggerated.
 - Confirm demo website samples are clearly labeled as examples or concepts.
-- Confirm contact copy does not expose private information and uses placeholder email text if needed.
+- Confirm contact copy does not expose private information and uses the public contact email if needed.
 
 ## Recommended Git Commit Message
 

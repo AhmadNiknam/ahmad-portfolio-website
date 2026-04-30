@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ahmad Niknam | IT Portfolio & Portfolio Website Services",
+  title: "Ahmad Niknam — IT Portfolio & Portfolio Website Services",
   description:
-    "Personal IT portfolio of Ahmad Niknam, featuring infrastructure, cloud, and project experience, plus professional portfolio website design services for professionals, students, researchers, job seekers, and newcomers.",
+    "Professional IT portfolio of Ahmad Niknam, featuring infrastructure, cloud support, project coordination, technical projects, and portfolio website design services for professionals, students, researchers, job seekers, and newcomers.",
   metadataBase: new URL("https://ahmadniknam.com"),
   keywords: [
     "Ahmad Niknam",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     shortcut: ["/favicon.svg"]
   },
   openGraph: {
-    title: "Ahmad Niknam | IT Portfolio & Portfolio Website Services",
+    title: "Ahmad Niknam — IT Portfolio & Portfolio Website Services",
     description:
-      "Personal IT portfolio featuring infrastructure, cloud, and project experience, plus professional portfolio website design services.",
+      "Professional IT portfolio of Ahmad Niknam, featuring infrastructure, cloud support, project coordination, technical projects, and portfolio website design services for professionals, students, researchers, job seekers, and newcomers.",
     url: "https://ahmadniknam.com",
     siteName: "Ahmad Niknam Portfolio",
     images: [
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmad Niknam | IT Portfolio & Portfolio Website Services",
+    title: "Ahmad Niknam — IT Portfolio & Portfolio Website Services",
     description:
-      "IT infrastructure, cloud, and project experience, plus professional portfolio website design services.",
+      "Professional IT portfolio of Ahmad Niknam, featuring infrastructure, cloud support, project coordination, technical projects, and portfolio website design services for professionals, students, researchers, job seekers, and newcomers.",
     images: ["/opengraph-image"]
   }
 };
