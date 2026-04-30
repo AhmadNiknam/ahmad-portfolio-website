@@ -62,11 +62,11 @@ export function WebDesignServices() {
       title="Portfolio Website Design Services"
       description="I help professionals, students, researchers, newcomers, job seekers, consultants, and freelancers create clean portfolio websites that present their background, projects, and services clearly."
     >
-      <div className="reveal grid gap-6 lg:grid-cols-4">
+      <div className="reveal grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
         {serviceAudiences.map((audience, index) => (
           <article
             key={audience.title}
-            className="group relative flex min-h-72 flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-sky-200 hover:shadow-2xl hover:shadow-slate-200/80"
+            className="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-sky-200 hover:shadow-2xl hover:shadow-slate-200/80 sm:min-h-72"
           >
             <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-sky-50 transition group-hover:bg-sky-100" />
             <div className="relative mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-sm font-black text-white shadow-lg shadow-slate-950/15">
@@ -146,7 +146,8 @@ export function WebDesignServices() {
             href={profileLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex shrink-0 justify-center rounded-full bg-sky-400 px-6 py-3 text-sm font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-sky-300"
+            className="inline-flex w-full shrink-0 justify-center rounded-full bg-sky-400 px-6 py-3 text-sm font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-sky-300 sm:w-auto"
+            aria-label="Connect with Ahmad Niknam on LinkedIn"
           >
             Connect on LinkedIn
           </a>
