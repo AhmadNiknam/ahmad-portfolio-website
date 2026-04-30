@@ -10,9 +10,9 @@ export const navItems = [
 export const profileLinks = {
   linkedin: "https://www.linkedin.com/in/ahmad-niknam/",
   github: "https://github.com/AhmadNiknam",
-  email: "mailto:your.email@example.com",
-  resumeRequest: "mailto:your.email@example.com?subject=Resume%20Request%20-%20Ahmad%20Niknam",
-  emailLabel: "your.email@example.com"
+  email: "mailto:contact@ahmadniknam.com",
+  resumeRequest: "mailto:contact@ahmadniknam.com?subject=Resume%20Request%20-%20Ahmad%20Niknam",
+  emailLabel: "contact@ahmadniknam.com"
 };
 
 export const heroBadges = [

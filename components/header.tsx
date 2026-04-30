@@ -1,37 +1,49 @@
 "use client";
 
 import { navItems } from "@/lib/portfolio-data";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 export function Header() {
   const sectionIds = useMemo(() => navItems.map((item) => item.href.replace("#", "")), []);
   const [activeSection, setActiveSection] = useState(sectionIds[0]);
 
-  useEffect(() => {
+  const updateActiveSection = useCallback(() => {
+    const headerHeight = document.querySelector("header")?.getBoundingClientRect().height ?? 0;
+    const activationPoint = headerHeight + 32;
+    const scrollBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+
+    if (scrollBottom) {
+      setActiveSection(sectionIds[sectionIds.length - 1]);
+      return;
+    }
+
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter((section): section is HTMLElement => Boolean(section));
+    let currentSection = sections[0];
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleSection = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-        if (visibleSection?.target.id) {
-          setActiveSection(visibleSection.target.id);
-        }
-      },
-      {
-        rootMargin: "-30% 0px -55% 0px",
-        threshold: [0.08, 0.2, 0.45]
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= activationPoint) {
+        currentSection = section;
       }
-    );
+    }
 
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
+    if (currentSection?.id) {
+      setActiveSection(currentSection.id);
+    }
   }, [sectionIds]);
+
+  useEffect(() => {
+    const frameId = window.requestAnimationFrame(updateActiveSection);
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
+  }, [updateActiveSection]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/[0.82] shadow-sm shadow-slate-950/[0.03] backdrop-blur-xl">
@@ -53,6 +65,7 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
+              onClick={() => setActiveSection(item.href.replace("#", ""))}
               className={`shrink-0 rounded-full px-3 py-2 text-sm font-semibold transition ${
                 activeSection === item.href.replace("#", "")
                   ? "bg-slate-950 text-white shadow-sm"

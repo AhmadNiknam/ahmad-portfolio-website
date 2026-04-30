@@ -106,7 +106,7 @@ Update the contact section so it can support two types of inquiries:
 
 Use placeholder email text for service-facing content if needed:
 
-- `your.email@example.com`
+- `contact@ahmadniknam.com`
 
 Keep the correct LinkedIn URL:
 

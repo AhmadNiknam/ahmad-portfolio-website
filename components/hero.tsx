@@ -11,7 +11,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_18%,_rgba(56,189,248,0.28),_transparent_32%),radial-gradient(circle_at_88%_10%,_rgba(147,197,253,0.16),_transparent_26%),linear-gradient(135deg,_rgba(15,23,42,1),_rgba(30,41,59,0.98)_54%,_rgba(15,23,42,1))]" />
       <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-slate-50 to-transparent" />
       <div className="absolute left-1/2 top-24 h-64 w-64 -translate-x-1/2 rounded-full bg-sky-400/10 blur-3xl" />
-      <div className="relative mx-auto grid min-h-[calc(100svh-73px)] max-w-6xl items-center gap-10 px-6 py-12 sm:py-14 lg:-translate-y-3 lg:grid-cols-[1.08fr_0.92fr] lg:gap-14 lg:py-12 xl:py-14">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 sm:py-18 md:py-20 lg:min-h-[calc(100dvh-88px)] lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:py-16 xl:max-w-7xl xl:gap-16 2xl:min-h-[760px]">
         <div className="animate-rise">
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.26em] text-sky-200">
             Ahmad Niknam
@@ -21,7 +21,7 @@ export function Hero() {
           </p>
           <h1
             id="hero-title"
-            className="max-w-4xl text-[2.05rem] font-bold leading-[1.04] tracking-[-0.04em] sm:text-[2.7rem] lg:text-[3.375rem]"
+            className="max-w-4xl text-[2.05rem] font-bold leading-[1.04] tracking-[-0.04em] sm:text-[2.7rem] lg:text-[3.65rem] xl:text-[4rem]"
           >
             Practical IT experience and clean portfolio websites for professionals building their
             next opportunity.
@@ -65,7 +65,7 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <div className="relative mx-auto w-full max-w-[25rem] animate-float-in sm:max-w-[27rem] lg:ml-auto lg:mr-0 lg:max-w-[24.5rem] lg:pl-4 xl:max-w-[26rem]">
+        <div className="relative mx-auto w-full max-w-[25rem] animate-float-in sm:max-w-[27rem] lg:ml-auto lg:mr-0 lg:max-w-[26rem] lg:pl-4 xl:max-w-[28rem]">
           <div className="absolute -inset-3 rounded-[2.75rem] bg-sky-400/[0.16] blur-3xl" />
           <div className="relative overflow-hidden rounded-[2.5rem] border border-white/[0.12] bg-white/[0.08] p-2 shadow-2xl shadow-slate-950/45 ring-1 ring-white/[0.06] backdrop-blur">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
