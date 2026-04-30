@@ -17,18 +17,20 @@ export function Hero() {
             Ahmad Niknam
           </p>
           <p className="mb-4 inline-flex rounded-full border border-sky-200/25 bg-white/10 px-4 py-2 text-sm font-semibold text-sky-100 shadow-lg shadow-slate-950/10 backdrop-blur">
-            IT Infrastructure Support | Azure Administrator | Windows Server | PowerShell Automation
+            Personal IT Portfolio + Portfolio Website Design Services
           </p>
           <h1
             id="hero-title"
             className="max-w-4xl text-[2.05rem] font-bold leading-[1.04] tracking-[-0.04em] sm:text-[2.7rem] lg:text-[3.375rem]"
           >
-            Reliable IT support and infrastructure expertise for modern organizations.
+            Practical IT experience and clean portfolio websites for professionals building their
+            next opportunity.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-200/95 sm:text-xl">
-            Hands-on IT professional with 10+ years of experience supporting servers, networks,
-            users, Microsoft 365, and hybrid environments. Focused on uptime, troubleshooting,
-            documentation, and practical automation.
+            I am an IT infrastructure and cloud support professional based in Regina, Saskatchewan.
+            Alongside my technical portfolio, I help professionals, students, researchers, job
+            seekers, newcomers, consultants, and freelancers create clear, modern portfolio websites
+            that present their work with confidence.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {heroBadges.map((badge) => (
@@ -45,13 +47,13 @@ export function Hero() {
               href="#projects"
               className="rounded-full bg-sky-400 px-6 py-3 text-center text-sm font-bold text-slate-950 shadow-xl shadow-sky-950/20 transition hover:-translate-y-0.5 hover:bg-sky-300"
             >
-              View Projects
+              View IT Projects
             </a>
             <a
-              href={profileLinks.resumeRequest}
+              href="#web-services"
               className="rounded-full bg-white px-6 py-3 text-center text-sm font-bold text-slate-950 shadow-xl shadow-slate-950/20 transition hover:-translate-y-0.5 hover:bg-slate-100"
             >
-              Request Resume
+              Portfolio Website Services
             </a>
             <a
               href={profileLinks.linkedin}
@@ -59,13 +61,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="rounded-full border border-white/25 px-6 py-3 text-center text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-white/10 hover:text-sky-100"
             >
-              LinkedIn
-            </a>
-            <a
-              href="#contact"
-              className="rounded-full border border-white/25 px-6 py-3 text-center text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-white/10 hover:text-sky-100"
-            >
-              Contact Me
+              Connect on LinkedIn
             </a>
           </div>
         </div>

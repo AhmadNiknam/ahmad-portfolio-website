@@ -6,8 +6,8 @@ export function Contact() {
     <Section
       id="contact"
       eyebrow="Contact"
-      title="Open to IT infrastructure, cloud support, systems administration, and operations roles."
-      description="Open to IT infrastructure, cloud support, systems administration, and technical operations opportunities in Canada."
+      title="Open to IT opportunities and portfolio website conversations."
+      description="Open to IT infrastructure, cloud support, systems administration, technical operations, and simple portfolio website design inquiries in Canada."
     >
       <div className="reveal grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl hover:shadow-slate-200/80">
@@ -15,7 +15,9 @@ export function Contact() {
           <p className="mt-4 leading-7 text-slate-600">
             Ahmad is available for conversations with employers and teams hiring for IT support,
             infrastructure, Azure administration, network support, systems administration, and
-            technical operations opportunities in Canada.
+            technical operations opportunities in Canada. He also discusses simple portfolio
+            website projects for professionals, students, researchers, newcomers, consultants, and
+            freelancers.
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-100">
@@ -23,8 +25,8 @@ export function Contact() {
               <p className="mt-2 font-bold text-slate-950">Canadian IT opportunities</p>
             </div>
             <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-100">
-              <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Best fit</p>
-              <p className="mt-2 font-bold text-slate-950">Support, systems, Azure</p>
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Also available</p>
+              <p className="mt-2 font-bold text-slate-950">Portfolio website services</p>
             </div>
           </div>
         </div>
@@ -34,8 +36,8 @@ export function Contact() {
             <h3 className="text-2xl font-bold tracking-tight">Connect professionally</h3>
             <p className="mt-4 leading-7 text-slate-200">
               Use the resume request, email, GitHub portfolio, or LinkedIn profile to start a
-              conversation about IT support, infrastructure administration, Azure operations, or
-              practical automation work.
+              conversation about IT support, infrastructure administration, Azure operations,
+              practical automation work, or portfolio website design services.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a

@@ -2,20 +2,24 @@ export const navItems = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Web Services", href: "#web-services" },
   { label: "Experience", href: "#experience" },
-  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" }
 ];
 
 export const profileLinks = {
   linkedin: "https://www.linkedin.com/in/ahmad-niknam/",
   github: "https://github.com/AhmadNiknam",
-  email: "mailto:Ahmadniknam@hotmail.com",
-  resumeRequest: "mailto:Ahmadniknam@hotmail.com?subject=Resume%20Request%20-%20Ahmad%20Niknam",
-  emailLabel: "Ahmadniknam@hotmail.com"
+  email: "mailto:your.email@example.com",
+  resumeRequest: "mailto:your.email@example.com?subject=Resume%20Request%20-%20Ahmad%20Niknam",
+  emailLabel: "your.email@example.com"
 };
 
-export const heroBadges = ["AZ-104 Certified", "Regina, SK", "Open to Opportunities"];
+export const heroBadges = [
+  "AZ-104 Certified",
+  "Regina, SK",
+  "Portfolio Website Services"
+];
 
 export const skillGroups = [
   {
