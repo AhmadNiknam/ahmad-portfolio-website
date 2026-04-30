@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ahmad Niknam | IT Support Specialist | Azure Administrator",
+  title: "Ahmad Niknam | IT Portfolio & Portfolio Website Services",
   description:
-    "Ahmad Niknam is an IT professional in Regina, Saskatchewan specializing in IT support, Windows Server, Azure administration, networking, and PowerShell automation.",
+    "Personal IT portfolio of Ahmad Niknam, featuring infrastructure, cloud, and project experience, plus professional portfolio website design services for professionals, students, researchers, job seekers, and newcomers.",
   metadataBase: new URL("https://ahmadniknam.com"),
   keywords: [
     "Ahmad Niknam",
@@ -20,7 +20,9 @@ export const metadata: Metadata = {
     "Hybrid Cloud",
     "PowerShell",
     "Regina Saskatchewan",
-    "Canadian IT Professional"
+    "Canadian IT Professional",
+    "Portfolio Website Services",
+    "Professional Portfolio Website"
   ],
   alternates: {
     canonical: "https://ahmadniknam.com"
@@ -33,9 +35,9 @@ export const metadata: Metadata = {
     shortcut: ["/favicon.svg"]
   },
   openGraph: {
-    title: "Ahmad Niknam | IT Support Specialist | Azure Administrator",
+    title: "Ahmad Niknam | IT Portfolio & Portfolio Website Services",
     description:
-      "Professional IT portfolio for Windows Server, Azure administration, networking, Microsoft 365, and PowerShell automation.",
+      "Personal IT portfolio featuring infrastructure, cloud, and project experience, plus professional portfolio website design services.",
     url: "https://ahmadniknam.com",
     siteName: "Ahmad Niknam Portfolio",
     images: [
@@ -50,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmad Niknam | IT Support Specialist | Azure Administrator",
+    title: "Ahmad Niknam | IT Portfolio & Portfolio Website Services",
     description:
-      "IT support, Windows Server, Azure administration, networking, and PowerShell automation portfolio.",
+      "IT infrastructure, cloud, and project experience, plus professional portfolio website design services.",
     images: ["/opengraph-image"]
   }
 };

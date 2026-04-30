@@ -31,6 +31,29 @@ const demoConcepts = [
   "Newcomer Career Portfolio"
 ];
 
+const processSteps = [
+  {
+    title: "Discovery",
+    description:
+      "Understand the client's background, goals, audience, and the type of portfolio website they need."
+  },
+  {
+    title: "Content Structure",
+    description:
+      "Organize the key sections such as About, Skills, Projects, Services, Experience, and Contact."
+  },
+  {
+    title: "Design & Build",
+    description:
+      "Create a clean, responsive, mobile-friendly website using a simple and professional layout."
+  },
+  {
+    title: "Review & Publish",
+    description:
+      "Review the content, test the website on different screen sizes, and prepare it for publishing and LinkedIn sharing."
+  }
+];
+
 export function WebDesignServices() {
   return (
     <Section
@@ -55,6 +78,34 @@ export function WebDesignServices() {
             <p className="relative mt-4 leading-7 text-slate-600">{audience.description}</p>
           </article>
         ))}
+      </div>
+
+      <div className="reveal mt-8 rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-8">
+        <div>
+          <h3 className="text-2xl font-bold tracking-tight text-slate-950">
+            Simple Portfolio Website Process
+          </h3>
+          <p className="mt-3 max-w-3xl leading-7 text-slate-600">
+            A simple planning and build process keeps the website focused, practical, and easy to
+            review before publishing.
+          </p>
+        </div>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {processSteps.map((step, index) => (
+            <article
+              key={step.title}
+              className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm"
+            >
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-sky-700">
+                Step {index + 1}
+              </p>
+              <h4 className="mt-3 text-lg font-bold tracking-tight text-slate-950">
+                {step.title}
+              </h4>
+              <p className="mt-3 leading-7 text-slate-600">{step.description}</p>
+            </article>
+          ))}
+        </div>
       </div>
 
       <div className="reveal mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm sm:p-8">
