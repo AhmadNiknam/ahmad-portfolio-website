@@ -17,20 +17,19 @@ export function Hero() {
             Ahmad Niknam
           </p>
           <p className="mb-4 inline-flex rounded-full border border-sky-200/25 bg-white/10 px-4 py-2 text-sm font-semibold text-sky-100 shadow-lg shadow-slate-950/10 backdrop-blur">
-            Personal IT Portfolio + Portfolio Website Design Services
+            Personal IT Portfolio + Portfolio Website Services
           </p>
           <h1
             id="hero-title"
             className="max-w-4xl text-[2.05rem] font-bold leading-[1.04] tracking-[-0.04em] sm:text-[2.7rem] lg:text-[3.65rem] xl:text-[4rem]"
           >
-            Practical IT experience and clean portfolio websites for professionals building their
-            next opportunity.
+            IT Support, Cloud Operations, and Practical Portfolio Websites
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-200/95 sm:text-xl">
-            I am an IT infrastructure and cloud support professional based in Regina, Saskatchewan.
+            I am an IT support and cloud operations professional based in Regina, Saskatchewan.
             Alongside my technical portfolio, I help professionals, students, researchers, job
-            seekers, newcomers, consultants, and freelancers create clear, modern portfolio websites
-            that present their work with confidence.
+            seekers, newcomers, consultants, and freelancers create clean portfolio websites that
+            present their background, projects, and services clearly.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {heroBadges.map((badge) => (
