@@ -25,10 +25,19 @@ const serviceAudiences = [
 ];
 
 const demoConcepts = [
-  "IT Professional Portfolio",
-  "Graduate Student / Researcher Portfolio",
-  "Project Manager Portfolio",
-  "Newcomer Career Portfolio"
+  {
+    title: "IT Professional Portfolio",
+    href: "/samples/it-professional-portfolio"
+  },
+  {
+    title: "Graduate Student / Researcher Portfolio"
+  },
+  {
+    title: "Project Manager Portfolio"
+  },
+  {
+    title: "Newcomer Career Portfolio"
+  }
 ];
 
 const processSteps = [
@@ -94,12 +103,23 @@ export function WebDesignServices() {
         </div>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {demoConcepts.map((concept) => (
-            <div
-              key={concept}
-              className="rounded-2xl border border-slate-200 bg-white p-4 font-bold text-slate-900 shadow-sm"
-            >
-              {concept}
-            </div>
+            concept.href ? (
+              <a
+                key={concept.title}
+                href={concept.href}
+                className="rounded-2xl border border-slate-200 bg-white p-4 font-bold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-200 hover:text-sky-700 hover:shadow-lg"
+                aria-label={`View ${concept.title} demo concept`}
+              >
+                {concept.title}
+              </a>
+            ) : (
+              <div
+                key={concept.title}
+                className="rounded-2xl border border-slate-200 bg-white p-4 font-bold text-slate-900 shadow-sm"
+              >
+                {concept.title}
+              </div>
+            )
           ))}
         </div>
       </div>
