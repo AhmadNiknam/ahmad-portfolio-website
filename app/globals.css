@@ -57,8 +57,12 @@ button {
   animation: reveal-up 700ms ease-out both;
 }
 
+.demo-style-slider {
+  overscroll-behavior-inline: contain;
+}
+
 .demo-style-track {
-  animation: demo-style-slide 34s linear infinite;
+  animation: demo-style-slide 40s linear infinite;
 }
 
 .demo-style-slider:hover .demo-style-track,
@@ -111,7 +115,7 @@ button {
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-50% - 0.5rem));
+    transform: translateX(calc(-50% - 0.875rem));
   }
 }
 
