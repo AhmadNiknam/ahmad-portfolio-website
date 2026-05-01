@@ -34,7 +34,8 @@ const demoConcepts = [
     href: "/samples/graduate-researcher-portfolio"
   },
   {
-    title: "Project Manager Portfolio"
+    title: "Project Manager Portfolio",
+    href: "/samples/project-manager-consultant-portfolio"
   },
   {
     title: "Newcomer Career Portfolio"
