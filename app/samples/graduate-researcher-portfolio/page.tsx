@@ -11,52 +11,50 @@ export const metadata: Metadata = {
 
 const researchInterests = [
   "Life Cycle Assessment",
-  "Renewable Energy Systems",
-  "Geothermal Energy",
-  "Environmental Impact Modelling",
-  "Data Analysis",
-  "Sustainability Decision Support"
+  "Renewable Energy",
+  "Geothermal Systems",
+  "Uncertainty Analysis",
+  "Environmental Modelling",
+  "Decision Support"
+];
+
+const quickProfile = [
+  "PhD Candidate",
+  "Energy Systems Research",
+  "Life Cycle Assessment",
+  "Sustainability Analysis"
 ];
 
 const academicProjects = [
   {
     title: "Life Cycle Assessment of Renewable Energy Pathways",
     description:
-      "A sample academic portfolio item comparing energy pathway assumptions, system boundaries, and environmental indicators for research communication.",
-    methods: ["Scenario comparison", "Impact categories", "Research summary"]
+      "Sample academic portfolio item focused on comparing environmental indicators, assumptions, and system boundaries across renewable technologies."
   },
   {
     title: "Uncertainty Analysis for Environmental Performance",
     description:
-      "A fictional research project card showing how sensitivity ranges, assumptions, and model limitations can be explained clearly.",
-    methods: ["Uncertainty framing", "Model assumptions", "Result interpretation"]
+      "Sample research note showing how sensitivity testing, scenario comparison, and model limitations can support clearer technical decisions."
   },
   {
     title: "Data Visualization for Research Communication",
     description:
-      "A sample project presenting charts, figure notes, and visual summaries for non-specialist academic and policy audiences.",
-    methods: ["Figure design", "Plain-language notes", "Presentation support"]
+      "Sample portfolio item focused on presenting complex research findings through clear figures, captions, and plain-language summaries."
   }
 ];
 
 const sampleAcademicEntries = [
   {
-    type: "Conference presentation sample",
-    title:
-      "Scenario-Based Environmental Assessment of Emerging Community Energy Systems",
-    note: "Fictional presentation entry included only to demonstrate academic portfolio structure."
+    type: "Sample conference presentation",
+    title: "Environmental Performance of Emerging Energy Systems"
   },
   {
-    type: "Research poster sample",
-    title:
-      "Visualizing Uncertainty in Life Cycle Assessment for Early-Stage Energy Technologies",
-    note: "Sample poster listing, not a real publication or conference claim."
+    type: "Sample research poster",
+    title: "Lifecycle Hotspots in Renewable Energy Pathways"
   },
   {
-    type: "Literature review sample",
-    title:
-      "Decision Support Methods for Sustainable Energy Technology Evaluation",
-    note: "Placeholder literature review entry for demo content only."
+    type: "Sample literature review",
+    title: "LCA Methods for Sustainable Energy Assessment"
   }
 ];
 
@@ -64,61 +62,76 @@ const academicSupport = [
   "Teaching assistant support",
   "Student mentoring",
   "Research documentation",
-  "Technical presentation preparation"
+  "Technical presentation preparation",
+  "Academic writing support"
 ];
 
 const toolsAndMethods = [
   "Literature Review",
-  "Life Cycle Assessment",
+  "LCA Modelling",
+  "Scenario Analysis",
   "Excel / Data Analysis",
-  "Python basics",
-  "Visualization",
-  "Academic Writing",
+  "Python Basics",
   "Research Communication"
 ];
 
-function SectionHeading({
-  label,
-  title,
-  description
-}: {
-  label: string;
-  title: string;
-  description?: string;
-}) {
+function SectionHeading({ title, eyebrow }: { title: string; eyebrow?: string }) {
   return (
-    <div className="max-w-3xl">
-      <p className="text-xs font-bold uppercase tracking-[0.24em] text-teal-700">
-        {label}
-      </p>
-      <h2 className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-slate-950 sm:text-4xl">
+    <div className="border-b border-stone-300 pb-4">
+      {eyebrow ? (
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-stone-500">
+          {eyebrow}
+        </p>
+      ) : null}
+      <h2 className="mt-2 font-serif text-3xl font-semibold tracking-[-0.03em] text-stone-950 sm:text-4xl">
         {title}
       </h2>
-      {description ? (
-        <p className="mt-4 text-lg leading-8 text-slate-600">{description}</p>
-      ) : null}
     </div>
+  );
+}
+
+function SidebarSection({
+  title,
+  items
+}: {
+  title: string;
+  items: string[];
+}) {
+  return (
+    <section className="border-t border-stone-300 pt-6">
+      <h2 className="text-xs font-bold uppercase tracking-[0.22em] text-stone-500">
+        {title}
+      </h2>
+      <ul className="mt-4 space-y-2 text-sm leading-6 text-stone-700">
+        {items.map((item) => (
+          <li key={item} className="flex gap-3">
+            <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-stone-500" />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 
 export default function GraduateResearcherPortfolioDemo() {
   return (
     <>
-      <main className="bg-[#f8faf7] text-slate-950">
-        <section className="border-b border-slate-200 bg-[#fdfdf8] py-6">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="flex flex-col gap-4 rounded-2xl border border-teal-100 bg-teal-50/80 px-5 py-4 text-sm leading-6 text-teal-950 sm:flex-row sm:items-center sm:justify-between">
+      <main className="bg-[#f7f3ea] text-stone-950">
+        <section className="border-b border-stone-300 bg-[#fbf8f0]">
+          <div className="mx-auto max-w-6xl px-6 py-5">
+            <div className="flex flex-col gap-3 border-l-4 border-stone-800 bg-[#fffdf7] px-5 py-4 text-sm leading-6 text-stone-700 shadow-sm sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <p className="font-bold uppercase tracking-[0.2em] text-teal-800">
+                <p className="font-bold uppercase tracking-[0.2em] text-stone-950">
                   Demo Portfolio Concept
                 </p>
-                <p className="mt-1 font-medium">
-                  This is a sample portfolio concept, not a completed client project.
+                <p className="mt-1">
+                  This is a sample academic portfolio concept, not a completed client project.
                 </p>
               </div>
               <Link
                 href="/"
-                className="inline-flex w-fit rounded-full border border-teal-200 bg-white px-4 py-2 text-sm font-semibold text-teal-900 transition hover:-translate-y-0.5 hover:border-teal-400"
+                className="w-fit border-b border-stone-900 pb-0.5 text-sm font-semibold text-stone-950 transition hover:text-stone-600"
               >
                 Back to Portfolio
               </Link>
@@ -126,260 +139,188 @@ export default function GraduateResearcherPortfolioDemo() {
           </div>
         </section>
 
-        <section className="relative isolate overflow-hidden bg-[linear-gradient(180deg,#fdfdf8_0%,#f4f7ef_100%)] py-16 sm:py-24">
-          <div className="absolute left-0 top-20 -z-10 h-72 w-72 rounded-full bg-teal-100/80 blur-3xl" />
-          <div className="absolute bottom-0 right-0 -z-10 h-80 w-80 rounded-full bg-amber-100/70 blur-3xl" />
-          <div className="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-            <div className="reveal">
-              <p className="mb-6 inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-slate-700 shadow-sm">
-                Graduate Research Profile
+        <section className="border-b border-stone-300 bg-[#fbf8f0]">
+          <div className="mx-auto max-w-6xl px-6 py-14 sm:py-20">
+            <div className="reveal max-w-4xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">
+                Academic Research Profile
               </p>
-              <h1 className="max-w-4xl text-5xl font-semibold tracking-[-0.06em] text-slate-950 sm:text-6xl lg:text-7xl">
+              <h1 className="mt-5 font-serif text-6xl font-semibold tracking-[-0.06em] text-stone-950 sm:text-7xl lg:text-8xl">
                 Maya Reynolds
               </h1>
-              <p className="mt-5 max-w-3xl text-xl font-semibold leading-8 text-teal-900 sm:text-2xl">
+              <p className="mt-5 max-w-3xl text-xl leading-8 text-stone-800 sm:text-2xl">
                 PhD Candidate | Energy Systems Research | Life Cycle Assessment
               </p>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+              <p className="mt-8 max-w-3xl border-l border-stone-400 pl-6 text-lg leading-8 text-stone-700">
                 I study how emerging energy systems can be evaluated through environmental
                 performance, uncertainty analysis, and practical decision-making frameworks.
               </p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <div className="mt-10 flex flex-col gap-3 text-sm font-semibold sm:flex-row sm:flex-wrap">
                 <a
-                  href="#research-areas"
-                  className="inline-flex justify-center rounded-full bg-teal-900 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-900/15 transition hover:-translate-y-0.5 hover:bg-teal-800"
+                  href="#research-focus"
+                  className="inline-flex w-fit border-b border-stone-900 pb-1 text-stone-950 transition hover:text-stone-600"
                 >
-                  View Research Areas
+                  Research Focus
                 </a>
                 <a
-                  href="#sample-projects"
-                  className="inline-flex justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:-translate-y-0.5 hover:border-teal-300 hover:text-teal-900"
+                  href="#sample-publications"
+                  className="inline-flex w-fit border-b border-stone-900 pb-1 text-stone-950 transition hover:text-stone-600 sm:ml-5"
                 >
-                  View Sample Projects
+                  Sample Publications
                 </a>
                 <Link
                   href="/"
-                  className="inline-flex justify-center rounded-full border border-transparent px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:bg-white"
+                  className="inline-flex w-fit border-b border-stone-900 pb-1 text-stone-950 transition hover:text-stone-600 sm:ml-5"
                 >
                   Back to Ahmad&apos;s Portfolio
                 </Link>
               </div>
             </div>
-
-            <aside className="reveal">
-              <div className="rounded-[2rem] border border-slate-200 bg-white/85 p-6 shadow-2xl shadow-slate-200/70 backdrop-blur">
-                <div className="border-b border-slate-200 pb-5">
-                  <p className="text-xs font-bold uppercase tracking-[0.22em] text-teal-700">
-                    Academic Snapshot
-                  </p>
-                  <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950">
-                    Sustainable Energy Research
-                  </h2>
-                </div>
-                <dl className="mt-6 grid gap-5">
-                  {[
-                    ["Program", "PhD candidate in sustainable energy systems"],
-                    ["Research lens", "Life cycle assessment, uncertainty, decision support"],
-                    ["Audience", "Academic committees, collaborators, employers, and students"]
-                  ].map(([label, value]) => (
-                    <div key={label} className="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
-                      <dt className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
-                        {label}
-                      </dt>
-                      <dd className="mt-2 font-medium leading-7 text-slate-800">{value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </aside>
           </div>
         </section>
 
-        <section className="py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-              <SectionHeading
-                label="Research Profile"
-                title="A calm academic profile for research, teaching, and collaboration."
-              />
-              <div className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-8">
-                <p className="text-lg leading-8 text-slate-700">
-                  Maya Reynolds is a fictional graduate researcher profile created to demonstrate
-                  how an academic portfolio can organize research focus, sample projects, teaching
-                  support, and professional contact information without presenting client work.
+        <section className="bg-[#f7f3ea]">
+          <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 lg:grid-cols-[18rem_minmax(0,1fr)] lg:gap-14 lg:py-16">
+            <aside className="reveal space-y-8 lg:sticky lg:top-8 lg:self-start">
+              <div>
+                <p className="font-serif text-2xl font-semibold text-stone-950">Maya Reynolds</p>
+                <p className="mt-2 text-sm leading-6 text-stone-600">
+                  Fictional academic profile for a graduate researcher portfolio demo.
                 </p>
-                <p className="mt-5 text-lg leading-8 text-slate-700">
-                  This concept is designed for a graduate student, researcher, or teaching assistant
-                  who wants a clean online presence for sustainable energy systems, life cycle
-                  assessment, data-driven analysis, and environmental decision support.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="research-areas" className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal">
-              <SectionHeading
-                label="Research Interests"
-                title="Research themes organized for quick review."
-                description="A portfolio for an academic audience should make research areas easy to scan while still feeling thoughtful and credible."
-              />
-            </div>
-            <div className="reveal mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {researchInterests.map((interest) => (
-                <article
-                  key={interest}
-                  className="rounded-[1.5rem] border border-slate-200 bg-[#fbfcf8] p-6 shadow-sm transition hover:-translate-y-1 hover:border-teal-200 hover:shadow-lg hover:shadow-slate-200/70"
-                >
-                  <div className="mb-5 h-1.5 w-14 rounded-full bg-teal-700" />
-                  <h3 className="text-xl font-semibold tracking-tight text-slate-950">{interest}</h3>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal rounded-[2rem] border border-teal-100 bg-[#edf7f2] p-7 shadow-sm sm:p-9">
-              <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-                <SectionHeading
-                  label="Current Research Focus"
-                  title="Evaluating emerging energy technologies with practical decision frameworks."
-                />
-                <p className="text-xl leading-9 text-slate-700">
-                  Evaluating the environmental performance of emerging energy technologies using
-                  life cycle assessment, uncertainty analysis, and scenario-based comparison.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="sample-projects" className="bg-[#fdfdf8] py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal">
-              <SectionHeading
-                label="Selected Academic Projects"
-                title="Sample portfolio items for research communication."
-                description="These examples are fictional academic portfolio items for this demo page, not real client work or completed research claims."
-              />
-            </div>
-            <div className="reveal mt-9 grid gap-5 lg:grid-cols-3">
-              {academicProjects.map((project) => (
-                <article
-                  key={project.title}
-                  className="flex min-h-full flex-col rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-teal-200 hover:shadow-xl hover:shadow-slate-200/80"
-                >
-                  <p className="w-fit rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-amber-800 ring-1 ring-amber-100">
-                    Sample academic item
-                  </p>
-                  <h3 className="mt-5 text-2xl font-semibold tracking-tight text-slate-950">
-                    {project.title}
-                  </h3>
-                  <p className="mt-4 flex-1 leading-7 text-slate-600">{project.description}</p>
-                  <div className="mt-6 flex flex-wrap gap-2">
-                    {project.methods.map((method) => (
-                      <span
-                        key={method}
-                        className="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700"
-                      >
-                        {method}
-                      </span>
-                    ))}
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-              <SectionHeading
-                label="Publications / Presentations"
-                title="Clearly marked sample academic entries."
-                description="The structure shows how publications, posters, and presentations could be listed without claiming real publications."
-              />
-              <div className="grid gap-4">
-                {sampleAcademicEntries.map((entry) => (
-                  <article
-                    key={entry.title}
-                    className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm"
+                <div className="mt-5 space-y-2 text-sm">
+                  <a
+                    href={profileLinks.email}
+                    className="block border-b border-stone-300 pb-2 text-stone-700 transition hover:text-stone-950"
                   >
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal-700">
-                      {entry.type}
-                    </p>
-                    <h3 className="mt-3 text-xl font-semibold tracking-tight text-slate-950">
-                      {entry.title}
-                    </h3>
-                    <p className="mt-3 leading-7 text-slate-600">{entry.note}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal grid gap-8 lg:grid-cols-2">
-              <div>
-                <SectionHeading
-                  label="Teaching and Academic Support"
-                  title="A practical view of academic contribution."
-                />
-                <div className="mt-8 grid gap-3">
-                  {academicSupport.map((item) => (
-                    <div
-                      key={item}
-                      className="rounded-2xl border border-slate-200 bg-[#fbfcf8] p-5 font-medium text-slate-800"
-                    >
-                      {item}
-                    </div>
-                  ))}
+                    {profileLinks.emailLabel}
+                  </a>
+                  <a
+                    href={profileLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block border-b border-stone-300 pb-2 text-stone-700 transition hover:text-stone-950"
+                  >
+                    LinkedIn
+                  </a>
                 </div>
               </div>
 
-              <div>
-                <SectionHeading
-                  label="Tools and Methods"
-                  title="Methods and communication skills grouped together."
-                />
-                <div className="mt-8 flex flex-wrap gap-3 rounded-[2rem] border border-slate-200 bg-[#f8faf7] p-6">
-                  {toolsAndMethods.map((tool) => (
-                    <span
-                      key={tool}
-                      className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm"
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+              <SidebarSection title="Quick Profile" items={quickProfile} />
+              <SidebarSection title="Research Keywords" items={researchInterests} />
+              <SidebarSection title="Methods & Tools" items={toolsAndMethods} />
+            </aside>
 
-        <section className="py-16 pb-20 sm:py-20 sm:pb-24">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal overflow-hidden rounded-[2rem] bg-slate-950 p-7 text-white shadow-2xl shadow-slate-300/40 sm:p-9">
-              <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-                <div>
-                  <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-teal-200">
-                    Build Something Similar
+            <div className="reveal space-y-14">
+              <section>
+                <SectionHeading eyebrow="Profile" title="Research Profile" />
+                <div className="mt-6 space-y-5 text-lg leading-8 text-stone-700">
+                  <p>
+                    Maya is a fictional graduate researcher focused on sustainable energy systems,
+                    life cycle assessment, environmental performance modelling, and research
+                    communication.
                   </p>
-                  <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                  <p>
+                    This sample content demonstrates how an academic portfolio can organize research
+                    focus, sample projects, teaching support, and contact details without claiming
+                    real publications, private information, or completed client work.
+                  </p>
+                </div>
+              </section>
+
+              <section id="research-focus">
+                <SectionHeading eyebrow="Current Work" title="Current Research Focus" />
+                <div className="mt-6 border-l border-stone-400 pl-6">
+                  <p className="text-xl leading-9 text-stone-800">
+                    Evaluating the environmental performance of emerging energy technologies using
+                    life cycle assessment, uncertainty analysis, and scenario-based comparison.
+                  </p>
+                  <ul className="mt-6 space-y-3 text-stone-700">
+                    <li>Compare environmental impacts across energy pathways</li>
+                    <li>Identify major lifecycle hotspots</li>
+                    <li>Communicate results for technical and non-technical audiences</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section>
+                <SectionHeading
+                  eyebrow="Portfolio Notes"
+                  title="Selected Academic Projects"
+                />
+                <div className="mt-6 divide-y divide-stone-300 border-y border-stone-300">
+                  {academicProjects.map((project, index) => (
+                    <article key={project.title} className="grid gap-4 py-6 sm:grid-cols-[4rem_1fr]">
+                      <p className="font-serif text-2xl text-stone-400">
+                        {String(index + 1).padStart(2, "0")}
+                      </p>
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-stone-500">
+                          Sample academic portfolio item
+                        </p>
+                        <h3 className="mt-2 font-serif text-2xl font-semibold tracking-[-0.02em] text-stone-950">
+                          {project.title}
+                        </h3>
+                        <p className="mt-3 leading-7 text-stone-700">{project.description}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+
+              <section id="sample-publications">
+                <SectionHeading
+                  eyebrow="Publications & Presentations"
+                  title="Sample Publications & Presentations"
+                />
+                <p className="mt-5 text-sm font-semibold uppercase tracking-[0.18em] text-stone-500">
+                  Sample entries for demonstration purposes only.
+                </p>
+                <div className="mt-5 space-y-5">
+                  {sampleAcademicEntries.map((entry) => (
+                    <article key={entry.title} className="border-l border-stone-400 pl-5">
+                      <p className="text-sm font-semibold text-stone-500">{entry.type}</p>
+                      <h3 className="mt-1 text-lg font-semibold leading-7 text-stone-950">
+                        {entry.title}
+                      </h3>
+                    </article>
+                  ))}
+                </div>
+              </section>
+
+              <section>
+                <SectionHeading
+                  eyebrow="Academic Support"
+                  title="Teaching & Academic Support"
+                />
+                <ol className="mt-6 divide-y divide-stone-300 border-y border-stone-300">
+                  {academicSupport.map((item) => (
+                    <li key={item} className="flex gap-4 py-4 text-stone-700">
+                      <span className="font-serif text-stone-400">-</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-stone-300 bg-[#fbf8f0] py-16 pb-20 sm:py-20 sm:pb-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="reveal border border-stone-900 bg-stone-950 p-7 text-white sm:p-9">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-stone-300">
+                Academic Portfolio Websites
+              </p>
+              <div className="mt-5 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+                <div className="max-w-3xl">
+                  <h2 className="font-serif text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">
                     Need a clean academic portfolio website?
                   </h2>
-                  <p className="mt-4 max-w-3xl leading-7 text-slate-200">
-                    Connect with Ahmad Niknam to discuss a simple professional portfolio website
-                    for your research profile, academic projects, publications, and career goals.
+                  <p className="mt-5 leading-8 text-stone-200">
+                    Connect with Ahmad Niknam to discuss a simple professional portfolio website for
+                    your research profile, academic projects, publications, and career goals.
                   </p>
-                  <p className="mt-3 text-sm font-semibold text-teal-100">
+                  <p className="mt-4 text-sm font-semibold text-stone-300">
                     Email: {profileLinks.emailLabel}
                   </p>
                 </div>
@@ -388,14 +329,14 @@ export default function GraduateResearcherPortfolioDemo() {
                     href={profileLinks.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-teal-50"
+                    className="inline-flex justify-center border border-white bg-white px-5 py-3 text-sm font-semibold text-stone-950 transition hover:bg-stone-100"
                     aria-label="Connect with Ahmad Niknam on LinkedIn"
                   >
                     Connect on LinkedIn
                   </a>
                   <Link
                     href="/"
-                    className="inline-flex justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+                    className="inline-flex justify-center border border-white/30 px-5 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
                   >
                     Back to Portfolio
                   </Link>
