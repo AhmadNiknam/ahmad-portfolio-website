@@ -30,7 +30,8 @@ const demoConcepts = [
     href: "/samples/it-professional-portfolio"
   },
   {
-    title: "Graduate Student / Researcher Portfolio"
+    title: "Graduate Student / Researcher Portfolio",
+    href: "/samples/graduate-researcher-portfolio"
   },
   {
     title: "Project Manager Portfolio"
