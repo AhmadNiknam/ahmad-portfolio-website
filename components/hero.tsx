@@ -18,14 +18,14 @@ export function Hero() {
           </p>
           <h1
             id="hero-title"
-            className="max-w-[47rem] text-[2.35rem] font-semibold leading-[1.04] tracking-[-0.05em] text-balance text-white sm:text-[3.1rem] lg:text-[4rem] xl:text-[4.35rem]"
+            className="max-w-[45rem] text-[2.35rem] font-semibold leading-[1.04] tracking-[-0.05em] text-balance text-white sm:text-[3.05rem] lg:text-[3.85rem] xl:text-[4.15rem]"
           >
-            IT Support, Cloud Operations, and Practical Digital Portfolios
+            IT Support, Cloud Operations & Portfolio Websites
           </h1>
           <p className="mt-6 max-w-[41rem] text-base leading-8 text-slate-300 sm:text-lg sm:leading-9">
             I am an IT support and cloud operations professional based in Regina, Saskatchewan. I
-            build clean, practical digital experiences that present technical skills, projects, and
-            professional stories clearly.
+            build clean, practical portfolio websites and technical project pages that present
+            skills, projects, and professional stories clearly.
           </p>
           <div className="mt-7 flex flex-wrap gap-2.5">
             {heroBadges.map((badge) => (
@@ -54,7 +54,7 @@ export function Hero() {
               href={profileLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-2 rounded-full px-2 py-3 text-center text-sm font-semibold text-slate-300 underline decoration-sky-200/30 underline-offset-4 transition hover:text-sky-100 hover:decoration-sky-100/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-200 focus-visible:ring-offset-2 focus-visible:ring-offset-[#06111f] sm:px-4"
+              className="group inline-flex items-center justify-center gap-2 rounded-full px-2 py-3 text-center text-sm font-semibold text-sky-100/90 underline decoration-sky-200/35 underline-offset-4 transition hover:text-white hover:decoration-sky-100/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-200 focus-visible:ring-offset-2 focus-visible:ring-offset-[#06111f] sm:px-4"
             >
               Connect on LinkedIn{" "}
               <span aria-hidden="true" className="transition group-hover:translate-x-0.5">
