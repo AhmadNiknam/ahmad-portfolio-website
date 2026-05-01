@@ -54,7 +54,8 @@ const demoPortfolioStyles = [
     description:
       "A portfolio concept for IT support, systems administration, cloud operations, and technical project experience.",
     href: "/samples/it-professional-portfolio",
-    accent: "from-slate-950 via-sky-900 to-cyan-700",
+    previewHref: "/samples/it-professional-portfolio?preview=hero",
+    previewTitle: "IT Professional Portfolio live preview",
     badgeClass: "bg-cyan-100 text-cyan-800",
     preview: ["Cloud", "Systems", "Support"]
   },
@@ -64,7 +65,8 @@ const demoPortfolioStyles = [
     description:
       "A clean research-focused portfolio for graduate students, researchers, publications, academic projects, and teaching work.",
     href: "/samples/graduate-researcher-portfolio",
-    accent: "from-indigo-950 via-slate-800 to-violet-700",
+    previewHref: "/samples/graduate-researcher-portfolio?preview=hero",
+    previewTitle: "Graduate Researcher Portfolio live preview",
     badgeClass: "bg-violet-100 text-violet-800",
     preview: ["Research", "Publications", "Teaching"]
   },
@@ -74,7 +76,8 @@ const demoPortfolioStyles = [
     description:
       "A modern project and consultant portfolio for services, case studies, delivery support, and stakeholder communication.",
     href: "/samples/project-manager-consultant-portfolio",
-    accent: "from-orange-500 via-rose-500 to-fuchsia-700",
+    previewHref: "/samples/project-manager-consultant-portfolio?preview=hero",
+    previewTitle: "Project Manager Portfolio live preview",
     badgeClass: "bg-orange-100 text-orange-800",
     preview: ["Services", "Case Studies", "Delivery"]
   },
@@ -83,8 +86,10 @@ const demoPortfolioStyles = [
     label: "Modern Career Portfolio",
     description:
       "A portfolio concept for newcomers, job seekers, international students, and career changers building a professional path in Canada.",
+    href: "/samples/newcomer-career-portfolio",
+    previewHref: "/samples/newcomer-career-portfolio?preview=hero",
+    previewTitle: "Newcomer Career Portfolio live preview",
     status: "In Progress",
-    accent: "from-emerald-700 via-teal-700 to-sky-700",
     badgeClass: "bg-emerald-100 text-emerald-800",
     preview: ["Career Path", "Skills", "Canada"]
   }
@@ -118,19 +123,27 @@ export function WebDesignServices() {
     style: (typeof demoPortfolioStyles)[number],
     isDuplicate = false
   ) => (
-    <article className="group flex h-full min-h-[25rem] w-[18rem] flex-col overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl sm:w-[21rem]">
-      <div className={`relative h-36 overflow-hidden bg-gradient-to-br ${style.accent} p-5 text-white`}>
-        <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-white/15" />
-        <div className="absolute bottom-4 right-4 h-16 w-24 rounded-2xl border border-white/25 bg-white/10 shadow-2xl backdrop-blur" />
-        <div className="absolute bottom-8 right-12 h-10 w-16 rounded-xl bg-white/20" />
-        <p className="relative text-xs font-black uppercase tracking-[0.2em] text-white/80">
-          {style.label}
-        </p>
-        <div className="relative mt-8 space-y-2">
-          <div className="h-2 w-24 rounded-full bg-white/80" />
-          <div className="h-2 w-32 rounded-full bg-white/50" />
-          <div className="h-2 w-20 rounded-full bg-white/30" />
+    <article className="group flex h-full min-h-[34rem] w-[18.5rem] flex-col overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl sm:w-[23rem] lg:w-[25rem]">
+      <div className="relative m-3 h-52 overflow-hidden rounded-[1.35rem] border border-slate-200 bg-white shadow-inner shadow-slate-200/70 sm:h-64">
+        <div className="absolute left-1/2 top-0 h-[28rem] w-[44rem] -translate-x-1/2 origin-top scale-[0.42] sm:scale-[0.58]">
+          <iframe
+            src={style.previewHref}
+            title={style.previewTitle}
+            loading="lazy"
+            scrolling="no"
+            className="pointer-events-none h-full w-full border-0"
+            tabIndex={-1}
+          />
         </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-white/10" />
+        <a
+          href={style.href}
+          className="absolute bottom-3 right-3 rounded-full bg-white/95 px-4 py-2 text-xs font-black text-slate-950 shadow-lg ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:bg-sky-50 hover:text-sky-700"
+          aria-label={`View ${style.title} demo`}
+          tabIndex={isDuplicate ? -1 : undefined}
+        >
+          View Demo
+        </a>
       </div>
       <div className="flex flex-1 flex-col p-5">
         <span
@@ -150,20 +163,14 @@ export function WebDesignServices() {
             </span>
           ))}
         </div>
-        {style.href ? (
-          <a
-            href={style.href}
-            className="mt-6 inline-flex items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-sky-700"
-            aria-label={`View ${style.title} demo`}
-            tabIndex={isDuplicate ? -1 : undefined}
-          >
-            View Demo
-          </a>
-        ) : (
-          <div className="mt-6 inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-500">
-            {style.status}
-          </div>
-        )}
+        <a
+          href={style.href}
+          className="mt-6 inline-flex items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-sky-700"
+          aria-label={`View ${style.title} demo`}
+          tabIndex={isDuplicate ? -1 : undefined}
+        >
+          {style.status ? `${style.status} - View Demo` : "View Demo"}
+        </a>
       </div>
     </article>
   );

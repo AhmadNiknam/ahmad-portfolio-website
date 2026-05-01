@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     "Demo portfolio website concept for graduate students, researchers, teaching assistants, and academic professionals."
 };
 
+type DemoSearchParams = Promise<{ preview?: string | string[] }>;
+
 const researchInterests = [
   "Life Cycle Assessment",
   "Renewable Energy",
@@ -114,7 +116,55 @@ function SidebarSection({
   );
 }
 
-export default function GraduateResearcherPortfolioDemo() {
+export default async function GraduateResearcherPortfolioDemo({
+  searchParams
+}: {
+  searchParams?: DemoSearchParams;
+}) {
+  const params = await searchParams;
+  const isHeroPreview = Array.isArray(params?.preview)
+    ? params.preview.includes("hero")
+    : params?.preview === "hero";
+
+  if (isHeroPreview) {
+    return (
+      <main className="h-screen overflow-hidden bg-[#f7f3ea] text-stone-950">
+        <section className="min-h-screen border-b border-stone-300 bg-[#fbf8f0]">
+          <div className="mx-auto max-w-6xl px-6 py-10 sm:py-14">
+            <div className="max-w-4xl">
+              <p className="w-fit border-l-4 border-stone-800 bg-[#fffdf7] px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-stone-600 shadow-sm">
+                Demo Portfolio Concept
+              </p>
+              <p className="mt-8 text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">
+                Academic Research Profile
+              </p>
+              <h1 className="mt-5 font-serif text-6xl font-semibold tracking-[-0.06em] text-stone-950 sm:text-7xl lg:text-8xl">
+                Maya Reynolds
+              </h1>
+              <p className="mt-5 max-w-3xl text-xl leading-8 text-stone-800 sm:text-2xl">
+                PhD Candidate | Energy Systems Research | Life Cycle Assessment
+              </p>
+              <p className="mt-8 max-w-3xl border-l border-stone-400 pl-6 text-lg leading-8 text-stone-700">
+                I study how emerging energy systems can be evaluated through environmental
+                performance, uncertainty analysis, and practical decision-making frameworks.
+              </p>
+              <div className="mt-10 flex flex-wrap gap-3">
+                {quickProfile.map((item) => (
+                  <span
+                    key={item}
+                    className="border border-stone-300 bg-[#fffdf7] px-4 py-2 text-sm font-semibold text-stone-700"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <>
       <main className="bg-[#f7f3ea] text-stone-950">

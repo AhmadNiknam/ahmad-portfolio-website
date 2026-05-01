@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     "Demo portfolio website concept for newcomers, international students, job seekers, and career changers building a professional path in Canada."
 };
 
+type DemoSearchParams = Promise<{ preview?: string | string[] }>;
+
 const identityTags = ["Customer Service", "Administrative Support", "Microsoft 365"];
 
 const transferableSkills = [
@@ -138,7 +140,80 @@ function SectionIntro({
   );
 }
 
-export default function NewcomerCareerPortfolioDemo() {
+export default async function NewcomerCareerPortfolioDemo({
+  searchParams
+}: {
+  searchParams?: DemoSearchParams;
+}) {
+  const params = await searchParams;
+  const isHeroPreview = Array.isArray(params?.preview)
+    ? params.preview.includes("hero")
+    : params?.preview === "hero";
+
+  if (isHeroPreview) {
+    return (
+      <main className="h-screen overflow-hidden bg-[#fffaf5] text-stone-950">
+        <section className="relative isolate min-h-screen bg-[#fffaf5] py-8 sm:py-10">
+          <div className="absolute left-0 top-0 -z-10 h-72 w-72 rounded-full bg-rose-200/30 blur-3xl" />
+          <div className="absolute bottom-10 right-0 -z-10 h-80 w-80 rounded-full bg-teal-200/30 blur-3xl" />
+          <div className="mx-auto grid max-w-6xl gap-8 px-6 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-center">
+            <div>
+              <div className="mb-6 h-1.5 w-24 rounded-full bg-gradient-to-r from-rose-400 via-amber-300 to-teal-400" />
+              <Eyebrow>Demo Portfolio Concept</Eyebrow>
+              <p className="mt-5 text-sm font-black uppercase tracking-[0.24em] text-stone-500">
+                Newcomer Career Portfolio
+              </p>
+              <h1 className="mt-5 max-w-3xl text-5xl font-black tracking-[-0.065em] text-stone-950 sm:text-6xl lg:text-7xl">
+                Nina Rahman
+              </h1>
+              <p className="mt-5 max-w-3xl text-xl font-bold leading-8 text-teal-800 sm:text-2xl">
+                Newcomer Career Portfolio | Customer Service | Administrative Support | Microsoft 365
+              </p>
+              <p className="mt-8 max-w-3xl text-2xl font-semibold leading-10 text-stone-900 sm:text-3xl">
+                Building a professional career in Canada through transferable skills, practical
+                learning, and clear communication.
+              </p>
+            </div>
+
+            <aside>
+              <div className="relative rounded-[2rem] border border-stone-200 bg-white p-5 shadow-2xl shadow-stone-200/70">
+                <div className="absolute -left-4 top-10 hidden h-20 w-8 rounded-full bg-amber-300 sm:block" />
+                <div className="absolute -right-5 bottom-16 hidden h-24 w-10 rounded-full bg-teal-300 sm:block" />
+                <div className="rounded-[1.5rem] bg-gradient-to-br from-rose-50 via-amber-50 to-teal-50 p-5">
+                  <div className="relative mx-auto flex aspect-[4/5] max-w-[17rem] items-center justify-center overflow-hidden rounded-[1.75rem] border border-white/80 bg-white shadow-inner">
+                    <div className="absolute inset-x-8 top-10 h-28 rounded-full bg-gradient-to-br from-rose-200 to-amber-200" />
+                    <div className="absolute bottom-0 h-40 w-56 rounded-t-full bg-gradient-to-br from-teal-500 to-sky-500" />
+                    <div className="relative flex h-28 w-28 items-center justify-center rounded-full border-8 border-white bg-stone-950 text-3xl font-black text-white shadow-xl">
+                      NR
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-5 rounded-[1.5rem] border border-stone-200 bg-stone-50 p-5">
+                  <p className="text-xs font-black uppercase tracking-[0.22em] text-rose-600">
+                    Current Goal
+                  </p>
+                  <p className="mt-3 text-lg font-black leading-7 text-stone-950">
+                    Administrative support and customer-facing roles in Canada
+                  </p>
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {identityTags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-stone-200 bg-white px-3 py-2 text-xs font-black text-stone-700 shadow-sm"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <>
       <main className="overflow-hidden bg-[#fffaf5] text-stone-950">

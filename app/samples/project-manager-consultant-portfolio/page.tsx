@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     "Demo portfolio website concept for project managers, consultants, business analysts, and professionals who want to present services, case studies, and project outcomes."
 };
 
+type DemoSearchParams = Promise<{ preview?: string | string[] }>;
+
 const deliverySnapshot = [
   {
     label: "Delivery Planning",
@@ -175,7 +177,82 @@ function SectionHeader({
   );
 }
 
-export default function ProjectManagerConsultantPortfolioDemo() {
+export default async function ProjectManagerConsultantPortfolioDemo({
+  searchParams
+}: {
+  searchParams?: DemoSearchParams;
+}) {
+  const params = await searchParams;
+  const isHeroPreview = Array.isArray(params?.preview)
+    ? params.preview.includes("hero")
+    : params?.preview === "hero";
+
+  if (isHeroPreview) {
+    return (
+      <main className="h-screen overflow-hidden bg-slate-50 text-slate-950">
+        <section className="relative isolate min-h-screen bg-[radial-gradient(circle_at_18%_20%,#bfdbfe_0%,transparent_28%),radial-gradient(circle_at_88%_12%,#f0abfc_0%,transparent_25%),linear-gradient(135deg,#eff6ff_0%,#ecfeff_38%,#f5f3ff_70%,#fff7ed_100%)] py-8 sm:py-10">
+          <div className="absolute left-1/2 top-14 -z-10 h-44 w-44 -translate-x-1/2 rotate-12 rounded-[2rem] bg-white/40 shadow-2xl shadow-blue-200/40" />
+          <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
+            <div>
+              <p className="mb-5 inline-flex rounded-full bg-blue-950 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-cyan-100 shadow-xl shadow-blue-900/20">
+                Demo Portfolio Concept
+              </p>
+              <h1 className="max-w-4xl text-5xl font-black tracking-[-0.065em] text-slate-950 sm:text-6xl lg:text-7xl">
+                Jordan Blake
+              </h1>
+              <p className="mt-5 max-w-3xl text-xl font-black leading-8 text-blue-900 sm:text-2xl">
+                Project Manager | Business Analyst | Agile Delivery Consultant
+              </p>
+              <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-700">
+                I help teams clarify priorities, organize delivery, reduce project risk, and turn
+                complex business needs into practical project outcomes.
+              </p>
+            </div>
+
+            <div>
+              <div className="relative rounded-[2rem] border border-white/80 bg-white/80 p-4 shadow-2xl shadow-blue-300/30 backdrop-blur">
+                <div className="rounded-[1.5rem] bg-slate-950 p-5 text-white">
+                  <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                      <p className="text-xs font-black uppercase tracking-[0.24em] text-cyan-200">
+                        Delivery Command Center
+                      </p>
+                      <h2 className="mt-3 text-2xl font-black tracking-tight">
+                        Organized project momentum
+                      </h2>
+                    </div>
+                    <div className="rounded-2xl bg-gradient-to-br from-cyan-300 to-violet-400 px-4 py-3 text-center text-sm font-black text-slate-950">
+                      JB
+                    </div>
+                  </div>
+                  <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                    {["Scope", "Risks", "Backlog", "Updates"].map((item, index) => (
+                      <div key={item} className="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">
+                        <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-300">
+                          Track {index + 1}
+                        </p>
+                        <p className="mt-2 text-lg font-black">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="-mt-3 ml-auto mr-4 max-w-sm rounded-[1.5rem] border border-white bg-white p-5 shadow-xl shadow-slate-300/30">
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-violet-700">
+                    Sample Profile Note
+                  </p>
+                  <p className="mt-3 leading-7 text-slate-700">
+                    Fictional consultant profile content for demonstrating a modern professional
+                    service portfolio layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <>
       <main className="overflow-hidden bg-slate-50 text-slate-950">
