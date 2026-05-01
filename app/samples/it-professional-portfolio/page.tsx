@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     "A light, modern demo portfolio concept for an IT support and systems administration professional."
 };
 
-type DemoSearchParams = Promise<{ preview?: string | string[] }>;
 
 const coreSkills = [
   "Microsoft 365 Administration",
@@ -70,76 +69,7 @@ const experienceSnapshots = [
   }
 ];
 
-export default async function ItProfessionalPortfolioDemo({
-  searchParams
-}: {
-  searchParams?: DemoSearchParams;
-}) {
-  const params = await searchParams;
-  const isHeroPreview = Array.isArray(params?.preview)
-    ? params.preview.includes("hero")
-    : params?.preview === "hero";
-
-  if (isHeroPreview) {
-    return (
-      <main className="h-screen overflow-hidden bg-[#f7f2ea] text-stone-950">
-        <section className="relative isolate min-h-screen overflow-hidden bg-[linear-gradient(135deg,#fffaf0_0%,#eef7f1_52%,#edf4ff_100%)] py-8">
-          <div className="absolute left-1/2 top-0 -z-10 h-80 w-80 -translate-x-1/2 rounded-full bg-emerald-200/40 blur-3xl" />
-          <div className="absolute right-0 top-20 -z-10 h-72 w-72 rounded-full bg-blue-200/40 blur-3xl" />
-          <div className="mx-auto grid max-w-6xl gap-8 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-            <div>
-              <p className="mb-4 inline-flex rounded-full bg-emerald-900 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-emerald-50 shadow-lg shadow-emerald-900/10">
-                Demo Portfolio Concept
-              </p>
-              <h1 className="max-w-4xl text-5xl font-black tracking-[-0.06em] text-stone-950 sm:text-6xl lg:text-7xl">
-                Alex Carter
-              </h1>
-              <p className="mt-5 max-w-3xl text-xl font-bold leading-8 text-emerald-900 sm:text-2xl">
-                IT Support Specialist | Systems Administration | Microsoft 365 | Azure
-              </p>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-700">
-                I help organizations support users, maintain reliable systems, and improve
-                day-to-day IT operations across cloud and on-premise environments.
-              </p>
-            </div>
-
-            <div>
-              <div className="overflow-hidden rounded-[2rem] border border-white bg-white shadow-2xl shadow-stone-300/40">
-                <div className="bg-stone-950 px-6 py-5 text-white">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <p className="text-xs font-black uppercase tracking-[0.22em] text-emerald-200">
-                        Profile Snapshot
-                      </p>
-                      <h2 className="mt-2 text-2xl font-black tracking-tight">IT Operations</h2>
-                    </div>
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-300 text-lg font-black text-stone-950">
-                      AC
-                    </div>
-                  </div>
-                </div>
-                <div className="grid gap-4 p-6">
-                  {[
-                    ["Focus", "User support, systems administration, cloud operations"],
-                    ["Tools", "Microsoft 365, Azure, Windows Server, PowerShell"],
-                    ["Style", "Calm troubleshooting, clear documentation, steady follow-through"]
-                  ].map(([label, value]) => (
-                    <div key={label} className="rounded-2xl bg-stone-50 p-5 ring-1 ring-stone-200">
-                      <p className="text-xs font-black uppercase tracking-[0.18em] text-emerald-800">
-                        {label}
-                      </p>
-                      <p className="mt-2 font-semibold leading-7 text-stone-800">{value}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    );
-  }
-
+export default function ItProfessionalPortfolioDemo() {
   return (
     <>
       <main className="bg-[#f7f2ea] text-stone-950">
