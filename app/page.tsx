@@ -19,10 +19,10 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
-        <WebDesignServices />
         <Experience />
         <Certifications />
         <Resume />
+        <WebDesignServices />
         <Contact />
       </main>
       <Footer />
