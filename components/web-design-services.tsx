@@ -20,8 +20,8 @@ const serviceAudiences = [
     title: "Job Seekers & Newcomers",
     description:
       "Canadian-style professional summary, transferable skills, selected experience, projects, and LinkedIn connection.",
-    actionLabel: "Coming Soon",
-    isDisabled: true
+    actionLabel: "View Career Demo",
+    href: "/samples/newcomer-career-portfolio"
   },
   {
     title: "Project Managers & Consultants",
@@ -80,22 +80,13 @@ export function WebDesignServices() {
               {audience.description}
             </p>
             <div className="relative mt-6">
-              {audience.isDisabled ? (
-                <span
-                  className="inline-flex min-h-11 items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-500"
-                  aria-disabled="true"
-                >
-                  {audience.actionLabel}
-                </span>
-              ) : (
-                <a
-                  href={audience.href}
-                  className="inline-flex min-h-11 items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-950 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50 hover:text-sky-700"
-                  aria-label={`${audience.actionLabel} for ${audience.title}`}
-                >
-                  {audience.actionLabel}
-                </a>
-              )}
+              <a
+                href={audience.href}
+                className="inline-flex min-h-11 items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-950 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50 hover:text-sky-700"
+                aria-label={`${audience.actionLabel} for ${audience.title}`}
+              >
+                {audience.actionLabel}
+              </a>
             </div>
           </article>
         ))}

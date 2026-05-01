@@ -9,75 +9,44 @@ export const metadata: Metadata = {
     "Demo portfolio website concept for newcomers, international students, job seekers, and career changers building a professional path in Canada."
 };
 
-
-const identityTags = ["Customer Service", "Administrative Support", "Microsoft 365"];
-
-const transferableSkills = [
-  {
-    title: "Communication",
-    description: "Clear listening, polite written updates, and confident workplace conversations.",
-    color: "bg-rose-50 text-rose-700",
-    dot: "bg-rose-400"
-  },
-  {
-    title: "Customer Service",
-    description: "Welcoming support, careful intake, practical follow-up, and respectful service.",
-    color: "bg-teal-50 text-teal-700",
-    dot: "bg-teal-400"
-  },
-  {
-    title: "Administrative Support",
-    description: "Organizing details, preparing simple records, tracking tasks, and supporting routines.",
-    color: "bg-amber-50 text-amber-700",
-    dot: "bg-amber-400"
-  },
-  {
-    title: "Documentation",
-    description: "Writing concise notes, summaries, checklists, and clear next-step records.",
-    color: "bg-sky-50 text-sky-700",
-    dot: "bg-sky-400"
-  },
-  {
-    title: "Team Collaboration",
-    description: "Contributing reliably, asking good questions, and sharing updates with context.",
-    color: "bg-emerald-50 text-emerald-700",
-    dot: "bg-emerald-400"
-  },
-  {
-    title: "Microsoft Office / Microsoft 365",
-    description: "Using documents, spreadsheets, email, shared files, and basic collaboration tools.",
-    color: "bg-blue-50 text-blue-700",
-    dot: "bg-blue-400"
-  },
-  {
-    title: "Problem Solving",
-    description: "Clarifying needs, comparing options, and finding practical ways to move work forward.",
-    color: "bg-orange-50 text-orange-700",
-    dot: "bg-orange-400"
-  },
-  {
-    title: "Learning Mindset",
-    description: "Building Canadian workplace confidence through steady practice and short courses.",
-    color: "bg-lime-50 text-lime-700",
-    dot: "bg-lime-400"
-  }
+const quickProfile = [
+  ["Location", "Canada"],
+  ["Career Focus", "Customer Service & Administrative Support"],
+  ["Skills Direction", "Microsoft 365, documentation, communication"],
+  ["Portfolio Goal", "Present transferable skills and Canadian career readiness"]
 ];
 
-const careerFocus = [
+const strengths = [
+  { label: "Reliable communication", level: "w-[92%]" },
+  { label: "Customer-focused mindset", level: "w-[88%]" },
+  { label: "Organized documentation", level: "w-[84%]" },
+  { label: "Adaptability", level: "w-[90%]" },
+  { label: "Learning mindset", level: "w-[95%]" }
+];
+
+const careerDirection = [
+  "Building Canadian workplace communication",
+  "Strengthening digital workplace skills",
+  "Preparing for administrative and customer-facing roles",
+  "Presenting transferable experience clearly"
+];
+
+const skillGroups = [
   {
-    title: "Workplace Communication",
-    description:
-      "Practicing clear email updates, service conversations, meeting notes, and professional follow-up."
+    title: "Communication & Service",
+    skills: ["Customer service", "Professional communication", "Team collaboration"]
   },
   {
-    title: "Digital Workplace Skills",
-    description:
-      "Strengthening everyday confidence with Microsoft 365, shared documents, spreadsheets, and online collaboration."
+    title: "Organization & Documentation",
+    skills: ["Administrative support", "Documentation", "Scheduling and coordination"]
   },
   {
-    title: "Professional Readiness",
-    description:
-      "Preparing a focused Canadian profile with transferable skills, learning evidence, and realistic career goals."
+    title: "Digital Workplace",
+    skills: ["Microsoft Office", "Microsoft 365", "Online collaboration tools"]
+  },
+  {
+    title: "Growth & Readiness",
+    skills: ["Problem solving", "Adaptability", "Continuous learning"]
   }
 ];
 
@@ -90,51 +59,48 @@ const learningEntries = [
   "English Language Development"
 ];
 
-const practiceWork = [
+const evidenceItems = [
   {
     title: "Career Transition Portfolio",
+    type: "Profile Document",
     description:
       "A sample online profile that connects previous experience, present learning, and Canadian career goals."
   },
   {
     title: "Customer Service Scenario Documentation",
+    type: "Service Notes",
     description:
       "Practice notes showing how to understand a request, document details, and follow up clearly."
   },
   {
     title: "Microsoft 365 Practice Workspace",
+    type: "Digital Workspace",
     description:
       "Sample documents, spreadsheets, email drafts, and shared task examples for office readiness."
   },
   {
     title: "Volunteer Coordination Example",
+    type: "Coordination Sample",
     description:
       "A practical example for organizing tasks, schedules, communication notes, and responsibilities."
   }
 ];
 
-function Eyebrow({ children }: { children: string }) {
-  return (
-    <p className="text-xs font-black uppercase tracking-[0.24em] text-teal-700">{children}</p>
-  );
-}
+const goals = [
+  "Build confidence in the Canadian job market",
+  "Present international experience clearly",
+  "Develop practical workplace communication",
+  "Create a professional online presence",
+  "Support applications, networking, and interviews"
+];
 
-function SectionIntro({
-  label,
-  title,
-  description
-}: {
-  label: string;
-  title: string;
-  description?: string;
-}) {
+function SectionTitle({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
-    <div className="reveal max-w-3xl">
-      <Eyebrow>{label}</Eyebrow>
-      <h2 className="mt-3 text-3xl font-black tracking-[-0.04em] text-stone-950 sm:text-4xl">
+    <div className="reveal">
+      <p className="text-xs font-black uppercase tracking-[0.28em] text-[#a24d2d]">{eyebrow}</p>
+      <h2 className="mt-3 text-3xl font-black tracking-[-0.045em] text-[#25211d] sm:text-4xl">
         {title}
       </h2>
-      {description ? <p className="mt-4 text-lg leading-8 text-stone-600">{description}</p> : null}
     </div>
   );
 }
@@ -142,19 +108,21 @@ function SectionIntro({
 export default function NewcomerCareerPortfolioDemo() {
   return (
     <>
-      <main className="overflow-hidden bg-[#fffaf5] text-stone-950">
-        <section className="border-b border-stone-200/70 bg-white/80">
-          <div className="mx-auto max-w-6xl px-6 py-5">
-            <div className="reveal flex flex-col gap-4 rounded-[1.5rem] border border-stone-200 bg-white px-5 py-4 shadow-sm shadow-stone-200/60 sm:flex-row sm:items-center sm:justify-between">
+      <main className="overflow-hidden bg-[#f8efe3] text-[#25211d]">
+        <section className="border-b border-[#d9c7b4] bg-[#fffaf2]">
+          <div className="mx-auto max-w-7xl px-5 py-5 sm:px-6">
+            <div className="reveal flex flex-col gap-4 rounded-[1.25rem] border border-[#d9c7b4] bg-[#fffaf2] px-5 py-4 shadow-sm shadow-[#c49a77]/10 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <Eyebrow>Demo Portfolio Concept</Eyebrow>
-                <p className="mt-1 text-sm font-semibold leading-6 text-stone-600">
+                <p className="text-xs font-black uppercase tracking-[0.24em] text-[#a24d2d]">
+                  Demo Portfolio Concept
+                </p>
+                <p className="mt-1 text-sm font-semibold leading-6 text-[#67584c]">
                   This is a sample newcomer career portfolio concept, not a completed client project.
                 </p>
               </div>
               <Link
                 href="/"
-                className="inline-flex w-fit justify-center rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-sm font-bold text-stone-800 transition hover:-translate-y-0.5 hover:border-teal-300 hover:bg-white hover:text-teal-800"
+                className="inline-flex w-fit justify-center rounded-full border border-[#d9c7b4] bg-white px-4 py-2 text-sm font-bold text-[#25211d] transition hover:-translate-y-0.5 hover:border-[#a24d2d] hover:text-[#a24d2d]"
               >
                 Back to Portfolio
               </Link>
@@ -162,221 +130,251 @@ export default function NewcomerCareerPortfolioDemo() {
           </div>
         </section>
 
-        <section className="relative isolate bg-[#fffaf5] py-14 sm:py-20">
-          <div className="absolute left-0 top-0 -z-10 h-72 w-72 rounded-full bg-rose-200/30 blur-3xl" />
-          <div className="absolute bottom-10 right-0 -z-10 h-80 w-80 rounded-full bg-teal-200/30 blur-3xl" />
-          <div className="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-center">
-            <div className="reveal">
-              <div className="mb-7 h-1.5 w-24 rounded-full bg-gradient-to-r from-rose-400 via-amber-300 to-teal-400" />
-              <p className="text-sm font-black uppercase tracking-[0.24em] text-stone-500">
-                Newcomer Career Portfolio
-              </p>
-              <h1 className="mt-5 max-w-3xl text-5xl font-black tracking-[-0.065em] text-stone-950 sm:text-6xl lg:text-7xl">
-                Nina Rahman
-              </h1>
-              <p className="mt-5 max-w-3xl text-xl font-bold leading-8 text-teal-800 sm:text-2xl">
-                Newcomer Career Portfolio | Customer Service | Administrative Support | Microsoft 365
-              </p>
-              <p className="mt-8 max-w-3xl text-2xl font-semibold leading-10 text-stone-900 sm:text-3xl">
-                Building a professional career in Canada through transferable skills, practical
-                learning, and clear communication.
-              </p>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-stone-600">
-                I am developing my Canadian career path by combining previous professional
-                experience, customer service skills, workplace communication, and continuous
-                learning.
-              </p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <a
-                  href="#transferable-skills"
-                  className="inline-flex justify-center rounded-full bg-stone-950 px-6 py-3 text-sm font-bold text-white shadow-xl shadow-stone-300/60 transition hover:-translate-y-0.5 hover:bg-teal-900"
-                >
-                  View Skills
-                </a>
-                <a
-                  href="#learning-journey"
-                  className="inline-flex justify-center rounded-full border border-teal-200 bg-white px-6 py-3 text-sm font-bold text-teal-900 shadow-sm transition hover:-translate-y-0.5 hover:border-teal-400"
-                >
-                  View Learning Journey
-                </a>
-                <Link
-                  href="/"
-                  className="inline-flex justify-center rounded-full border border-stone-200 bg-white px-6 py-3 text-sm font-bold text-stone-800 shadow-sm transition hover:-translate-y-0.5 hover:border-rose-300 hover:text-rose-700"
-                >
-                  Back to Ahmad&apos;s Portfolio
-                </Link>
-              </div>
-            </div>
-
-            <aside className="reveal">
-              <div className="relative rounded-[2rem] border border-stone-200 bg-white p-5 shadow-2xl shadow-stone-200/70">
-                <div className="absolute -left-4 top-10 hidden h-20 w-8 rounded-full bg-amber-300 sm:block" />
-                <div className="absolute -right-5 bottom-16 hidden h-24 w-10 rounded-full bg-teal-300 sm:block" />
-                <div className="rounded-[1.5rem] bg-gradient-to-br from-rose-50 via-amber-50 to-teal-50 p-5">
-                  <div className="relative mx-auto flex aspect-[4/5] max-w-[17rem] items-center justify-center overflow-hidden rounded-[1.75rem] border border-white/80 bg-white shadow-inner">
-                    <div className="absolute inset-x-8 top-10 h-28 rounded-full bg-gradient-to-br from-rose-200 to-amber-200" />
-                    <div className="absolute bottom-0 h-40 w-56 rounded-t-full bg-gradient-to-br from-teal-500 to-sky-500" />
-                    <div className="relative flex h-28 w-28 items-center justify-center rounded-full border-8 border-white bg-stone-950 text-3xl font-black text-white shadow-xl">
-                      NR
+        <section className="relative isolate border-b border-[#d9c7b4] bg-[#f8efe3] py-10 sm:py-14 lg:py-16">
+          <div className="absolute left-[-8rem] top-20 -z-10 h-72 w-72 rounded-full bg-[#dc8f56]/30 blur-3xl" />
+          <div className="absolute bottom-8 right-[-8rem] -z-10 h-80 w-80 rounded-full bg-[#26736a]/20 blur-3xl" />
+          <div className="mx-auto grid max-w-7xl gap-5 px-5 sm:px-6 lg:grid-cols-[0.9fr_1.08fr_0.92fr] lg:items-stretch">
+            <aside className="reveal order-2 flex flex-col gap-5 lg:order-1">
+              <div className="rounded-[1.75rem] border border-[#d9c7b4] bg-[#fffaf2] p-6 shadow-sm shadow-[#c49a77]/10">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#26736a]">
+                  Profile Details
+                </p>
+                <div className="mt-5 divide-y divide-[#eadbcb]">
+                  {quickProfile.map(([label, value]) => (
+                    <div key={label} className="grid gap-1 py-4 first:pt-0 last:pb-0">
+                      <p className="text-xs font-black uppercase tracking-[0.2em] text-[#9a8371]">
+                        {label}
+                      </p>
+                      <p className="text-base font-bold leading-7 text-[#25211d]">{value}</p>
                     </div>
-                    <span className="absolute bottom-4 rounded-full bg-white/90 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-stone-600 shadow-sm">
-                      Sample Profile Visual
-                    </span>
-                  </div>
-                </div>
-                <div className="mt-5 rounded-[1.5rem] border border-stone-200 bg-stone-50 p-5">
-                  <p className="text-xs font-black uppercase tracking-[0.22em] text-rose-600">
-                    Current Goal
-                  </p>
-                  <p className="mt-3 text-lg font-black leading-7 text-stone-950">
-                    Administrative support and customer-facing roles in Canada
-                  </p>
-                </div>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {identityTags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-stone-200 bg-white px-3 py-2 text-xs font-black text-stone-700 shadow-sm"
-                    >
-                      {tag}
-                    </span>
                   ))}
                 </div>
+              </div>
+
+              <div className="rounded-[1.75rem] border border-[#d9c7b4] bg-[#d96f32] p-6 text-white shadow-xl shadow-[#c49a77]/20">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#ffe1c7]">
+                  Strengths
+                </p>
+                <div className="mt-5 space-y-4">
+                  {strengths.map((strength) => (
+                    <div key={strength.label}>
+                      <div className="flex items-center gap-3">
+                        <span className="h-2.5 w-2.5 rounded-full bg-[#ffe1c7]" />
+                        <p className="text-sm font-bold">{strength.label}</p>
+                      </div>
+                      <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/25">
+                        <div className={`h-full rounded-full bg-white ${strength.level}`} />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </aside>
+
+            <section className="reveal order-1 rounded-[2.25rem] border border-[#d9c7b4] bg-[#fffaf2] p-5 shadow-2xl shadow-[#c49a77]/20 lg:order-2">
+              <div className="flex min-h-full flex-col">
+                <div className="rounded-[1.8rem] bg-[#25211d] px-5 py-4 text-[#fffaf2] sm:px-6">
+                  <p className="text-xs font-black uppercase tracking-[0.28em] text-[#f2b477]">
+                    Newcomer Career Portfolio
+                  </p>
+                  <h1 className="mt-4 text-6xl font-black tracking-[-0.08em] sm:text-7xl lg:text-8xl">
+                    Nina Rahman
+                  </h1>
+                  <p className="mt-4 max-w-2xl text-xl font-bold leading-8 text-[#f8d8bc] sm:text-2xl">
+                    Customer Service | Administrative Support | Microsoft 365
+                  </p>
+                </div>
+
+                <div className="mt-5 flex flex-1 flex-col justify-between rounded-[1.8rem] border border-[#eadbcb] bg-[#f6e6d4] p-5 sm:p-6">
+                  <div className="relative mx-auto flex aspect-[4/5] w-full max-w-sm items-center justify-center overflow-hidden rounded-[1.6rem] border border-[#d6b999] bg-[#fffaf2]">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_35%_18%,#f4b26f_0%,transparent_27%),radial-gradient(circle_at_82%_80%,#26736a_0%,transparent_25%)] opacity-75" />
+                    <div className="absolute left-8 top-8 h-24 w-24 rounded-full border border-[#d9c7b4] bg-[#f7d9bd]" />
+                    <div className="absolute bottom-0 h-[52%] w-[72%] rounded-t-full bg-[#26736a]" />
+                    <div className="absolute bottom-[33%] flex h-32 w-32 items-center justify-center rounded-full border-[10px] border-[#fffaf2] bg-[#25211d] text-4xl font-black text-[#fffaf2] shadow-2xl">
+                      NR
+                    </div>
+                    <span className="absolute bottom-5 rounded-full bg-[#fffaf2]/95 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-[#67584c] shadow-sm">
+                      Portrait Placeholder
+                    </span>
+                  </div>
+
+                  <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                    <div className="rounded-2xl bg-[#fffaf2] p-4">
+                      <p className="text-xs font-black uppercase tracking-[0.2em] text-[#a24d2d]">
+                        Title
+                      </p>
+                      <p className="mt-2 font-black">Newcomer Career Portfolio</p>
+                    </div>
+                    <div className="rounded-2xl bg-[#fffaf2] p-4">
+                      <p className="text-xs font-black uppercase tracking-[0.2em] text-[#a24d2d]">
+                        Focus
+                      </p>
+                      <p className="mt-2 font-black">Career readiness in Canada</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <aside className="reveal order-3 flex flex-col gap-5">
+              <div className="rounded-[1.75rem] border border-[#d9c7b4] bg-[#fffaf2] p-6">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#a24d2d]">
+                  Main Statement
+                </p>
+                <p className="mt-5 text-2xl font-black leading-9 tracking-[-0.035em] text-[#25211d]">
+                  Building a professional career in Canada through transferable skills, practical
+                  learning, and clear communication.
+                </p>
+                <p className="mt-5 text-base leading-8 text-[#67584c]">
+                  Nina is a fictional newcomer profile created to show how international experience,
+                  workplace communication, learning progress, and career goals can be presented
+                  clearly in a modern online portfolio.
+                </p>
+              </div>
+
+              <div className="rounded-[1.75rem] border border-[#b8d8d2] bg-[#e8f2ef] p-6">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#26736a]">
+                  Career Direction
+                </p>
+                <ul className="mt-5 space-y-3">
+                  {careerDirection.map((item) => (
+                    <li key={item} className="flex gap-3 text-sm font-bold leading-6 text-[#294b48]">
+                      <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#26736a]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </aside>
           </div>
         </section>
 
-        <section className="py-14 sm:py-18">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal grid gap-8 border-y border-stone-200 py-10 lg:grid-cols-[0.38fr_0.62fr] lg:items-start">
-              <SectionIntro label="Professional Summary" title="Professional Summary" />
-              <div className="space-y-5 text-lg leading-8 text-stone-600">
-                <p>
-                  Nina Rahman is a fictional newcomer profile created to show how a personal career
-                  portfolio can present transferable experience with clarity, confidence, and care.
-                  The profile highlights communication, reliability, customer-facing strengths,
-                  administrative readiness, and an honest direction for building a career in Canada.
-                </p>
-                <p>
-                  This sample keeps the message practical: previous experience matters, current
-                  learning is visible, and the portfolio gives employers a clear place to understand
-                  career goals, skills, and sample evidence.
-                </p>
+        <section className="bg-[#fffaf2] py-14 sm:py-18">
+          <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-6 lg:grid-cols-[0.42fr_0.58fr]">
+            <SectionTitle eyebrow="Professional Summary" title="Clear career story" />
+            <div className="reveal border-l-0 border-[#d9c7b4] text-lg leading-9 text-[#67584c] lg:border-l lg:pl-8">
+              <p>
+                A clear summary explaining that this fictional profile shows how a newcomer or career
+                changer can present previous experience, transferable skills, learning progress, and
+                current career direction in a Canadian-style portfolio.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="transferable-skills" className="bg-[#f8efe3] py-14 sm:py-20">
+          <div className="mx-auto max-w-7xl px-5 sm:px-6">
+            <div className="grid gap-8 lg:grid-cols-[0.32fr_0.68fr]">
+              <SectionTitle eyebrow="Transferable Skills" title="Skills grouped for quick review" />
+              <div className="reveal grid gap-4 sm:grid-cols-2">
+                {skillGroups.map((group, index) => (
+                  <article
+                    key={group.title}
+                    className="min-h-64 border border-[#d9c7b4] bg-[#fffaf2] p-6 shadow-sm shadow-[#c49a77]/10"
+                  >
+                    <p className="text-sm font-black text-[#d96f32]">
+                      {String(index + 1).padStart(2, "0")}
+                    </p>
+                    <h3 className="mt-5 text-2xl font-black tracking-[-0.04em] text-[#25211d]">
+                      {group.title}
+                    </h3>
+                    <ul className="mt-6 space-y-3">
+                      {group.skills.map((skill) => (
+                        <li
+                          key={skill}
+                          className="border-t border-[#eadbcb] pt-3 text-sm font-bold leading-6 text-[#67584c]"
+                        >
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </article>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        <section id="transferable-skills" className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <SectionIntro
-              label="Practical Strengths"
-              title="Transferable Skills"
-              description="A concise skills layout helps the profile feel approachable while still showing concrete workplace value."
-            />
-            <div className="reveal mt-10 divide-y divide-stone-200 overflow-hidden rounded-[1.5rem] border border-stone-200 bg-[#fffdf9]">
-              {transferableSkills.map((skill) => (
-                <div
-                  key={skill.title}
-                  className="grid gap-4 px-5 py-5 transition hover:bg-white sm:grid-cols-[15rem_minmax(0,1fr)] sm:px-7"
-                >
-                  <div className="flex items-center gap-3">
-                    <span className={`h-3 w-3 rounded-full ${skill.dot}`} />
-                    <h3 className="text-lg font-black tracking-tight text-stone-950">{skill.title}</h3>
+        <section className="bg-[#fffaf2] py-14 sm:py-20">
+          <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-6 lg:grid-cols-[0.32fr_0.68fr]">
+            <SectionTitle eyebrow="Learning and Certifications" title="Visible learning path" />
+            <div className="reveal">
+              <div className="grid gap-px overflow-hidden rounded-[1.5rem] border border-[#d9c7b4] bg-[#d9c7b4] sm:grid-cols-2">
+                {learningEntries.map((entry) => (
+                  <div key={entry} className="bg-[#fffaf2] p-5">
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-[#9a8371]">
+                      Sample Learning
+                    </p>
+                    <p className="mt-3 text-lg font-black tracking-[-0.02em] text-[#25211d]">
+                      {entry}
+                    </p>
                   </div>
-                  <p className={`rounded-full px-5 py-3 text-sm font-semibold leading-6 ${skill.color}`}>
-                    {skill.description}
-                  </p>
-                </div>
-              ))}
+                ))}
+              </div>
+              <p className="mt-4 text-sm font-semibold leading-6 text-[#67584c]">
+                Sample learning items for demonstration purposes only.
+              </p>
             </div>
           </div>
         </section>
 
-        <section className="py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <SectionIntro
-              label="Current Direction"
-              title="Current Career Focus"
-              description="Three focused areas give the portfolio a simple, employer-friendly structure without turning it into a long timeline."
-            />
-            <div className="reveal mt-10 grid gap-4 lg:grid-cols-3">
-              {careerFocus.map((item, index) => (
-                <article
-                  key={item.title}
-                  className="border-l-4 border-stone-950 bg-white px-6 py-7 shadow-sm shadow-stone-200/80"
-                >
-                  <p className="text-sm font-black text-rose-600">0{index + 1}</p>
-                  <h3 className="mt-4 text-2xl font-black tracking-tight text-stone-950">
-                    {item.title}
-                  </h3>
-                  <p className="mt-4 leading-8 text-stone-600">{item.description}</p>
-                </article>
-              ))}
+        <section className="bg-[#f8efe3] py-14 sm:py-20">
+          <div className="mx-auto max-w-7xl px-5 sm:px-6">
+            <div className="grid gap-8 lg:grid-cols-[0.32fr_0.68fr]">
+              <SectionTitle eyebrow="Portfolio Evidence" title="Sample work as proof of direction" />
+              <div className="reveal space-y-4">
+                {evidenceItems.map((item) => (
+                  <article
+                    key={item.title}
+                    className="grid gap-5 border border-[#d9c7b4] bg-[#fffaf2] p-5 sm:grid-cols-[12rem_minmax(0,1fr)] sm:p-6"
+                  >
+                    <div>
+                      <p className="text-xs font-black uppercase tracking-[0.18em] text-[#a24d2d]">
+                        {item.type}
+                      </p>
+                      <div className="mt-4 h-2 w-20 rounded-full bg-[#d96f32]" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-black tracking-[-0.04em] text-[#25211d]">
+                        {item.title}
+                      </h3>
+                      <p className="mt-3 leading-8 text-[#67584c]">{item.description}</p>
+                    </div>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="learning-journey" className="bg-[#f5fbf9] py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <SectionIntro
-              label="Learning Path"
-              title="Learning and Certifications"
-              description="Stacked entries keep learning progress easy to scan and clearly separate from project or client claims."
-            />
-            <div className="reveal mt-10 max-w-4xl border-y border-teal-200">
-              {learningEntries.map((entry, index) => (
+        <section className="bg-[#fffaf2] py-14 sm:py-20">
+          <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-6 lg:grid-cols-[0.32fr_0.68fr]">
+            <SectionTitle eyebrow="Professional Goals" title="Practical next steps" />
+            <div className="reveal grid gap-3 sm:grid-cols-2">
+              {goals.map((goal) => (
                 <div
-                  key={entry}
-                  className="grid gap-3 border-b border-teal-100 py-5 last:border-b-0 sm:grid-cols-[4rem_minmax(0,1fr)_auto] sm:items-center"
+                  key={goal}
+                  className="flex min-h-24 items-center gap-4 rounded-[1.25rem] border border-[#d9c7b4] bg-[#f8efe3] p-5"
                 >
-                  <span className="text-sm font-black text-teal-700">{String(index + 1).padStart(2, "0")}</span>
-                  <p className="text-lg font-black text-stone-950">{entry}</p>
-                  <span className="w-fit rounded-full bg-white px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-stone-500 ring-1 ring-teal-100">
-                    Sample
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#26736a] text-sm font-black text-white">
+                    +
                   </span>
+                  <p className="font-bold leading-7 text-[#25211d]">{goal}</p>
                 </div>
               ))}
             </div>
-            <p className="reveal mt-4 text-sm font-semibold leading-6 text-stone-600">
-              Sample learning items for demonstration purposes only.
-            </p>
           </div>
         </section>
 
-        <section className="py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <SectionIntro
-              label="Portfolio Evidence"
-              title="Practice Work and Portfolio Evidence"
-              description="Simple showcase blocks present proof-of-learning examples without claiming real client work."
-            />
-            <div className="reveal mt-10 grid gap-px overflow-hidden rounded-[1.75rem] border border-stone-200 bg-stone-200 lg:grid-cols-2">
-              {practiceWork.map((item) => (
-                <article key={item.title} className="bg-white p-7 sm:p-8">
-                  <span className="block h-1.5 w-16 rounded-full bg-gradient-to-r from-rose-400 to-teal-400" />
-                  <h3 className="mt-6 text-2xl font-black tracking-tight text-stone-950">
-                    {item.title}
-                  </h3>
-                  <p className="mt-4 leading-8 text-stone-600">{item.description}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal relative isolate overflow-hidden rounded-[2rem] border border-amber-200 bg-[#fff6df] p-7 sm:p-10">
-              <div className="absolute -right-16 -top-20 -z-10 h-56 w-56 rounded-full bg-rose-200/70 blur-3xl" />
-              <div className="absolute -bottom-20 left-8 -z-10 h-56 w-56 rounded-full bg-teal-200/70 blur-3xl" />
-              <div className="max-w-4xl">
-                <Eyebrow>Clear Online Profile</Eyebrow>
-                <h2 className="mt-3 text-3xl font-black tracking-[-0.04em] text-stone-950 sm:text-4xl">
-                  Why a Career Portfolio Helps
-                </h2>
-                <p className="mt-6 border-l-4 border-rose-400 pl-6 text-xl font-semibold leading-9 text-stone-800">
+        <section className="bg-[#f8efe3] py-14 sm:py-20">
+          <div className="mx-auto max-w-7xl px-5 sm:px-6">
+            <div className="reveal relative overflow-hidden rounded-[2rem] border border-[#d9c7b4] bg-[#25211d] p-7 text-[#fffaf2] sm:p-10">
+              <div className="absolute right-0 top-0 h-36 w-36 rounded-bl-full bg-[#d96f32]" />
+              <div className="relative max-w-4xl">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#f2b477]">
+                  Why This Portfolio Helps
+                </p>
+                <p className="mt-6 border-l-4 border-[#f2b477] pl-6 text-2xl font-black leading-10 tracking-[-0.04em] sm:text-3xl">
                   A career portfolio helps newcomers and job seekers show their background,
                   transferable skills, learning progress, sample work, and career direction in one
                   clear online profile.
@@ -386,22 +384,22 @@ export default function NewcomerCareerPortfolioDemo() {
           </div>
         </section>
 
-        <section className="py-16 pb-20 sm:py-20 sm:pb-24">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="reveal grid gap-8 rounded-[2rem] bg-stone-950 p-7 text-white shadow-2xl shadow-stone-300/50 sm:p-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
+        <section className="bg-[#fffaf2] py-14 pb-20 sm:py-20 sm:pb-24">
+          <div className="mx-auto max-w-7xl px-5 sm:px-6">
+            <div className="reveal grid gap-8 rounded-[2rem] border border-[#d9c7b4] bg-[#f6e6d4] p-7 shadow-2xl shadow-[#c49a77]/20 sm:p-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
               <div className="max-w-3xl">
-                <p className="text-xs font-black uppercase tracking-[0.24em] text-teal-200">
+                <p className="text-xs font-black uppercase tracking-[0.28em] text-[#a24d2d]">
                   Portfolio Website Services
                 </p>
-                <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
-                  Need a professional newcomer career portfolio?
+                <h2 className="mt-4 text-3xl font-black tracking-[-0.045em] text-[#25211d] sm:text-5xl">
+                  Need a professional personal brand portfolio?
                 </h2>
-                <p className="mt-4 leading-8 text-stone-200">
+                <p className="mt-5 text-lg leading-8 text-[#67584c]">
                   Connect with Ahmad Niknam to discuss a simple portfolio website for your Canadian
                   career journey, transferable skills, learning path, projects, and professional
                   goals.
                 </p>
-                <p className="mt-4 text-sm font-semibold text-stone-300">
+                <p className="mt-5 text-sm font-bold text-[#67584c]">
                   Email: {profileLinks.emailLabel}
                 </p>
               </div>
@@ -410,14 +408,14 @@ export default function NewcomerCareerPortfolioDemo() {
                   href={profileLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex justify-center rounded-full bg-white px-6 py-3 text-sm font-bold text-stone-950 shadow-xl shadow-black/20 transition hover:-translate-y-0.5 hover:bg-teal-50"
+                  className="inline-flex justify-center rounded-full bg-[#25211d] px-6 py-3 text-sm font-bold text-white shadow-xl shadow-[#c49a77]/20 transition hover:-translate-y-0.5 hover:bg-[#26736a]"
                   aria-label="Connect with Ahmad Niknam on LinkedIn"
                 >
                   Connect on LinkedIn
                 </a>
                 <Link
                   href="/"
-                  className="inline-flex justify-center rounded-full border border-white/25 px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+                  className="inline-flex justify-center rounded-full border border-[#c7aa8d] bg-[#fffaf2] px-6 py-3 text-sm font-bold text-[#25211d] transition hover:-translate-y-0.5 hover:border-[#a24d2d] hover:text-[#a24d2d]"
                 >
                   Back to Portfolio
                 </Link>
