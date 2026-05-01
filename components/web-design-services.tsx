@@ -27,19 +27,66 @@ const serviceAudiences = [
 const demoConcepts = [
   {
     title: "IT Professional Portfolio",
-    href: "/samples/it-professional-portfolio"
+    href: "/samples/it-professional-portfolio",
+    status: "Available"
   },
   {
     title: "Graduate Student / Researcher Portfolio",
-    href: "/samples/graduate-researcher-portfolio"
+    href: "/samples/graduate-researcher-portfolio",
+    status: "Available"
   },
   {
     title: "Project Manager Portfolio",
-    href: "/samples/project-manager-consultant-portfolio"
+    href: "/samples/project-manager-consultant-portfolio",
+    status: "Available"
   },
   {
     title: "Newcomer Career Portfolio",
-    href: "/samples/newcomer-career-portfolio"
+    href: "/samples/newcomer-career-portfolio",
+    status: "In Progress"
+  }
+];
+
+const demoPortfolioStyles = [
+  {
+    title: "IT Professional Portfolio",
+    label: "Modern Tech Portfolio",
+    description:
+      "A portfolio concept for IT support, systems administration, cloud operations, and technical project experience.",
+    href: "/samples/it-professional-portfolio",
+    accent: "from-slate-950 via-sky-900 to-cyan-700",
+    badgeClass: "bg-cyan-100 text-cyan-800",
+    preview: ["Cloud", "Systems", "Support"]
+  },
+  {
+    title: "Graduate Researcher Portfolio",
+    label: "Academic Research Profile",
+    description:
+      "A clean research-focused portfolio for graduate students, researchers, publications, academic projects, and teaching work.",
+    href: "/samples/graduate-researcher-portfolio",
+    accent: "from-indigo-950 via-slate-800 to-violet-700",
+    badgeClass: "bg-violet-100 text-violet-800",
+    preview: ["Research", "Publications", "Teaching"]
+  },
+  {
+    title: "Project Manager Portfolio",
+    label: "Vibrant Consultant Style",
+    description:
+      "A modern project and consultant portfolio for services, case studies, delivery support, and stakeholder communication.",
+    href: "/samples/project-manager-consultant-portfolio",
+    accent: "from-orange-500 via-rose-500 to-fuchsia-700",
+    badgeClass: "bg-orange-100 text-orange-800",
+    preview: ["Services", "Case Studies", "Delivery"]
+  },
+  {
+    title: "Newcomer Career Portfolio",
+    label: "Modern Career Portfolio",
+    description:
+      "A portfolio concept for newcomers, job seekers, international students, and career changers building a professional path in Canada.",
+    status: "In Progress",
+    accent: "from-emerald-700 via-teal-700 to-sky-700",
+    badgeClass: "bg-emerald-100 text-emerald-800",
+    preview: ["Career Path", "Skills", "Canada"]
   }
 ];
 
@@ -67,6 +114,60 @@ const processSteps = [
 ];
 
 export function WebDesignServices() {
+  const renderDemoStyleCard = (
+    style: (typeof demoPortfolioStyles)[number],
+    isDuplicate = false
+  ) => (
+    <article className="group flex h-full min-h-[25rem] w-[18rem] flex-col overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl sm:w-[21rem]">
+      <div className={`relative h-36 overflow-hidden bg-gradient-to-br ${style.accent} p-5 text-white`}>
+        <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-white/15" />
+        <div className="absolute bottom-4 right-4 h-16 w-24 rounded-2xl border border-white/25 bg-white/10 shadow-2xl backdrop-blur" />
+        <div className="absolute bottom-8 right-12 h-10 w-16 rounded-xl bg-white/20" />
+        <p className="relative text-xs font-black uppercase tracking-[0.2em] text-white/80">
+          {style.label}
+        </p>
+        <div className="relative mt-8 space-y-2">
+          <div className="h-2 w-24 rounded-full bg-white/80" />
+          <div className="h-2 w-32 rounded-full bg-white/50" />
+          <div className="h-2 w-20 rounded-full bg-white/30" />
+        </div>
+      </div>
+      <div className="flex flex-1 flex-col p-5">
+        <span
+          className={`w-fit rounded-full px-3 py-1 text-xs font-black uppercase tracking-[0.16em] ${style.badgeClass}`}
+        >
+          {style.label}
+        </span>
+        <h4 className="mt-4 text-xl font-bold tracking-tight text-slate-950">{style.title}</h4>
+        <p className="mt-3 flex-1 leading-7 text-slate-600">{style.description}</p>
+        <div className="mt-5 flex flex-wrap gap-2">
+          {style.preview.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-bold text-slate-600"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+        {style.href ? (
+          <a
+            href={style.href}
+            className="mt-6 inline-flex items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-sky-700"
+            aria-label={`View ${style.title} demo`}
+            tabIndex={isDuplicate ? -1 : undefined}
+          >
+            View Demo
+          </a>
+        ) : (
+          <div className="mt-6 inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-500">
+            {style.status}
+          </div>
+        )}
+      </div>
+    </article>
+  );
+
   return (
     <Section
       id="web-services"
@@ -92,15 +193,52 @@ export function WebDesignServices() {
         ))}
       </div>
 
+      <div className="reveal mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-8">
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-sky-700">
+              Showcase
+            </p>
+            <h3 className="mt-2 text-2xl font-bold tracking-tight text-slate-950">
+              Demo Portfolio Styles
+            </h3>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-600">
+              Explore different portfolio website styles designed for different professional
+              goals, backgrounds, and audiences.
+            </p>
+          </div>
+          <p className="rounded-full bg-slate-100 px-4 py-2 text-sm font-bold text-slate-600">
+            Auto-sliding preview
+          </p>
+        </div>
+
+        <div className="demo-style-slider relative mt-7 overflow-x-auto pb-2 md:overflow-hidden">
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden w-16 bg-gradient-to-r from-white to-transparent md:block" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-16 bg-gradient-to-l from-white to-transparent md:block" />
+          <div className="demo-style-track flex w-max gap-4 pr-4">
+            {demoPortfolioStyles.map((style) => (
+              <div key={style.title} className="shrink-0">
+                {renderDemoStyleCard(style)}
+              </div>
+            ))}
+            {demoPortfolioStyles.map((style) => (
+              <div key={`${style.title}-duplicate`} className="shrink-0" aria-hidden="true">
+                {renderDemoStyleCard(style, true)}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div className="reveal mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm sm:p-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <h3 className="text-2xl font-bold tracking-tight text-slate-950">
-              Demo Portfolio Website Concepts
+              Demo Concepts Included
             </h3>
             <p className="mt-3 max-w-3xl leading-7 text-slate-600">
-              These are sample website concepts only, included to show the types of portfolios that
-              can be planned and built.
+              These sample website concepts are included as simple reference links for the portfolio
+              styles that can be planned and built.
             </p>
           </div>
         </div>
@@ -113,7 +251,12 @@ export function WebDesignServices() {
                 className="rounded-2xl border border-slate-200 bg-white p-4 font-bold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-200 hover:text-sky-700 hover:shadow-lg"
                 aria-label={`View ${concept.title} demo concept`}
               >
-                {concept.title}
+                <span>{concept.title}</span>
+                {concept.status !== "Available" ? (
+                  <span className="mt-3 block w-fit rounded-full bg-amber-100 px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-amber-800">
+                    {concept.status}
+                  </span>
+                ) : null}
               </a>
             ) : (
               <div
