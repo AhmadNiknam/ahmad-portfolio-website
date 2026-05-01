@@ -24,29 +24,6 @@ const serviceAudiences = [
   }
 ];
 
-const demoConcepts = [
-  {
-    title: "IT Professional Portfolio",
-    href: "/samples/it-professional-portfolio",
-    status: "Available"
-  },
-  {
-    title: "Graduate Student / Researcher Portfolio",
-    href: "/samples/graduate-researcher-portfolio",
-    status: "Available"
-  },
-  {
-    title: "Project Manager Portfolio",
-    href: "/samples/project-manager-consultant-portfolio",
-    status: "Available"
-  },
-  {
-    title: "Newcomer Career Portfolio",
-    href: "/samples/newcomer-career-portfolio",
-    status: "In Progress"
-  }
-];
-
 const demoPortfolioStyles = [
   {
     title: "IT Professional Portfolio",
@@ -234,46 +211,6 @@ export function WebDesignServices() {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      <div className="reveal mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm sm:p-8">
-        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h3 className="text-2xl font-bold tracking-tight text-slate-950">
-              Demo Concepts Included
-            </h3>
-            <p className="mt-3 max-w-3xl leading-7 text-slate-600">
-              These sample website concepts are included as simple reference links for the portfolio
-              styles that can be planned and built.
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {demoConcepts.map((concept) => (
-            concept.href ? (
-              <a
-                key={concept.title}
-                href={concept.href}
-                className="rounded-2xl border border-slate-200 bg-white p-4 font-bold text-slate-900 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-200 hover:text-sky-700 hover:shadow-lg"
-                aria-label={`View ${concept.title} demo concept`}
-              >
-                <span>{concept.title}</span>
-                {concept.status !== "Available" ? (
-                  <span className="mt-3 block w-fit rounded-full bg-amber-100 px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-amber-800">
-                    {concept.status}
-                  </span>
-                ) : null}
-              </a>
-            ) : (
-              <div
-                key={concept.title}
-                className="rounded-2xl border border-slate-200 bg-white p-4 font-bold text-slate-900 shadow-sm"
-              >
-                {concept.title}
-              </div>
-            )
-          ))}
         </div>
       </div>
 
