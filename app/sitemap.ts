@@ -8,8 +8,7 @@ const routes = [
   `${baseUrl}/#skills`,
   `${baseUrl}/#projects`,
   `${baseUrl}/#experience`,
-  `${baseUrl}/#certifications`,
-  `${baseUrl}/#resume`,
+  `${baseUrl}/#web-services`,
   `${baseUrl}/#contact`
 ];
 
