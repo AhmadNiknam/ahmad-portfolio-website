@@ -38,7 +38,8 @@ const demoConcepts = [
     href: "/samples/project-manager-consultant-portfolio"
   },
   {
-    title: "Newcomer Career Portfolio"
+    title: "Newcomer Career Portfolio",
+    href: "/samples/newcomer-career-portfolio"
   }
 ];
 
