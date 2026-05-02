@@ -20,12 +20,13 @@ export function Hero() {
             id="hero-title"
             className="max-w-[44rem] text-[clamp(2.25rem,9vw,3.05rem)] font-semibold leading-[1.03] tracking-[-0.05em] text-balance text-white sm:text-[clamp(2.9rem,6.2vw,3.45rem)] lg:text-[clamp(3.15rem,4.2vw,3.65rem)] xl:text-[3.85rem]"
           >
-            IT Support & Cloud Operations + Portfolio Website Services
+            IT Support & Cloud Operations with Portfolio Website Services
           </h1>
           <p className="mt-5 max-w-[40rem] text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
             I am an IT support and cloud operations professional based in Regina, Saskatchewan.
             Alongside my technical portfolio, I help professionals create clean, practical
-            portfolio websites that present their skills, projects, and career story clearly.
+            portfolio websites that present their skills, projects, experience, and career
+            direction clearly.
           </p>
           <div className="mt-6 flex flex-wrap gap-2.5">
             {heroBadges.map((badge) => (

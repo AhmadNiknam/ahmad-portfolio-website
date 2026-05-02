@@ -17,8 +17,8 @@ export const profileLinks = {
 
 export const heroBadges = [
   "AZ-104 Certified",
-  "Regina, SK",
-  "Portfolio Website Services"
+  "Microsoft 365",
+  "Network & Systems Support"
 ];
 
 export const skillGroups = [
