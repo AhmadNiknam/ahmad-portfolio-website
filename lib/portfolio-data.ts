@@ -100,6 +100,18 @@ export const experienceItems = [
     ]
   },
   {
+    role: "Remote IT Support Technician",
+    company: "Arain Fars Company",
+    location: "Remote",
+    period: "2023 - 2025",
+    summary:
+      "Provided remote support for Windows Server environments and core infrastructure services.",
+    highlights: [
+      "Troubleshot server, user access, connectivity, and service availability issues remotely.",
+      "Documented support activity and escalated infrastructure issues with clear context."
+    ]
+  },
+  {
     role: "IT Support & Systems Administrator",
     company: "Iranian Blood Transfusion Organization",
     location: "Multi-branch environment",
@@ -112,15 +124,16 @@ export const experienceItems = [
     ]
   },
   {
-    role: "Remote IT Support Technician",
-    company: "Arain Fars Company",
-    location: "Remote",
-    period: "2023 - 2025",
+    role: "Earlier IT Infrastructure & Network Support Experience",
+    company: "Earlier IT Roles",
+    location: "Iran",
+    period: "Before 2015",
     summary:
-      "Provided remote support for Windows Server environments and core infrastructure services.",
+      "Built foundational hands-on experience across Windows Server environments, networking, virtualization, backup operations, user support, and multi-site infrastructure support.",
     highlights: [
-      "Troubleshot server, user access, connectivity, and service availability issues remotely.",
-      "Documented support activity and escalated infrastructure issues with clear context."
+      "Supported server, network, and branch infrastructure operations across multi-site environments.",
+      "Worked with Windows Server, Active Directory, Cisco networking equipment, VMware, backup systems, and core infrastructure services.",
+      "Developed practical troubleshooting, documentation, and operational support experience before later systems administration roles."
     ]
   }
 ];
