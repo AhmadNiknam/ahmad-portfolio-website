@@ -25,8 +25,13 @@ export const skillGroups = [
   {
     title: "Cloud",
     icon: "AZ",
-    summary: "Microsoft cloud administration with a practical hybrid support mindset.",
-    skills: ["Microsoft Azure", "Hybrid Cloud", "Azure VM", "Identity"]
+    summary: "Azure administration and Microsoft cloud support with a practical hybrid mindset.",
+    skills: [
+      "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+      "Microsoft Azure",
+      "Azure VM",
+      "Identity"
+    ]
   },
   {
     title: "Infrastructure",
@@ -43,8 +48,8 @@ export const skillGroups = [
   {
     title: "Operations",
     icon: "OPS",
-    summary: "Service-focused habits for incidents, users, monitoring, and handoffs.",
-    skills: ["Incident Response", "Monitoring", "Documentation", "End User Support", "Service Desk"]
+    summary: "Service-focused habits for IT support, incidents, users, monitoring, and handoffs.",
+    skills: ["IT Support", "Incident Response", "Monitoring", "Documentation", "End User Support"]
   },
   {
     title: "Automation",

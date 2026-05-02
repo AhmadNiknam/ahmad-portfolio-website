@@ -80,7 +80,7 @@ export function Hero() {
             <div className="mt-4 rounded-[1.5rem] border border-white/[0.08] bg-slate-950/35 px-5 py-4 backdrop-blur">
               <p className="text-base font-semibold tracking-[-0.02em] text-white">Ahmad Niknam</p>
               <p className="mt-1 text-sm leading-6 text-slate-300">
-                IT Infrastructure Support | Azure Administrator
+                IT Support Specialist | Network & Systems Support
               </p>
             </div>
           </div>

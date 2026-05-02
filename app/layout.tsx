@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Ahmad Niknam — IT Portfolio & Portfolio Website Services",
   description:
-    "Professional IT portfolio of Ahmad Niknam, featuring infrastructure, cloud support, project coordination, technical projects, and portfolio website design services for professionals, students, researchers, job seekers, and newcomers.",
+    "Professional IT portfolio of Ahmad Niknam, featuring IT support, Microsoft 365, Windows Server, network and systems support, Azure administration, PowerShell automation, and secondary portfolio website services.",
   metadataBase: new URL("https://ahmadniknam.com"),
   keywords: [
     "Ahmad Niknam",
@@ -17,8 +17,11 @@ export const metadata: Metadata = {
     "Windows Server",
     "Active Directory",
     "Microsoft 365",
+    "Network and Systems Support",
     "Hybrid Cloud",
     "PowerShell",
+    "PowerShell Automation",
+    "AZ-104 Certified",
     "Regina Saskatchewan",
     "Canadian IT Professional",
     "Portfolio Website Services",
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ahmad Niknam — IT Portfolio & Portfolio Website Services",
     description:
-      "Professional IT portfolio of Ahmad Niknam, featuring infrastructure, cloud support, project coordination, technical projects, and portfolio website design services for professionals, students, researchers, job seekers, and newcomers.",
+      "Professional IT portfolio of Ahmad Niknam, featuring IT support, Microsoft 365, Windows Server, network and systems support, Azure administration, PowerShell automation, and secondary portfolio website services.",
     url: "https://ahmadniknam.com",
     siteName: "Ahmad Niknam Portfolio",
     images: [
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ahmad Niknam — IT Portfolio & Portfolio Website Services",
     description:
-      "Professional IT portfolio of Ahmad Niknam, featuring infrastructure, cloud support, project coordination, technical projects, and portfolio website design services for professionals, students, researchers, job seekers, and newcomers.",
+      "Professional IT portfolio of Ahmad Niknam, featuring IT support, Microsoft 365, Windows Server, network and systems support, Azure administration, PowerShell automation, and secondary portfolio website services.",
     images: ["/opengraph-image"]
   }
 };
