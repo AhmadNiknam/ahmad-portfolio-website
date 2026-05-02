@@ -26,7 +26,7 @@ Important current files:
 - `components/section.tsx` provides the shared section wrapper used across most homepage sections.
 - `components/footer.tsx` renders the footer.
 - `lib/portfolio-data.ts` stores navigation items, profile links, hero badges, skills, projects, experience, certifications, and resume highlights.
-- `public/profile.jpg` is used by the hero.
+- `public/profile-ahmad-2026.jpg` is used by the hero.
 - `public/favicon.svg` is used by metadata and browser icons.
 
 ## Recommended Integration Approach
