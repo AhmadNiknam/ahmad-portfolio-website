@@ -68,7 +68,7 @@ export function Hero() {
           <div className="relative rounded-[2.25rem] border border-white/[0.11] bg-white/[0.055] p-2.5 shadow-[0_28px_80px_rgba(2,8,23,0.42)] ring-1 ring-white/[0.05] backdrop-blur">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] bg-slate-900">
               <Image
-                src="/profile.jpg"
+                src="/publicprofile-ahmad-2026.JPG"
                 alt="Ahmad Niknam professional profile photo"
                 fill
                 sizes="(min-width: 1280px) 22.5rem, (min-width: 1024px) 21.5rem, (min-width: 640px) 22rem, calc(100vw - 3rem)"
