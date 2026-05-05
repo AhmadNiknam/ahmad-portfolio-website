@@ -15,11 +15,28 @@ export const profileLinks = {
   emailLabel: "contact@ahmadniknam.com"
 };
 
+export const heroEyebrow = "PERSONAL IT PORTFOLIO & WEB SERVICES";
+
+/** Line breaks tuned for the Hero headline layout */
+export const heroHeadlineLines = [
+  "Cloud Operations, IT Support,",
+  "and Premium Portfolio Websites"
+] as const;
+
 export const heroBadges = [
   "AZ-104 Certified",
   "Microsoft 365",
   "Network & Systems Support"
 ];
+
+export const heroProfileImageSrc = "/profile-ahmad-2026-v2.jpg";
+
+export const heroCard = {
+  name: "Ahmad Niknam",
+  role: "IT Support Specialist | Network & Systems Support",
+  location: "Regina, SK",
+  availability: "Available for opportunities"
+} as const;
 
 export const skillGroups = [
   {

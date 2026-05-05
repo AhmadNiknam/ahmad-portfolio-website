@@ -46,30 +46,27 @@ export function Header() {
   }, [updateActiveSection]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/[0.82] shadow-sm shadow-slate-950/[0.03] backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-slate-200/45 bg-white/[0.72] shadow-[0_8px_30px_-18px_rgba(15,23,42,0.12)] backdrop-blur-xl backdrop-saturate-150">
       <nav
-        className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-4 md:flex-row md:items-center md:justify-between"
+        className="mx-auto flex max-w-[88rem] flex-col gap-4 px-5 py-4 sm:px-8 md:flex-row md:items-center md:justify-between xl:px-12"
         aria-label="Primary navigation"
       >
         <a
           href="#hero"
-          className="group inline-flex items-center gap-3 text-sm font-bold uppercase tracking-[0.22em] text-slate-950"
+          className="text-[0.8125rem] font-bold uppercase tracking-[0.22em] text-slate-950 transition hover:text-slate-700"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-slate-950 text-[0.7rem] tracking-normal text-white shadow-lg shadow-slate-900/15 transition group-hover:bg-sky-600">
-            AN
-          </span>
-          <span>Ahmad Niknam</span>
+          AHMAD NIKNAM
         </a>
-        <div className="flex w-full items-center gap-2 overflow-x-auto rounded-full border border-slate-200 bg-white/70 p-1 md:w-auto md:overflow-visible">
+        <div className="flex w-full items-center gap-1 overflow-x-auto rounded-full border border-white/70 bg-white/45 p-1 shadow-[0_10px_36px_-22px_rgba(15,23,42,0.22),inset_0_1px_0_rgba(255,255,255,0.65)] backdrop-blur-xl backdrop-saturate-150 md:w-auto md:overflow-visible md:gap-0.5 md:pr-1 md:pl-1">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={() => setActiveSection(item.href.replace("#", ""))}
-              className={`shrink-0 rounded-full px-3 py-2 text-sm font-semibold transition ${
+              className={`shrink-0 rounded-full px-3 py-2 text-sm font-semibold transition md:px-3.5 ${
                 activeSection === item.href.replace("#", "")
-                  ? "bg-slate-950 text-white shadow-sm"
-                  : "text-slate-600 hover:bg-sky-50 hover:text-sky-700"
+                  ? "bg-gradient-to-b from-teal-100/95 to-cyan-100/85 text-teal-950 shadow-[0_0_0_1px_rgba(45,212,191,0.35),0_8px_26px_-14px_rgba(34,211,238,0.55)]"
+                  : "text-slate-600 hover:bg-white/55 hover:text-slate-900"
               }`}
             >
               {item.label}
