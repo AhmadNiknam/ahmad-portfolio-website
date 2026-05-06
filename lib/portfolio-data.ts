@@ -20,7 +20,7 @@ export const heroEyebrow = "PERSONAL IT PORTFOLIO & WEB SERVICES";
 /** Line breaks tuned for the Hero headline layout */
 export const heroHeadlineLines = [
   "Cloud Operations, IT Support,",
-  "and Premium Portfolio Websites"
+  "and Modern Portfolio Websites"
 ] as const;
 
 export const heroBadges = [
