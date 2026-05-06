@@ -127,7 +127,7 @@ export function Hero() {
       <div className="absolute -left-24 top-1/4 -z-10 h-[min(42rem,85vw)] w-[min(42rem,85vw)] rounded-full bg-gradient-to-br from-cyan-100/35 via-transparent to-transparent blur-3xl" />
       <div className="absolute -right-16 bottom-0 -z-10 h-[min(36rem,75vw)] w-[min(36rem,75vw)] rounded-full bg-gradient-to-tl from-teal-100/25 via-sky-50/20 to-transparent blur-3xl" />
 
-      <div className="relative mx-auto flex min-h-0 w-full max-w-[88rem] flex-col gap-12 px-5 pb-28 pt-10 sm:gap-14 sm:px-8 sm:pb-32 sm:pt-14 lg:min-h-[calc(100dvh-80px)] lg:flex-row lg:items-center lg:gap-x-16 lg:gap-y-10 lg:pb-28 lg:pt-20 xl:gap-x-24 xl:px-12 xl:pb-32 xl:pt-24">
+      <div className="relative mx-auto grid min-h-[calc(100svh-112px)] w-full max-w-[88rem] grid-cols-1 items-center gap-12 px-5 py-14 sm:min-h-[calc(100svh-88px)] sm:gap-14 sm:px-8 sm:py-16 lg:min-h-[calc(100svh-73px)] lg:grid-cols-[minmax(0,1fr)_minmax(360px,420px)] lg:gap-x-16 lg:gap-y-10 lg:py-12 xl:gap-x-24 xl:px-12 xl:py-14">
         <div className="order-2 flex min-w-0 flex-1 flex-col lg:order-1 lg:max-w-[52rem] animate-rise">
           <div className="mb-6 inline-flex w-fit max-w-full items-center rounded-full border border-slate-200/90 bg-white/70 px-3.5 py-2 shadow-[0_1px_0_rgba(255,255,255,0.85)_inset,0_8px_28px_-12px_rgba(15,23,42,0.12)] backdrop-blur-md sm:mb-7">
             <p className="text-[0.65rem] font-semibold uppercase leading-snug tracking-[0.14em] text-slate-700 sm:text-[0.7rem]">
@@ -197,7 +197,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="order-1 mx-auto flex w-full max-w-[21rem] shrink-0 items-center sm:max-w-[22.5rem] lg:order-2 lg:mx-0 lg:ml-auto lg:mr-0 lg:max-w-[min(24rem,38vw)] xl:max-w-[25rem] animate-float-in">
+        <div className="order-1 mx-auto flex w-full max-w-[21rem] shrink-0 items-center sm:max-w-[22.75rem] lg:order-2 lg:mx-0 lg:ml-auto lg:mr-0 lg:max-w-[26.25rem] xl:max-w-[26.5rem] animate-float-in">
           <div className="relative mx-auto">
             <div
               className="absolute -inset-6 -z-10 rounded-[2.15rem] bg-[radial-gradient(ellipse_at_50%_35%,rgba(45,212,191,0.16),transparent_55%),radial-gradient(ellipse_at_80%_80%,rgba(148,163,184,0.22),transparent_50%)] opacity-90 blur-2xl"
@@ -210,7 +210,7 @@ export function Hero() {
                     src={heroProfileImageSrc}
                     alt={`${heroCard.name} — IT Support Specialist`}
                     fill
-                    sizes="(min-width: 1280px) 25rem, (min-width: 1024px) 38vw, (min-width: 640px) 22.5rem, calc(100vw - 2.5rem)"
+                    sizes="(min-width: 1280px) 26.5rem, (min-width: 1024px) 26.25rem, (min-width: 640px) 22.75rem, calc(100vw - 2.5rem)"
                     priority
                     className="object-cover object-[center_18%] saturate-[0.97]"
                   />
