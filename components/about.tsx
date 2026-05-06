@@ -1,4 +1,5 @@
 import { Section } from "@/components/section";
+import { ds } from "@/lib/ds";
 
 export function About() {
   const strengths = [
@@ -31,35 +32,39 @@ export function About() {
       title="A dependable IT professional for support, infrastructure, cloud, and operations teams."
       description="Concise background for recruiters hiring IT Support Specialists, Systems Administrators, Azure Administrators, and Network & Systems Support professionals."
     >
-      <div className="reveal grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="relative overflow-hidden rounded-3xl bg-slate-950 p-8 text-white shadow-2xl shadow-slate-200 sm:p-10">
-          <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-sky-400/20 blur-3xl" />
-          <div className="relative">
-            <p className="text-lg leading-8 text-slate-200">
-              Ahmad Niknam is an IT Support Specialist with extensive hands-on experience in
-              Microsoft 365, Windows Server administration, Active Directory, network and systems
-              support, Azure administration, and technical operations.
+      <div className="reveal grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
+        <div className={ds.cardHighlight}>
+          <div
+            className="pointer-events-none absolute -right-24 -top-24 h-52 w-52 rounded-full bg-teal-200/25 blur-3xl"
+            aria-hidden
+          />
+          <div className="pointer-events-none absolute -bottom-20 -left-16 h-44 w-44 rounded-full bg-sky-200/20 blur-3xl" aria-hidden />
+          <div className="relative space-y-6">
+            <p className="text-[1.05rem] leading-[1.75] text-slate-700">
+              Ahmad Niknam is an IT Support Specialist with extensive hands-on experience in Microsoft 365,
+              Windows Server administration, Active Directory, network and systems support, Azure
+              administration, and technical operations.
             </p>
-            <p className="mt-6 text-lg leading-8 text-slate-200">
-              He has supported multi-site environments, end users, enterprise systems, and
-              operational continuity. He also builds PowerShell automation projects and
-              Azure-focused tools to improve visibility, reliability, and efficiency.
+            <p className="text-[1.05rem] leading-[1.75] text-slate-700">
+              He has supported multi-site environments, end users, enterprise systems, and operational
+              continuity. He also builds PowerShell automation projects and Azure-focused tools to improve
+              visibility, reliability, and efficiency.
             </p>
-            <p className="mt-6 text-lg leading-8 text-slate-200">
-              Based in Regina, Saskatchewan, he is available for IT support, infrastructure, cloud,
-              and operations opportunities.
+            <p className="text-[1.05rem] leading-[1.75] text-slate-700">
+              Based in Regina, Saskatchewan, he is available for IT support, infrastructure, cloud, and
+              operations opportunities.
             </p>
           </div>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-5">
           {strengths.map((item) => (
             <div
               key={item.title}
-              className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl hover:shadow-slate-200/70"
+              className={`${ds.card} ${ds.cardInteractive} group`}
             >
-              <div className="mb-5 h-1.5 w-12 rounded-full bg-sky-400 transition group-hover:w-16" />
-              <h3 className="text-lg font-bold text-slate-950">{item.title}</h3>
-              <p className="mt-3 leading-7 text-slate-600">{item.description}</p>
+              <div className="mb-4 h-1 w-10 rounded-full bg-gradient-to-r from-teal-400/90 via-teal-500/50 to-transparent transition-[width] duration-300 group-hover:w-14" />
+              <h3 className="text-lg font-semibold text-[var(--ds-color-heading)]">{item.title}</h3>
+              <p className="mt-3 leading-[1.7] text-slate-600">{item.description}</p>
             </div>
           ))}
         </div>

@@ -1,4 +1,5 @@
 import { Section } from "@/components/section";
+import { ds } from "@/lib/ds";
 import { profileLinks } from "@/lib/portfolio-data";
 
 const serviceAudiences = [
@@ -67,22 +68,23 @@ export function WebDesignServices() {
         {serviceAudiences.map((audience, index) => (
           <article
             key={audience.title}
-            className="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:border-sky-200 hover:shadow-2xl hover:shadow-slate-200/80 sm:min-h-80"
+            className={`${ds.card} group relative flex flex-col overflow-hidden rounded-[var(--ds-radius-card)] ${ds.cardInteractive} sm:min-h-[20rem]`}
           >
-            <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-sky-50 transition group-hover:bg-sky-100" />
-            <div className="relative mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-sm font-black text-white shadow-lg shadow-slate-950/15">
+            <div
+              className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-gradient-to-br from-teal-100/45 to-cyan-50/25 opacity-80 blur-2xl transition-opacity group-hover:opacity-100"
+              aria-hidden
+            />
+            <div className="relative mb-5 flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200/80 bg-white text-sm font-bold tracking-tight text-[var(--ds-color-heading)] shadow-[var(--ds-shadow-chip)]">
               0{index + 1}
             </div>
-            <h3 className="relative text-xl font-bold tracking-tight text-slate-950">
+            <h3 className="relative text-xl font-semibold tracking-tight text-[var(--ds-color-heading)]">
               {audience.title}
             </h3>
-            <p className="relative mt-4 flex-1 leading-7 text-slate-600">
-              {audience.description}
-            </p>
+            <p className="relative mt-4 flex-1 leading-[1.7] text-slate-600">{audience.description}</p>
             <div className="relative mt-6">
               <a
                 href={audience.href}
-                className="inline-flex min-h-11 items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-950 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50 hover:text-sky-700"
+                className={`${ds.btnSecondary} min-h-[44px] px-6 py-2.5 text-sm`}
                 aria-label={`${audience.actionLabel} for ${audience.title}`}
               >
                 {audience.actionLabel}
@@ -92,41 +94,43 @@ export function WebDesignServices() {
         ))}
       </div>
 
-      <div className="reveal mt-8 rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-8">
+      <div className={`${ds.card} reveal mt-8 sm:mt-10`}>
         <div>
-          <h3 className="text-2xl font-bold tracking-tight text-slate-950">
+          <h3 className="text-2xl font-semibold tracking-tight text-[var(--ds-color-heading)]">
             Simple Portfolio Website Process
           </h3>
-          <p className="mt-3 max-w-3xl leading-7 text-slate-600">
-            A simple planning and build process keeps the website focused, practical, and easy to
-            review before publishing.
+          <p className="mt-3 max-w-3xl leading-[1.7] text-slate-600">
+            A simple planning and build process keeps the website focused, practical, and easy to review
+            before publishing.
           </p>
         </div>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {processSteps.map((step, index) => (
             <article
               key={step.title}
-              className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm"
+              className="rounded-2xl border border-slate-200/85 bg-gradient-to-b from-slate-50/95 to-white/90 p-5 shadow-[var(--ds-shadow-chip)]"
             >
-              <p className="text-sm font-black uppercase tracking-[0.18em] text-sky-700">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-teal-800">
                 Step {index + 1}
               </p>
-              <h4 className="mt-3 text-lg font-bold tracking-tight text-slate-950">
+              <h4 className="mt-3 text-lg font-semibold tracking-tight text-[var(--ds-color-heading)]">
                 {step.title}
               </h4>
-              <p className="mt-3 leading-7 text-slate-600">{step.description}</p>
+              <p className="mt-3 leading-[1.7] text-slate-600">{step.description}</p>
             </article>
           ))}
         </div>
       </div>
 
-      <div className="reveal mt-8 overflow-hidden rounded-3xl bg-slate-950 p-7 text-white shadow-2xl shadow-slate-200 sm:p-8">
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h3 className="text-2xl font-bold tracking-tight">
+      <div className={`${ds.surfaceDark} reveal mt-8 sm:mt-10`}>
+        <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-teal-400/12 blur-3xl" aria-hidden />
+        <div className="absolute -bottom-24 -left-16 h-48 w-48 rounded-full bg-sky-400/10 blur-3xl" aria-hidden />
+        <div className="relative flex flex-col gap-7 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-2xl">
+            <h3 className="text-2xl font-semibold tracking-tight text-white">
               Interested in a simple professional portfolio website?
             </h3>
-            <p className="mt-3 max-w-3xl leading-7 text-slate-200">
+            <p className="mt-3 leading-[1.7] text-slate-200/95">
               Connect with me on LinkedIn or contact me to discuss your idea.
             </p>
           </div>
@@ -134,7 +138,7 @@ export function WebDesignServices() {
             href={profileLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-full shrink-0 justify-center rounded-full bg-sky-400 px-6 py-3 text-sm font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-sky-300 sm:w-auto"
+            className={`${ds.btnOnDarkPrimary} w-full shrink-0 md:w-auto`}
             aria-label="Connect with Ahmad Niknam on LinkedIn"
           >
             Connect on LinkedIn

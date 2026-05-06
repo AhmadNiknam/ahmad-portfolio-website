@@ -137,7 +137,7 @@ export function Hero() {
 
           <h1
             id="hero-title"
-            className="max-w-[46rem] text-pretty font-semibold tracking-[-0.035em] text-[#1a2332] text-[clamp(2rem,4.2vw+1rem,3.35rem)] leading-[1.12] sm:leading-[1.1]"
+            className="max-w-[46rem] text-pretty font-semibold tracking-[-0.035em] text-[var(--ds-color-heading)] text-[clamp(2rem,4.2vw+1rem,3.35rem)] leading-[1.12] sm:leading-[1.1]"
           >
             {heroHeadlineLines.map((line, i) => (
               <span key={line}>
@@ -173,13 +173,13 @@ export function Hero() {
           <div className="mt-8 flex min-w-0 flex-col gap-3 sm:mt-9 md:flex-row md:flex-wrap md:items-center md:gap-x-3 md:gap-y-3">
             <a
               href="#projects"
-              className="inline-flex min-h-[44px] shrink-0 items-center justify-center rounded-full bg-[#1e2a3b] px-7 py-3 text-center text-sm font-semibold text-white shadow-[0_12px_36px_-12px_rgba(34,211,238,0.55),0_14px_38px_-18px_rgba(15,23,42,0.55)] ring-1 ring-white/10 transition hover:bg-[#243449] hover:shadow-[0_14px_40px_-10px_rgba(34,211,238,0.45)] focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f4f6f9]"
+              className="inline-flex min-h-[44px] shrink-0 items-center justify-center rounded-full bg-[var(--ds-cta-primary)] px-7 py-3 text-center text-sm font-semibold text-white shadow-[var(--ds-shadow-primary)] ring-1 ring-white/10 transition hover:bg-[var(--ds-cta-primary-hover)] hover:shadow-[var(--ds-shadow-primary-hover)] focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--ds-ring-offset)]"
             >
               View IT Projects
             </a>
             <a
               href="#web-services"
-              className="inline-flex min-h-[44px] shrink-0 items-center justify-center rounded-full border border-slate-300/95 bg-white px-7 py-3 text-center text-sm font-semibold text-[#1e293b] shadow-[0_8px_26px_-18px_rgba(15,23,42,0.28)] transition hover:border-slate-400 hover:bg-slate-50/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f4f6f9]"
+              className="inline-flex min-h-[44px] shrink-0 items-center justify-center rounded-full border border-slate-300/95 bg-white px-7 py-3 text-center text-sm font-semibold text-[var(--ds-color-heading)] shadow-[var(--ds-shadow-secondary)] transition hover:border-slate-400 hover:bg-slate-50/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--ds-ring-offset)]"
             >
               Portfolio Website Services
             </a>
@@ -187,7 +187,7 @@ export function Hero() {
               href={profileLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-[44px] items-center gap-1 self-start rounded-lg px-1 py-2 text-sm font-semibold text-slate-600 underline-offset-4 transition hover:text-teal-700 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f4f6f9] md:self-center md:px-2"
+              className="inline-flex min-h-[44px] items-center gap-1 self-start rounded-lg px-1 py-2 text-sm font-semibold text-slate-600 underline-offset-4 transition hover:text-teal-700 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--ds-ring-offset)] md:self-center md:px-2"
             >
               Connect on LinkedIn
               <span aria-hidden="true" className="text-base font-normal">
@@ -218,7 +218,7 @@ export function Hero() {
                 </div>
 
                 <div className="text-center">
-                  <h2 className="text-[1.35rem] font-semibold tracking-[-0.02em] text-[#1a2332]">
+                  <h2 className="text-[1.35rem] font-semibold tracking-[-0.02em] text-[var(--ds-color-heading)]">
                     {heroCard.name}
                   </h2>
                   <p className="mt-1.5 text-sm leading-relaxed text-slate-500">{heroCard.role}</p>
