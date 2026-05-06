@@ -20,12 +20,12 @@ export function Experience() {
                   <h3 className="text-xl font-semibold tracking-tight text-[var(--ds-color-heading)]">
                     {item.role}
                   </h3>
-                  <p className="mt-2 font-semibold text-slate-700">{item.company}</p>
+                  <p className="mt-2 font-semibold text-[var(--ds-color-muted)]">{item.company}</p>
                   <p className="mt-1 text-sm text-slate-500">{item.location}</p>
                 </div>
                 <span className={ds.datePill}>{item.period}</span>
               </div>
-              <p className="mt-5 leading-[1.7] text-slate-600">{item.summary}</p>
+              <p className="mt-5 leading-[1.7] text-[var(--ds-color-muted)]">{item.summary}</p>
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {item.highlights.map((highlight) => (
                   <li key={highlight} className={ds.insetSurface}>

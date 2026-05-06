@@ -22,12 +22,12 @@ export function Skills() {
             />
             <div className={ds.skillIconPlate}>{group.icon}</div>
             <h3 className="text-xl font-semibold text-[var(--ds-color-heading)]">{group.title}</h3>
-            <p className="mt-3 leading-[1.7] text-slate-600">{group.summary}</p>
+            <p className="mt-3 leading-[1.7] text-[var(--ds-color-muted)]">{group.summary}</p>
             <ul className="mt-5 space-y-2.5">
               {group.skills.map((skill) => (
                 <li
                   key={skill}
-                  className="flex items-start gap-2.5 text-sm font-medium leading-snug text-slate-700"
+                  className="flex items-start gap-2.5 text-sm font-medium leading-snug text-[var(--ds-color-muted)]"
                 >
                   <span className={`${ds.listBullet} mt-0.5`} aria-hidden="true">
                     +

@@ -31,7 +31,7 @@ export function Projects() {
             <h3 className="relative text-xl font-semibold tracking-tight text-[var(--ds-color-heading)] sm:text-[1.35rem]">
               {project.title}
             </h3>
-            <p className="relative mt-4 leading-[1.7] text-slate-600">{project.description}</p>
+            <p className="relative mt-4 leading-[1.7] text-[var(--ds-color-muted)]">{project.description}</p>
             <p className={`${ds.insetSurface} relative mt-5`}>{project.impact}</p>
             <div className="relative mt-6 flex flex-wrap gap-2">
               {project.tags.map((tag) => (

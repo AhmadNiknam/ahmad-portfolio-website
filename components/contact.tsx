@@ -11,9 +11,9 @@ export function Contact() {
       description="You can contact me for IT, cloud, infrastructure, and project-related opportunities, or to discuss a simple professional portfolio website for your career, research, or freelance profile."
     >
       <div className="reveal grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:gap-8">
-        <div className={`${ds.card} ${ds.cardInteractive} shadow-[var(--ds-shadow-elevated)]`}>
+        <div className={ds.cardContact}>
           <h3 className="text-xl font-semibold text-[var(--ds-color-heading)]">Based in Regina, Saskatchewan</h3>
-          <p className="mt-4 leading-[1.7] text-slate-600">
+          <p className="mt-4 leading-[1.7] text-[var(--ds-color-muted)]">
             Ahmad is available for conversations with employers, teams, and project contacts about IT support,
             infrastructure, Azure administration, network support, systems administration, and technical
             operations opportunities in Canada. He also discusses simple portfolio website projects for

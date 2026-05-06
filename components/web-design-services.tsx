@@ -74,13 +74,11 @@ export function WebDesignServices() {
               className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-gradient-to-br from-teal-100/45 to-cyan-50/25 opacity-80 blur-2xl transition-opacity group-hover:opacity-100"
               aria-hidden
             />
-            <div className="relative mb-5 flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200/80 bg-white text-sm font-bold tracking-tight text-[var(--ds-color-heading)] shadow-[var(--ds-shadow-chip)]">
-              0{index + 1}
-            </div>
+            <div className={`relative mb-5 ${ds.iconPlate}`}>0{index + 1}</div>
             <h3 className="relative text-xl font-semibold tracking-tight text-[var(--ds-color-heading)]">
               {audience.title}
             </h3>
-            <p className="relative mt-4 flex-1 leading-[1.7] text-slate-600">{audience.description}</p>
+            <p className="relative mt-4 flex-1 leading-[1.7] text-[var(--ds-color-muted)]">{audience.description}</p>
             <div className="relative mt-6">
               <a
                 href={audience.href}
@@ -99,24 +97,21 @@ export function WebDesignServices() {
           <h3 className="text-2xl font-semibold tracking-tight text-[var(--ds-color-heading)]">
             Simple Portfolio Website Process
           </h3>
-          <p className="mt-3 max-w-3xl leading-[1.7] text-slate-600">
+          <p className="mt-3 max-w-3xl leading-[1.7] text-[var(--ds-color-muted)]">
             A simple planning and build process keeps the website focused, practical, and easy to review
             before publishing.
           </p>
         </div>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {processSteps.map((step, index) => (
-            <article
-              key={step.title}
-              className="rounded-2xl border border-slate-200/85 bg-gradient-to-b from-slate-50/95 to-white/90 p-5 shadow-[var(--ds-shadow-chip)]"
-            >
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-teal-800">
+            <article key={step.title} className={ds.cardNested}>
+              <p className="text-[0.65rem] font-semibold uppercase leading-snug tracking-[0.14em] text-[var(--ds-color-muted)]">
                 Step {index + 1}
               </p>
               <h4 className="mt-3 text-lg font-semibold tracking-tight text-[var(--ds-color-heading)]">
                 {step.title}
               </h4>
-              <p className="mt-3 leading-[1.7] text-slate-600">{step.description}</p>
+              <p className="mt-3 leading-[1.7] text-[var(--ds-color-muted)]">{step.description}</p>
             </article>
           ))}
         </div>

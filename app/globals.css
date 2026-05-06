@@ -6,6 +6,8 @@
   --background: #f4f6f9;
   --foreground: #0f172a;
   --ds-color-heading: #1a2332;
+  /* Body / supporting copy — gray-blue aligned with Hero paragraphs */
+  --ds-color-muted: #475569;
   --ds-color-surface-dark: #0f1722;
   --ds-cta-primary: #1e2a3b;
   --ds-cta-primary-hover: #243449;
@@ -14,19 +16,24 @@
   --ds-radius-card: 1.5rem;
   --ds-radius-hero-frame: 1.85rem;
 
-  /* Shadows — soft, modern (Hero retains stronger local shadows) */
+  /* Shadows — soft, low-opacity slate bases + subtle aqua/teal accents where emphasis matters */
   --ds-shadow-eyebrow: 0 1px 0 rgb(255 255 255 / 0.85) inset, 0 6px 22px -14px rgb(15 23 42 / 0.1);
-  --ds-shadow-chip: 0 4px 18px -12px rgb(15 23 42 / 0.14), 0 1px 0 rgb(255 255 255 / 0.85) inset;
-  --ds-shadow-card: 0 10px 34px -22px rgb(15 23 42 / 0.12), 0 4px 14px -8px rgb(15 23 42 / 0.06);
-  --ds-shadow-card-hover: 0 18px 46px -24px rgb(15 23 42 / 0.14), 0 8px 22px -12px rgb(15 23 42 / 0.08);
-  --ds-shadow-elevated: 0 20px 50px -28px rgb(15 23 42 / 0.16), 0 10px 26px -18px rgb(15 23 42 / 0.1);
-  --ds-shadow-secondary: 0 8px 26px -18px rgb(15 23 42 / 0.2);
-  --ds-shadow-primary: 0 12px 36px -12px rgb(34 211 238 / 0.45), 0 14px 38px -18px rgb(15 23 42 / 0.45);
-  --ds-shadow-primary-hover: 0 14px 40px -10px rgb(34 211 238 / 0.38);
-  --ds-shadow-icon: 0 10px 26px -16px rgb(15 23 42 / 0.22);
-  --ds-shadow-timeline: 0 8px 22px -12px rgb(15 118 110 / 0.22);
-  --ds-shadow-dark-panel: 0 28px 64px -32px rgb(15 23 42 / 0.55), 0 14px 40px -22px rgb(34 211 238 / 0.12);
-  --ds-shadow-light-pill: 0 12px 32px -16px rgb(15 23 42 / 0.35);
+  --ds-shadow-chip: 0 4px 18px -12px rgb(15 23 42 / 0.12), 0 1px 0 rgb(255 255 255 / 0.85) inset;
+  --ds-shadow-card: 0 10px 34px -22px rgb(15 23 42 / 0.11), 0 4px 14px -8px rgb(15 23 42 / 0.055);
+  --ds-shadow-card-hover: 0 18px 46px -24px rgb(15 23 42 / 0.13), 0 8px 22px -12px rgb(15 23 42 / 0.075);
+  --ds-shadow-elevated: 0 20px 50px -28px rgb(15 23 42 / 0.14), 0 10px 26px -18px rgb(15 23 42 / 0.085);
+  --ds-shadow-elevated-hover: 0 26px 56px -26px rgb(15 23 42 / 0.16), 0 12px 30px -16px rgb(15 23 42 / 0.095);
+  --ds-shadow-secondary: 0 8px 26px -18px rgb(15 23 42 / 0.13);
+  --ds-shadow-primary: 0 12px 36px -12px rgb(34 211 238 / 0.38), 0 14px 38px -18px rgb(15 23 42 / 0.38);
+  --ds-shadow-primary-hover: 0 14px 40px -10px rgb(34 211 238 / 0.32);
+  --ds-shadow-icon: 0 10px 26px -16px rgb(15 23 42 / 0.18);
+  --ds-shadow-timeline: 0 8px 22px -12px rgb(15 118 110 / 0.18);
+  --ds-shadow-dark-panel: 0 26px 58px -30px rgb(15 23 42 / 0.38), 0 12px 36px -20px rgb(34 211 238 / 0.08);
+  --ds-shadow-light-pill: 0 12px 32px -16px rgb(15 23 42 / 0.26);
+  /* Shell chrome — aligns header/nav with section surfaces */
+  --ds-shadow-header: 0 8px 30px -18px rgb(15 23 42 / 0.09);
+  --ds-shadow-nav-shell: 0 10px 32px -20px rgb(15 23 42 / 0.11), inset 0 1px 0 rgb(255 255 255 / 0.72);
+  --ds-shadow-nav-active: 0 0 0 1px rgb(45 212 191 / 0.28), 0 6px 22px -14px rgb(15 23 42 / 0.07);
 
   --section-scroll-offset: 144px;
 }
