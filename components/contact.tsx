@@ -8,16 +8,17 @@ export function Contact() {
       id="contact"
       eyebrow="Contact"
       title="Open to IT opportunities and portfolio website conversations."
-      description="You can contact me for IT, cloud, infrastructure, and project-related opportunities, or to discuss a simple professional portfolio website for your career, research, or freelance profile."
+      description="Open to IT support, systems and network support, cloud operations, practical automation, and web systems project conversations."
     >
       <div className="reveal grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:gap-8">
         <div className={ds.cardContact}>
           <h3 className="text-xl font-semibold text-[var(--ds-color-heading)]">Based in Regina, Saskatchewan</h3>
           <p className="mt-4 leading-[1.7] text-[var(--ds-color-muted)]">
             Ahmad is available for conversations with employers, teams, and project contacts about IT support,
-            infrastructure, Azure administration, network support, systems administration, and technical
-            operations opportunities in Canada. He also discusses simple portfolio website projects for
-            professionals, students, researchers, newcomers, consultants, and freelancers.
+            systems and network support, Azure administration, cloud operations, practical automation, and
+            technical operations opportunities in Canada. He also discusses practical web systems and simple
+            portfolio website projects for professionals, students, researchers, newcomers, consultants, and
+            freelancers.
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             <div className={ds.insetSurface}>
@@ -38,8 +39,9 @@ export function Contact() {
           <div className="relative">
             <h3 className="text-2xl font-semibold tracking-tight text-white">Connect professionally</h3>
             <p className="mt-4 max-w-xl leading-[1.7] text-slate-200/95">
-              LinkedIn is the best place to start a professional conversation about IT support, infrastructure
-              administration, Azure operations, practical automation work, or portfolio website design services.
+              LinkedIn is the best place to start a professional conversation about IT support, systems and
+              network support, cloud operations, practical automation, web systems projects, or portfolio
+              website services.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a

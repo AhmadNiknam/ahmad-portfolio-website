@@ -6,22 +6,22 @@ export function About() {
     {
       title: "IT & Systems Support",
       description:
-        "IT support across Windows Server, Active Directory, Microsoft 365, end users, monitoring, and daily technical operations."
+        "Hands-on support across Microsoft 365, Windows Server, Active Directory, end users, monitoring, and daily technical operations."
     },
     {
       title: "Network & Azure Administration",
       description:
-        "Practical network and systems support across on-prem environments, Azure resources, endpoints, and multi-site operations."
+        "Practical administration across Azure, Intune, DNS, DHCP, VPN, endpoints, connectivity, and multi-site support needs."
     },
     {
       title: "Practical Automation",
       description:
-        "PowerShell automation and Azure-focused tools that improve visibility, reliability, reporting, and repeatable checks."
+        "PowerShell automation, reporting, documentation, and repeatable checks that improve support visibility and reliability."
     },
     {
-      title: "Reliable Service",
+      title: "Web Systems Projects",
       description:
-        "Calm troubleshooting, clear documentation, and a support mindset built around uptime and continuity."
+        "Support for secure web portals, admin workflows, cloud deployment, documentation, and practical user-facing systems."
     }
   ];
 
@@ -30,7 +30,7 @@ export function About() {
       id="about"
       eyebrow="About"
       title="A dependable IT professional for support, infrastructure, cloud, and operations teams."
-      description="Concise background for recruiters hiring IT Support Specialists, Systems Administrators, Azure Administrators, and Network & Systems Support professionals."
+      description="Concise background for IT support, systems and network support, Azure administration, and practical web systems project conversations."
     >
       <div className="reveal grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
         <div className={ds.cardHighlight}>
@@ -41,18 +41,18 @@ export function About() {
           <div className="pointer-events-none absolute -bottom-20 -left-16 h-44 w-44 rounded-full bg-sky-200/20 blur-3xl" aria-hidden />
           <div className="relative space-y-6">
             <p className={ds.bodyMuted}>
-              Ahmad Niknam is an IT Support Specialist with extensive hands-on experience in Microsoft 365,
-              Windows Server administration, Active Directory, network and systems support, Azure
-              administration, and technical operations.
+              Ahmad Niknam is an IT Support Specialist with hands-on experience across Microsoft 365,
+              Windows Server administration, Active Directory, DNS, DHCP, VPN, network and systems support,
+              Azure administration, and technical operations.
             </p>
             <p className={ds.bodyMuted}>
-              He has supported multi-site environments, end users, enterprise systems, and operational
-              continuity. He also builds PowerShell automation projects and Azure-focused tools to improve
-              visibility, reliability, and efficiency.
+              He has supported remote and multi-site environments, documented solutions, and helped maintain
+              reliable IT services through practical troubleshooting and clear communication.
             </p>
             <p className={ds.bodyMuted}>
-              Based in Regina, Saskatchewan, he is available for IT support, infrastructure, cloud, and
-              operations opportunities.
+              In addition to his systems and support background, Ahmad supports web systems projects where IT
+              operations, secure configuration, documentation, user workflows, and cloud-based deployment are
+              important.
             </p>
           </div>
         </div>

@@ -7,8 +7,8 @@ export function Projects() {
     <Section
       id="projects"
       eyebrow="Projects"
-      title="Portfolio projects built around real infrastructure support problems."
-      description="Focused automation and reporting projects that demonstrate PowerShell, Azure, Microsoft 365, and troubleshooting judgment."
+      title="Portfolio projects built around IT support, operations, and secure web systems."
+      description="Focused automation, reporting, and web systems projects that demonstrate PowerShell, Azure, Microsoft 365, troubleshooting judgment, and secure deployment support."
     >
       <div className="reveal grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
         {projects.map((project, index) => (
@@ -26,13 +26,23 @@ export function Projects() {
             />
             <div className="relative mb-6 flex items-center justify-between gap-3">
               <div className={ds.iconPlate}>0{index + 1}</div>
-              <span className={`${ds.chip} ${ds.chipDense}`}>Portfolio project</span>
+              <span className={`${ds.chip} ${ds.chipDense}`}>{project.status ?? "Portfolio project"}</span>
             </div>
             <h3 className="relative text-xl font-semibold tracking-tight text-[var(--ds-color-heading)] sm:text-[1.35rem]">
               {project.title}
             </h3>
+            {(project.date || project.associatedWith) ? (
+              <p className="relative mt-2 text-sm font-semibold text-slate-500">
+                {[project.date, project.associatedWith].filter(Boolean).join(" · ")}
+              </p>
+            ) : null}
             <p className="relative mt-4 leading-[1.7] text-[var(--ds-color-muted)]">{project.description}</p>
             <p className={`${ds.insetSurface} relative mt-5`}>{project.impact}</p>
+            {project.contribution ? (
+              <p className="relative mt-4 text-sm leading-[1.7] text-[var(--ds-color-muted)]">
+                {project.contribution}
+              </p>
+            ) : null}
             <div className="relative mt-6 flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <span key={tag} className={ds.tag}>
@@ -40,17 +50,19 @@ export function Projects() {
                 </span>
               ))}
             </div>
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${ds.btnPrimary} relative mt-auto w-fit`}
-            >
-              View on GitHub
-              <span aria-hidden="true" className="ml-1.5 font-normal">
-                →
-              </span>
-            </a>
+            {project.githubUrl ? (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${ds.btnPrimary} relative mt-auto w-fit`}
+              >
+                View on GitHub
+                <span aria-hidden="true" className="ml-1.5 font-normal">
+                  →
+                </span>
+              </a>
+            ) : null}
           </article>
         ))}
       </div>

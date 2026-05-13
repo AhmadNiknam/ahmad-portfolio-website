@@ -8,9 +8,9 @@ export function Skills() {
       id="skills"
       eyebrow="Skills"
       title="Core technical strengths grouped for infrastructure and support roles."
-      description="Recruiter-friendly skill areas across cloud, infrastructure, networking, operations, and automation."
+      description="Recruiter-friendly skill areas across cloud, infrastructure, networking, operations, automation, and practical web systems projects."
     >
-      <div className="reveal grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+      <div className="reveal grid gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
         {skillGroups.map((group) => (
           <article
             key={group.title}

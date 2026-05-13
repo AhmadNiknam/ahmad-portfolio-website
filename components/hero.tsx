@@ -153,7 +153,7 @@ export function Hero() {
 
           <p className="mt-6 max-w-[40rem] text-[0.95rem] leading-[1.65] text-slate-600 sm:mt-7 sm:text-[1.05rem] sm:leading-[1.7]">
             I am an IT support and cloud operations professional based in Regina, Saskatchewan.
-            Alongside my technical portfolio, I build clean, practical{" "}
+            Alongside my technical portfolio, I support practical web systems projects and build clean{" "}
             <strong className="font-semibold text-slate-800">portfolio websites</strong> that help
             professionals present their skills, projects, and experience clearly.
           </p>

@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ahmad Niknam — IT Portfolio & Portfolio Website Services",
+  title: "Ahmad Niknam | IT Support, Systems & Network Support, Cloud Operations",
   description:
-    "Professional IT portfolio of Ahmad Niknam, featuring IT support, Microsoft 365, Windows Server, network and systems support, Azure administration, PowerShell automation, and secondary portfolio website services.",
+    "Portfolio of Ahmad Niknam, an IT Support Specialist focused on Microsoft 365, Windows Server, network and systems support, Azure administration, PowerShell automation, and practical web systems projects.",
   metadataBase: new URL("https://ahmadniknam.com"),
   keywords: [
     "Ahmad Niknam",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     shortcut: ["/favicon.svg"]
   },
   openGraph: {
-    title: "Ahmad Niknam — IT Portfolio & Portfolio Website Services",
+    title: "Ahmad Niknam | IT Support, Systems & Network Support, Cloud Operations",
     description:
-      "Professional IT portfolio of Ahmad Niknam, featuring IT support, Microsoft 365, Windows Server, network and systems support, Azure administration, PowerShell automation, and secondary portfolio website services.",
+      "Portfolio of Ahmad Niknam, an IT Support Specialist focused on Microsoft 365, Windows Server, network and systems support, Azure administration, PowerShell automation, and practical web systems projects.",
     url: "https://ahmadniknam.com",
     siteName: "Ahmad Niknam Portfolio",
     images: [
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmad Niknam — IT Portfolio & Portfolio Website Services",
+    title: "Ahmad Niknam | IT Support, Systems & Network Support, Cloud Operations",
     description:
-      "Professional IT portfolio of Ahmad Niknam, featuring IT support, Microsoft 365, Windows Server, network and systems support, Azure administration, PowerShell automation, and secondary portfolio website services.",
+      "Portfolio of Ahmad Niknam, an IT Support Specialist focused on Microsoft 365, Windows Server, network and systems support, Azure administration, PowerShell automation, and practical web systems projects.",
     images: ["/opengraph-image"]
   }
 };

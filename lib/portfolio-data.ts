@@ -40,13 +40,14 @@ export const heroCard = {
 
 export const skillGroups = [
   {
-    title: "Cloud",
+    title: "Cloud / Azure",
     icon: "AZ",
-    summary: "Azure administration and Microsoft cloud support with a practical hybrid mindset.",
+    summary: "Microsoft cloud administration and support across Azure, Microsoft 365, and endpoint services.",
     skills: [
       "Microsoft Certified: Azure Administrator Associate (AZ-104)",
       "Microsoft Azure",
-      "Azure VM",
+      "Microsoft 365",
+      "Intune",
       "Identity"
     ]
   },
@@ -60,23 +61,52 @@ export const skillGroups = [
     title: "Networking",
     icon: "NET",
     summary: "Structured troubleshooting across connectivity, segmentation, and access paths.",
-    skills: ["VLAN", "VPN", "Routing", "Switching", "Troubleshooting"]
+    skills: ["Network & Systems Support", "VPN", "Routing", "Switching", "Connectivity"]
   },
   {
     title: "Operations",
     icon: "OPS",
     summary: "Service-focused habits for IT support, incidents, users, monitoring, and handoffs.",
-    skills: ["IT Support", "Incident Response", "Monitoring", "Documentation", "End User Support"]
+    skills: ["IT Support", "Troubleshooting", "Documentation", "End User Support", "Secure Configuration"]
   },
   {
     title: "Automation",
     icon: "PS",
     summary: "Lightweight automation and reporting for repeatable support workflows.",
-    skills: ["PowerShell", "Microsoft Graph", "GitHub Actions", "Reporting"]
+    skills: ["PowerShell Automation", "Microsoft Graph", "GitHub Actions", "Reporting"]
+  },
+  {
+    title: "Web Systems Projects",
+    icon: "WEB",
+    summary: "Practical portal and deployment support where IT operations, documentation, and secure workflows matter.",
+    skills: ["Next.js", "Supabase", "Vercel", "GitHub", "Admin Workflow"]
   }
 ];
 
 export const projects = [
+  {
+    title: "Web Portal and Admin System - University of Regina",
+    date: "Feb 2026 - Present",
+    associatedWith: "University of Regina",
+    status: "In progress",
+    description:
+      "Ongoing part-time web systems project for a University of Regina research group, repositioned as an industry-focused consulting and R&D platform with a supporting academic pathway.",
+    impact:
+      "Supports planning, design, development, testing, deployment, and documentation for a secure public website and admin portal covering consultation requests, collaboration inquiries, application workflows, private document access, and administrative review.",
+    contribution:
+      "Work includes translating stakeholder requirements into website features, user workflows, admin dashboard functions, and implementation tasks, plus Supabase configuration, Row Level Security validation, private storage, signed document access, role-based admin controls, MFA-based admin access, and Vercel deployment support.",
+    tags: [
+      "Next.js",
+      "React",
+      "Supabase",
+      "Vercel",
+      "GitHub",
+      "Resend",
+      "Secure Configuration",
+      "Admin Workflow",
+      "Documentation"
+    ]
+  },
   {
     title: "Server Health Sentinel",
     description:
@@ -104,6 +134,21 @@ export const projects = [
 ];
 
 export const experienceItems = [
+  {
+    role: "IT Project & Web Systems Coordinator - Secure Portal & Admin Systems",
+    company: "University of Regina",
+    location: "Regina, Saskatchewan, Canada - Hybrid",
+    period: "Feb 2026 - Present",
+    summary:
+      "Permanent part-time role coordinating and supporting the planning, development, testing, deployment, and documentation of a secure web portal and admin review system for a University of Regina research group.",
+    highlights: [
+      "Translate stakeholder requirements into website features, user workflows, admin dashboard functions, and implementation tasks.",
+      "Support consultation requests, application workflows, document submission, admin review activities, and email notifications.",
+      "Configure and validate Supabase tables, Row Level Security policies, private storage, signed document access, and role-based admin controls.",
+      "Support secure deployment with Next.js, Supabase, Vercel, GitHub, protected routes, environment-based configuration, and MFA-based admin access.",
+      "Test local and production releases, troubleshoot deployment issues, validate Vercel updates, and maintain GitHub documentation and technical records."
+    ]
+  },
   {
     role: "IT Support Trainee",
     company: "Saskatchewan Polytechnic",
