@@ -85,23 +85,21 @@ export const skillGroups = [
 
 export const projects = [
   {
-    title: "Web Portal and Admin System - University of Regina",
+    title: "Secure Web Portal & Admin System",
     date: "Feb 2026 - Present",
     associatedWith: "University of Regina",
-    status: "In progress",
+    status: "In Progress",
     description:
-      "Ongoing part-time web systems project for a University of Regina research group, repositioned as an industry-focused consulting and R&D platform with a supporting academic pathway.",
+      "Ongoing part-time web systems project supporting a secure public website and admin review portal for a University of Regina research group.",
     impact:
-      "Supports planning, design, development, testing, deployment, and documentation for a secure public website and admin portal covering consultation requests, collaboration inquiries, application workflows, private document access, and administrative review.",
+      "Supports consultation requests, application workflows, private document access, admin review steps, status updates, and secure deployment practices.",
     contribution:
-      "Work includes translating stakeholder requirements into website features, user workflows, admin dashboard functions, and implementation tasks, plus Supabase configuration, Row Level Security validation, private storage, signed document access, role-based admin controls, MFA-based admin access, and Vercel deployment support.",
+      "Work includes translating stakeholder requirements into structured features and workflows, supporting Supabase configuration, Row Level Security validation, private storage setup, role-based admin controls, MFA-based access, Vercel deployment, testing, and technical documentation.",
     tags: [
       "Next.js",
-      "React",
       "Supabase",
       "Vercel",
       "GitHub",
-      "Resend",
       "Secure Configuration",
       "Admin Workflow",
       "Documentation"
@@ -135,18 +133,17 @@ export const projects = [
 
 export const experienceItems = [
   {
-    role: "IT Project & Web Systems Coordinator - Secure Portal & Admin Systems",
+    role: "IT Project Coordinator - Secure Web Portal & Admin Systems",
     company: "University of Regina",
     location: "Regina, Saskatchewan, Canada - Hybrid",
     period: "Feb 2026 - Present",
     summary:
-      "Permanent part-time role coordinating and supporting the planning, development, testing, deployment, and documentation of a secure web portal and admin review system for a University of Regina research group.",
+      "Part-time role supporting the planning, testing, deployment, documentation, and secure configuration of a web portal and admin review system for a University of Regina research group.",
     highlights: [
-      "Translate stakeholder requirements into website features, user workflows, admin dashboard functions, and implementation tasks.",
-      "Support consultation requests, application workflows, document submission, admin review activities, and email notifications.",
+      "Translate stakeholder requirements into structured website features, user workflows, admin review steps, and implementation tasks.",
+      "Support secure portal workflows including consultation requests, application review, document submission, status updates, and email notifications.",
       "Configure and validate Supabase tables, Row Level Security policies, private storage, signed document access, and role-based admin controls.",
-      "Support secure deployment with Next.js, Supabase, Vercel, GitHub, protected routes, environment-based configuration, and MFA-based admin access.",
-      "Test local and production releases, troubleshoot deployment issues, validate Vercel updates, and maintain GitHub documentation and technical records."
+      "Support deployment and release validation using Next.js, Supabase, Vercel, GitHub, environment-based configuration, and MFA-based admin access."
     ]
   },
   {
