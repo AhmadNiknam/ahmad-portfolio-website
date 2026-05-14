@@ -19,8 +19,8 @@ export const heroEyebrow = "PERSONAL IT PORTFOLIO & WEB SERVICES";
 
 /** Line breaks tuned for the Hero headline layout */
 export const heroHeadlineLines = [
-  "Cloud Operations, IT Support,",
-  "and Modern Portfolio Websites"
+  "IT Support, Systems Support,",
+  "and Technical Projects"
 ] as const;
 
 export const heroBadges = [
@@ -33,7 +33,7 @@ export const heroProfileImageSrc = "/profile-ahmad-2026-v2.jpg";
 
 export const heroCard = {
   name: "Ahmad Niknam",
-  role: "IT Support | Network & Systems Support",
+  role: "IT Support | Systems Support",
   location: "Regina, SK",
   availability: "Available for opportunities"
 } as const;
