@@ -91,6 +91,38 @@ function HeroNetworkGraphic() {
   );
 }
 
+const profileSocialIconClass =
+  "inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200/90 bg-white/85 text-slate-700 shadow-[0_6px_22px_-14px_rgba(15,23,42,0.35),0_1px_0_rgba(255,255,255,0.9)_inset] backdrop-blur-sm transition hover:border-teal-200/90 hover:bg-teal-50/60 hover:text-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white";
+
+function ProfileSocialIcons() {
+  return (
+    <div className="mt-2.5 flex items-center justify-center gap-2.5" role="group" aria-label="Professional profile links">
+      <a
+        href={profileLinks.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={profileSocialIconClass}
+        aria-label="View Ahmad Niknam on LinkedIn"
+      >
+        <svg className="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a-1.998 1.998 0 1 1 0-3.996 1.998 1.998 0 0 1 0 3.996zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+      </a>
+      <a
+        href={profileLinks.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={profileSocialIconClass}
+        aria-label="View Ahmad Niknam on GitHub"
+      >
+        <svg className="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a>
+    </div>
+  );
+}
+
 function ScrollCue() {
   return (
     <div
@@ -222,7 +254,8 @@ export function Hero() {
                     {heroCard.name}
                   </h2>
                   <p className="mt-1.5 text-sm leading-relaxed text-slate-500">{heroCard.role}</p>
-                  <p className="mt-3 inline-flex items-center justify-center gap-1.5 text-sm font-medium text-slate-600">
+                  <ProfileSocialIcons />
+                  <p className="mt-2.5 inline-flex items-center justify-center gap-1.5 text-sm font-medium text-slate-600">
                     <svg className="h-4 w-4 shrink-0 text-teal-600/85" viewBox="0 0 24 24" fill="none" aria-hidden>
                       <path
                         d="M12 21s-6.2-4.35-8.5-8.5C2.5 10.45 4.6 6 9 6c2.2 0 3 1 3 1s.8-1 3-1c4.4 0 6.5 4.45 5.5 6.5C18.2 16.65 12 21 12 21Z"
