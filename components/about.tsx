@@ -1,5 +1,6 @@
 import { Section } from "@/components/section";
 import { ds } from "@/lib/ds";
+import { supportingCredentials } from "@/lib/portfolio-data";
 
 export function About() {
   const strengths = [
@@ -54,6 +55,24 @@ export function About() {
               operations, secure configuration, documentation, user workflows, and cloud-based deployment are
               important.
             </p>
+            <div className="pt-2">
+              <div className="mb-3 h-px w-full bg-gradient-to-r from-slate-200 via-slate-200/70 to-transparent" aria-hidden />
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-600">
+                Supporting credential
+              </p>
+              <ul className="mt-3 space-y-3">
+                {supportingCredentials.map((credential) => (
+                  <li key={credential.title} className={ds.insetSurface}>
+                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                      <span className="text-[var(--ds-color-heading)]">{credential.title}</span>
+                      <span className="text-slate-500">{credential.issued}</span>
+                    </div>
+                    <p className="mt-1 text-slate-600">{credential.issuer}</p>
+                    <p className="mt-2 text-slate-600">{credential.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-5">

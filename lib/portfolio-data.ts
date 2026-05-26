@@ -38,6 +38,17 @@ export const heroCard = {
   availability: "Available for opportunities"
 } as const;
 
+export const supportingCredentials = [
+  {
+    title: "WES-Verified Academic Credentials",
+    issuer: "World Education Services (WES)",
+    issued: "May 2026",
+    label: "Verified International Academic Qualifications",
+    description:
+      "Bachelor’s and Master’s academic credentials completed internationally and verified by World Education Services for Canadian credential recognition."
+  }
+] as const;
+
 export const skillGroups = [
   {
     title: "Cloud / Azure",
