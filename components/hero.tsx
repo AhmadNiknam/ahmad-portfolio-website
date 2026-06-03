@@ -238,13 +238,17 @@ export function Hero() {
             <div className="rounded-[1.85rem] bg-gradient-to-br from-white via-slate-100/95 to-slate-200/90 p-[2px] shadow-[0_28px_60px_-28px_rgba(15,23,42,0.45),0_14px_36px_-22px_rgba(15,23,42,0.28)] ring-1 ring-white/80">
               <div className="rounded-[1.75rem] bg-gradient-to-b from-white/98 to-slate-50/95 p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)] backdrop-blur-sm sm:p-6 lg:p-6 xl:p-7">
                 <div className="relative mb-5 aspect-[4/5] overflow-hidden rounded-[1.15rem] bg-slate-200/90 shadow-inner ring-1 ring-slate-200/80 lg:mb-6">
+                  <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
+                    <div className="hero-profile-light-bar hero-profile-light-bar--left" />
+                    <div className="hero-profile-light-bar hero-profile-light-bar--right" />
+                  </div>
                   <Image
                     src={heroProfileImageSrc}
                     alt={`${heroCard.name} — IT Support Specialist`}
                     fill
                     sizes="(min-width: 1536px) 31rem, (min-width: 1280px) 30rem, (min-width: 1024px) 28.5rem, (min-width: 640px) 23.5rem, calc(100vw - 2.5rem)"
                     priority
-                    className="object-cover object-[center_18%] saturate-[0.97]"
+                    className="relative z-[1] object-cover object-[center_18%] saturate-[0.97]"
                   />
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/[0.14] via-transparent to-transparent" />
                 </div>

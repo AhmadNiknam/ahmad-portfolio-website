@@ -138,6 +138,67 @@ button {
   }
 }
 
+@keyframes hero-profile-light-bar-rise {
+  0%,
+  100% {
+    transform: translateY(30%) scaleY(0.86);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-28%) scaleY(1.04);
+    opacity: 0.46;
+  }
+}
+
+.hero-profile-light-bar {
+  position: absolute;
+  top: 50%;
+  width: 3px;
+  height: 44%;
+  border-radius: 9999px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgb(45 212 191 / 0.22) 16%,
+    rgb(94 234 212 / 0.42) 50%,
+    rgb(45 212 191 / 0.22) 84%,
+    transparent 100%
+  );
+  box-shadow:
+    0 0 6px rgb(45 212 191 / 0.18),
+    0 0 16px rgb(45 212 191 / 0.1);
+  filter: blur(0.35px);
+  opacity: 0.38;
+  transform: translateY(-50%);
+  will-change: transform, opacity;
+}
+
+.hero-profile-light-bar--left {
+  left: 0.625rem;
+}
+
+.hero-profile-light-bar--right {
+  right: 0.625rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-profile-light-bar--left {
+    animation: hero-profile-light-bar-rise 5.5s ease-in-out infinite;
+  }
+
+  .hero-profile-light-bar--right {
+    animation: hero-profile-light-bar-rise 6.25s ease-in-out infinite;
+    animation-delay: -1.4s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-profile-light-bar {
+    transform: translateY(-50%);
+    opacity: 0.34;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
