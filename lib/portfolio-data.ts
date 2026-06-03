@@ -144,17 +144,17 @@ export const projects = [
 
 export const experienceItems = [
   {
-    role: "IT Project Coordinator - Secure Web Portal & Admin Systems",
-    company: "University of Regina",
-    location: "Regina, Saskatchewan, Canada - Hybrid",
-    period: "Feb 2026 - Present",
+    role: "IT Systems & Project Coordinator",
+    company: "University of Regina · Permanent Part-time",
+    location: "Regina, Saskatchewan, Canada · Hybrid",
+    period: "Feb 2026 – Present",
     summary:
-      "Part-time role supporting the planning, testing, deployment, documentation, and secure configuration of a web portal and admin review system for a University of Regina research group.",
+      "Support planning, testing, and deployment of a secure web portal and related administrative systems, helping bridge technical and non-technical stakeholders throughout the project lifecycle.",
     highlights: [
-      "Translate stakeholder requirements into structured website features, user workflows, admin review steps, and implementation tasks.",
-      "Support secure portal workflows including consultation requests, application review, document submission, status updates, and email notifications.",
-      "Configure and validate Supabase tables, Row Level Security policies, private storage, signed document access, and role-based admin controls.",
-      "Support deployment and release validation using Next.js, Supabase, Vercel, GitHub, environment-based configuration, and MFA-based admin access."
+      "Coordinate user access, role-based permissions, and MFA practices; validate admin workflows to ensure systems behave correctly before release.",
+      "Troubleshoot configuration and deployment issues across GitHub, Vercel, and Supabase; document findings clearly so the next person can pick up where the work left off.",
+      "Maintain thorough documentation, including system setup notes, testing procedures, issue logs, and support guides to keep the team aligned and reduce repeated questions.",
+      "Support communication between technical and non-technical stakeholders by translating project needs into clear tasks, workflows, and follow-up actions."
     ]
   },
   {

@@ -7,8 +7,8 @@ export function Experience() {
     <Section
       id="experience"
       eyebrow="Experience"
-      title="Professional experience across IT support, systems administration, and web systems coordination."
-      description="A clear timeline focused on support outcomes, Windows infrastructure, Microsoft 365, networking, remote technical support, and practical secure portal work."
+      title="Professional experience across IT support, systems support, and technical project coordination."
+      description="A clear timeline focused on support outcomes, Windows infrastructure, Microsoft 365, networking, remote technical support, and practical web systems projects."
     >
       <div className={`reveal relative space-y-6 ${ds.timelineLine}`}>
         {experienceItems.map((item, index) => (
