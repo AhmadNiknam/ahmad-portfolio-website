@@ -42,18 +42,18 @@ export function About() {
           <div className="pointer-events-none absolute -bottom-20 -left-16 h-44 w-44 rounded-full bg-sky-200/20 blur-3xl" aria-hidden />
           <div className="relative space-y-6">
             <p className={ds.bodyMuted}>
-              Ahmad Niknam is an IT Support Specialist with hands-on experience across Microsoft 365,
-              Windows Server administration, Active Directory, DNS, DHCP, VPN, network and systems support,
-              Azure administration, and technical operations.
+              Ahmad Niknam is an IT Support Specialist with over a decade of experience across IT support,
+              systems support, and network support. His hands-on work spans Windows Server, Microsoft 365,
+              Active Directory, DNS/DHCP, VPN, printers, workstations, monitoring, and user support.
             </p>
             <p className={ds.bodyMuted}>
-              He has supported remote and multi-site environments, documented solutions, and helped maintain
-              reliable IT services through practical troubleshooting and clear communication.
+              He completed Canadian IT training and workplace readiness through Saskatchewan Polytechnic and
+              has supported remote and multi-site environments through practical troubleshooting, documentation,
+              and clear communication.
             </p>
             <p className={ds.bodyMuted}>
-              In addition to his systems and support background, Ahmad supports web systems projects where IT
-              operations, secure configuration, documentation, user workflows, and cloud-based deployment are
-              important.
+              Ahmad currently supports web systems at the University of Regina—websites, forms, GitHub, Vercel,
+              documentation, and technical coordination—alongside practical automation and reporting projects.
             </p>
             <div className="pt-2">
               <div className="mb-3 h-px w-full bg-gradient-to-r from-slate-200 via-slate-200/70 to-transparent" aria-hidden />

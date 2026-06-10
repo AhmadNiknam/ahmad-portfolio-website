@@ -75,10 +75,18 @@ export const skillGroups = [
     skills: ["Network & Systems Support", "VPN", "Routing", "Switching", "Connectivity"]
   },
   {
-    title: "Operations",
+    title: "Operations & ITSM Tools",
     icon: "OPS",
     summary: "Service-focused habits for IT support, incidents, users, monitoring, and handoffs.",
-    skills: ["IT Support", "Troubleshooting", "Documentation", "End User Support", "Secure Configuration"]
+    skills: [
+      "IT Support",
+      "Troubleshooting",
+      "Documentation",
+      "Freshservice",
+      "Jira",
+      "PRTG",
+      "ServiceNow familiarity"
+    ]
   },
   {
     title: "Automation",
@@ -96,24 +104,24 @@ export const skillGroups = [
 
 export const projects = [
   {
-    title: "Secure Web Portal & Admin System",
+    title: "Research Group Web Systems Support",
     date: "Feb 2026 - Present",
     associatedWith: "University of Regina",
     status: "In Progress",
     description:
-      "Ongoing part-time web systems project supporting a secure public website and admin review portal for a University of Regina research group.",
+      "Ongoing web systems support for University of Regina research group websites, forms, and deployment workflows.",
     impact:
-      "Supports consultation requests, application workflows, private document access, admin review steps, status updates, and secure deployment practices.",
+      "Strengthens online presence, improves form-based submissions and administrative workflows, and supports reliable deployment and troubleshooting.",
     contribution:
-      "Work includes translating stakeholder requirements into structured features and workflows, supporting Supabase configuration, Row Level Security validation, private storage setup, role-based admin controls, MFA-based access, Vercel deployment, testing, and technical documentation.",
+      "Work includes website maintenance, web form development, GitHub and Vercel configuration, deployment support, and technical documentation.",
     tags: [
       "Next.js",
-      "Supabase",
-      "Vercel",
+      "React",
       "GitHub",
-      "Secure Configuration",
-      "Admin Workflow",
-      "Documentation"
+      "Vercel",
+      "Web Forms",
+      "Documentation",
+      "Technical Coordination"
     ]
   },
   {
@@ -144,66 +152,84 @@ export const projects = [
 
 export const experienceItems = [
   {
-    role: "IT Systems & Project Coordinator",
+    role: "IT Systems Support Specialist",
     company: "University of Regina · Permanent Part-time",
     location: "Regina, Saskatchewan, Canada · Hybrid",
     period: "Feb 2026 – Present",
     summary:
-      "Support planning, testing, and deployment of a secure web portal and related administrative systems, helping bridge technical and non-technical stakeholders throughout the project lifecycle.",
+      "Support web systems, forms, deployment workflows, and technical coordination for University of Regina research group websites and related administrative processes.",
     highlights: [
-      "Coordinate user access, role-based permissions, and MFA practices; validate admin workflows to ensure systems behave correctly before release.",
-      "Troubleshoot configuration and deployment issues across GitHub, Vercel, and Supabase; document findings clearly so the next person can pick up where the work left off.",
-      "Maintain thorough documentation, including system setup notes, testing procedures, issue logs, and support guides to keep the team aligned and reduce repeated questions.",
-      "Support communication between technical and non-technical stakeholders by translating project needs into clear tasks, workflows, and follow-up actions."
+      "Designed and maintained websites for three University of Regina research groups.",
+      "Developed web forms for user submissions and administrative workflows.",
+      "Configured and maintained web system components using GitHub and Vercel.",
+      "Documented technical steps, updates, and workflow notes for continuity."
     ]
   },
   {
-    role: "IT Support Trainee",
-    company: "Saskatchewan Polytechnic",
-    location: "Regina, Saskatchewan, Canada",
-    period: "2025 - 2026",
+    role: "IT Support Trainee – Career Enhancement Program",
+    company: "Saskatchewan Polytechnic · Contract Full-time",
+    location: "Regina, Saskatchewan, Canada · On-site",
+    period: "Sep 2025 – Feb 2026",
     summary:
-      "Focused on Canadian workplace readiness, Microsoft 365, support operations, and communication.",
+      "Full-time professional training program focused on job-ready IT support skills, workplace communication, Microsoft 365, and support operations in Canada.",
     highlights: [
-      "Built local workplace familiarity for IT service, documentation, and team communication.",
-      "Strengthened support practices aligned with Canadian business environments."
+      "Practiced IT support fundamentals including troubleshooting, ticket handling, and end-user support.",
+      "Worked with Microsoft 365 applications such as Outlook, Teams, and OneDrive in workplace contexts.",
+      "Strengthened customer service, communication, and handling of end-user requests.",
+      "Developed documentation, reporting, job search, and interview preparation skills for IT roles."
     ]
   },
   {
     role: "Remote IT Support Technician",
-    company: "Arain Fars Company",
-    location: "Remote",
-    period: "2023 - 2025",
+    company: "Arain Fars Company · On-Call",
+    location: "Iran · Remote",
+    period: "Jan 2023 – Nov 2025",
     summary:
-      "Provided remote support for Windows Server environments and core infrastructure services.",
+      "Provided remote IT support for Windows Server environments, user access, connectivity, printers, workstations, and core infrastructure services.",
     highlights: [
-      "Troubleshot server, user access, connectivity, and service availability issues remotely.",
+      "Supported Windows Server environments, user account management, and connectivity remotely.",
+      "Troubleshot workstation, printer, and network issues using remote tools and phone support.",
+      "Monitored system health with PRTG, addressed alerts, and supported service availability.",
       "Documented support activity and escalated infrastructure issues with clear context."
     ]
   },
   {
-    role: "IT Support & Systems Administrator",
-    company: "Iranian Blood Transfusion Organization",
-    location: "Multi-branch environment",
-    period: "2015 - 2022",
+    role: "IT Support Specialist – Systems & Network Support",
+    company: "Iranian Blood Transfusion Organization · Permanent Full-time",
+    location: "Shiraz, Fars Province, Iran",
+    period: "Nov 2015 – Dec 2022",
     summary:
-      "Supported 500+ users across multiple branches. Managed Windows Server, Active Directory, VPN, DNS, DHCP, Microsoft 365, monitoring, and user support.",
+      "Delivered comprehensive technical support for users, branches, Windows infrastructure, network connectivity, and operational IT services.",
     highlights: [
-      "Maintained user accounts, core network services, and Windows infrastructure operations.",
-      "Supported operational continuity through monitoring, troubleshooting, and documentation."
+      "Delivered technical support for 500+ users across multiple locations.",
+      "Troubleshot LAN, Wi-Fi, VPN, DNS, and DHCP issues; conducted field network tasks.",
+      "Supported Windows Server tasks, user access, file services, monitoring, and operational continuity."
     ]
   },
   {
-    role: "Earlier IT Infrastructure & Network Support Experience",
-    company: "Earlier IT Roles",
-    location: "Iran",
-    period: "Before 2015",
+    role: "Information Technology Support Specialist",
+    company: "Iranian Blood Transfusion Organization · Contract Full-time",
+    location: "Shiraz County, Fars Province, Iran",
+    period: "Jan 2013 – Nov 2015",
     summary:
-      "Built foundational hands-on experience across Windows Server environments, networking, virtualization, backup operations, user support, and multi-site infrastructure support.",
+      "Provided front-line IT support for Windows systems, printers, software applications, and user access requests.",
     highlights: [
-      "Supported server, network, and branch infrastructure operations across multi-site environments.",
-      "Worked with Windows Server, Active Directory, Cisco networking equipment, VMware, backup systems, and core infrastructure services.",
-      "Developed practical troubleshooting, documentation, and operational support experience before later systems administration roles."
+      "Delivered front-line IT support for Windows systems, printers, and software applications.",
+      "Assisted users through in-person, phone, and remote support to reduce downtime.",
+      "Managed basic Active Directory tasks and documented recurring support steps."
+    ]
+  },
+  {
+    role: "Junior IT Support Assistant",
+    company: "Iranian Blood Transfusion Organization · Contract Full-time",
+    location: "Iran",
+    period: "Jan 2012 – Jan 2013",
+    summary:
+      "Supported senior IT staff with basic desktop support, equipment checks, documentation, and routine troubleshooting.",
+    highlights: [
+      "Assisted senior IT staff with desktop setups and basic hardware troubleshooting.",
+      "Conducted equipment checks, workstation preparation, and cabling documentation.",
+      "Provided routine support for computer, printer, and software issues."
     ]
   }
 ];
